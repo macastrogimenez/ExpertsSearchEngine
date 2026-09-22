@@ -5,8 +5,8 @@ const path = require('path');
 
 function parseArgs(argv) {
   const args = {
-    input: 'projects.JSON',
-    output: 'project.csv',
+    input: '../PureJSONs/projects.JSON',
+    output: '../CsvForDB/project.csv',
   };
 
   for (let i = 0; i < argv.length; i += 1) {
