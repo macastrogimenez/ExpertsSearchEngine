@@ -5,8 +5,8 @@ const path = require('path');
 
 function parseArgs(argv) {
   const args = {
-    input: 'researchOutput.JSON',
-    output: 'paper.csv',
+    input: '../PureJSONs/researchOutput.JSON',
+    output: '../CsvForDB/paper.csv',
     typesOut: '',
   };
 
