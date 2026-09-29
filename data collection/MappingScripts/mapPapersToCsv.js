@@ -95,7 +95,7 @@ async function run() {
   const items = Array.isArray(json?.items) ? json.items : [];
 
   const rows = [
-    ['uuid', 'year', 'title', 'subtitle', 'university', 'type', 'abstract', 'file', 'totalNumberOfContributors'],
+    ['uuid','doi', 'year', 'title', 'subtitle', 'university', 'type', 'abstract', 'file', 'totalNumberOfContributors'],
   ];
 
   const uniqueTypes = new Set();
@@ -108,6 +108,7 @@ async function run() {
 
     rows.push([
       item?.uuid ?? '',
+      item?.electronicVersions?.find(version => version?.doi)?.doi ?? '', 
       item?.submissionYear ?? '',
       item?.title?.value ?? '',
       readSubtitle(item),
