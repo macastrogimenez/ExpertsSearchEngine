@@ -1,0 +1,257 @@
+uuid,orcid,firstName,lastName,email,jobTitle
+5ad9c220-e37f-443a-8a31-fc4abf365db5,0000-0002-6780-4471,Dan Witzner,Hansen,witzner@itu.dk,Professor
+f2136570-f73c-446f-9fb0-6d9e461e2124,0000-0003-4757-3394,Yvonne,Dittrich,ydi@itu.dk,Professor
+472021c7-73cc-44ba-a4ef-70cd2bed8601,0000-0001-9078-4512,Thore,Husfeldt,thore@itu.dk,Professor
+689427b5-8d2a-44f3-b291-6db6ba598305,0000-0002-8356-5394,Miguel Angel,Sicart,miguel@itu.dk,Professor
+10003d22-a201-4b64-88e3-b423bc76fcc2,0000-0003-0386-4376,Rasmus Ejlers,Møgelberg,mogel@itu.dk,Professor
+2fa5dc89-7d78-45d0-96c7-e8f39b78dd3e,0000-0001-9898-8106,Anna,Vallgårda,akav@itu.dk,Professor
+a39b94ff-e1b6-4b96-8404-486167a9123d,0000-0003-0532-2685,Andrzej,Wasowski,wasowski@itu.dk,Professor
+92f6c3f3-0ad2-40fc-b278-69170f87567d,0000-0001-7204-465X,Lars Rune,Christensen,lrc@itu.dk,Associate Professor
+ea6d10cf-6bb5-4414-8966-f1ed2591f794,0000-0003-2300-6934,Søren,Lauesen,slauesen@itu.dk,Professor Emeritus
+d30b96a8-4f1e-44fa-9bf5-0209bedf0268,0000-0002-7435-5563,Thomas,Hildebrandt,hilde@itu.dk,Visiting Researcher
+d3b41838-e2bf-4735-b1cd-03f60b49c7e5,0000-0002-4385-1409,Søren,Debois,debois@itu.dk,Associate Professor
+1313519f-2074-41d6-8b79-589648e37211,0000-0003-4793-0099,Carsten,Schürmann,carsten@itu.dk,Professor
+47a94200-3abe-4354-b5e3-c8ef6f1ba1f2,0000-0001-5093-5806,Claus,Brabrand,brabrand@itu.dk,Professor
+b752c464-c7fb-4a52-a0c3-3b2d3db5d62f,0000-0002-2588-6261,Gitte Bang,Stald,stald@itu.dk,Associate Professor
+9ba013db-4c4d-41dd-be12-dbe188f67f29,0000-0002-9578-2708,Hanna Elina,Wirman,wirman@itu.dk,Associate Professor
+0ee7ba1e-3108-4db3-a908-97977980d032,0000-0002-5843-6021,Peter,Sestoft,sestoft@itu.dk,Professor
+9027b41a-4159-4db7-9ddd-8fc8f41f1fb3,0000-0001-9479-2632,Marco,Carbone,maca@itu.dk,Professor
+cf5e1d64-5489-4534-ba34-8dba5fd354a6,0000-0003-2804-9028,Paolo,Burelli,pabu@itu.dk,Associate Professor
+d55dab65-fffe-4da4-a383-cfcf5ee3a8cd,0000-0002-1631-5483,Christopher,Gad,chga@itu.dk,Associate Professor
+2b8ff3a4-e9b0-403d-8bd8-1bf26121c234,0000-0001-7391-0046,Paolo,Tell,pate@itu.dk,Associate Professor
+879e7ac4-e64c-4c5f-9591-421e56cd0678,0000-0001-8215-4801,Natalie,Schluter,nael@itu.dk,Associate Professor
+1052b289-f510-4c5a-9662-2db48c12ebc2,0000-0003-1768-7147,Lene,Nielsen,lene@itu.dk,Associate Professor
+0cc78e11-da3d-4687-a49a-76a2ba39c292,0000-0001-8936-7797,Sara Marie,Ertner,saramarie@itu.dk,Associate Professor
+80784458-06f6-4eff-b0c8-df982ffa9835,0000-0002-7209-9041,Rune Kristian Lundedal,Nielsen,rkln@itu.dk,Associate Professor
+74a08deb-18e1-48d0-a86e-ed6675da92ab,0000-0002-5984-561X,Christian Østergaard,Madsen,chrm@itu.dk,Associate Professor
+2efbc294-1ce4-4148-a403-93fe6450d879,0000-0001-5081-1811,James,Maguire,jmag@itu.dk,Associate Professor
+bc7a60f7-45a0-401f-813f-6b4aa700c849,0000-0003-3712-6988,Steffen,Dalsgaard,sdal@itu.dk,Professor
+4e33d926-364b-47b8-97d7-409c16b62db9,0000-0001-7738-7846,Vasiliki,Baka,vasb@itu.dk,Associate Professor
+44c88dce-966d-46f3-88a8-2014e39197b9,0000-0002-0091-2574,Hans-Joachim Løvind,Backe,hanj@itu.dk,Associate Professor
+2a9c0934-98ca-4101-b829-b88d77f6487e,0000-0003-0179-2487,Kasper,Støy,ksty@itu.dk,Professor
+f11b0cc1-ad9f-4b12-b805-65b70e5bcd65,0000-0001-9562-6572,Rachel,Douglas-Jones,rdoj@itu.dk,Professor
+1b45e3f5-b8cd-4c0d-a444-2901304f76ee,0000-0002-3629-2039,Luca,Rossi,lucr@itu.dk,Associate Professor
+a420ffb3-2ca6-4925-a25f-baaa5228fc15,0000-0003-3607-8400,Sebastian,Risi,sebr@itu.dk,Professor
+1e0534b4-fe3e-4c5e-ad6d-5f1c7df6a14e,0000-0002-7377-6091,Erik,Grönvall,erig@itu.dk,Associate Professor
+443362d7-b255-460d-a559-0fa80a8d9fbc,0000-0002-4621-3699,Vasilis,Galis,vgal@itu.dk,Professor
+7dd48cfe-3069-4563-bef4-ef661c18387a,0000-0001-7288-6988,Andres,Faina,anfv@itu.dk,Associate Professor
+22ec9269-2fff-4dbf-a9c7-5037559a15ee,0000-0003-0484-4668,Anders Sundnes,Løvlie,asun@itu.dk,Associate Professor
+5c54c44a-9eaa-4a97-a78a-e853dc73e9d9,0000-0003-3738-010X,Rodrigo Moreno,Garcia,rodr@itu.dk,Assistant Professor
+54728da8-274d-40e6-b119-23318d995721,0000-0002-0158-5034,Hanne,Westh,hwni@itu.dk,Associate Professor
+e9d14210-bc71-4824-b7cf-fd1448d022ab,0000-0002-3912-2166,Marisa,Cohn,mcoh@itu.dk,Associate Professor
+a4c1604d-b01f-46ef-baf3-74d2a8046d6b,0000-0002-2181-149X,Jörn,Christiansson,jrme@itu.dk,Associate Professor
+3d49de50-0620-46fe-ae15-53b12dfb8649,0009-0006-0393-3676,Björn,Karlsson,bjrk@itu.dk,Guest
+e0edf6ca-5a14-41d8-81cc-77fd67f03ee5,0000-0002-2500-0467,Jens,Schmidt,jesc@itu.dk,Chief Consultant
+ddcdfda8-c5ea-4e67-b0ea-21ba86966197,0000-0001-8828-9723,Martin,Pichlmair,mpic@itu.dk,Associate Professor
+e6f70fb0-caf1-4736-b583-b0777bc1390f,0000-0001-9470-1809,Riko,Jacob,rikj@itu.dk,Associate Professor
+5041f387-908f-4845-9f79-3a6dbd527f4b,0000-0002-2670-2102,Michael,Hockenhull,michh@itu.dk,Postdoc
+a22e85da-82e3-410d-8ef1-31407362ba19,0000-0001-7193-3797,Louise Harder,Fischer,louf@itu.dk,Associate Professor
+6ec63914-1f4e-4708-8830-1b054c2ee03a,0000-0002-4178-3676,Irina,Papazu,irpa@itu.dk,Associate Professor
+d37cba38-dff2-4c27-a515-226cfadfd849,0000-0001-9065-2843,Jonas,Fritsch,frit@itu.dk,Associate Professor
+25a5a0d6-404b-419c-9502-b246525617a2,0000-0001-9723-5516,Laurens,Boer,laub@itu.dk,Associate Professor
+5e271e6a-7a91-47bd-9f12-3b73f4e0d7ac,0000-0003-1600-8261,Patrick,Bahr,paba@itu.dk,Associate Professor
+0537edb0-1a18-425e-8a82-c92b2882a597,0000-0002-4098-9015,Vasilieos-Spyridon,Vlassis,vavl@itu.dk,Postdoc
+805cae2a-3462-4130-88de-cc7d94aec0a5,0000-0003-2235-6078,Vasiliki,Tsaknaki,vats@itu.dk,Associate Professor
+4398dfd4-2627-4dbb-9ef1-de133b87f57f,0009-0005-1202-9577,Elizabete,Munzlinger,enar@itu.dk,PhD fellow (industrial)
+5c50bbc9-ed3d-417f-ba4d-e484eaf536b3,0000-0003-2946-9462,Alessandro,Bruni,brun@itu.dk,Associate Professor
+5f52759c-418a-41b7-bbdb-050492677284,0000-0002-7212-6476,Martin,Aumüller,maau@itu.dk,Associate Professor
+70f3c85a-9cd2-40b4-bed9-5e2a75609421,0000-0001-7792-7216,Sisse,Finken,sisf@itu.dk,Associate Professor
+528393a3-e784-47a8-85be-c81d44c393bd,0000-0003-3793-5021,Sanna-Maria,Marttila,sanma@itu.dk,Associate Professor
+831421c0-027f-4a25-b795-ee2fce0c8d2a,0000-0003-1306-249X,Louise,Barkhuus,barkhuus@itu.dk,Professor
+3ef9211c-34b2-4061-ba59-c5800d6a5b32,0000-0001-7102-7268,Cæcilie Sloth,Laursen,cael@itu.dk,PhD fellow (enrolled/guest)
+42147e05-f94c-471d-a889-c57a01e4bdd0,0000-0002-1268-7474,Pawel,Grabarczyk,pawg@itu.dk,Associate Professor
+bd52cb95-025e-4106-9c13-1345c76dcbfe,0000-0003-1304-5913,Björn Thór,Jónsson,bjth@itu.dk,Guest Researcher
+62db65c9-470c-472f-b039-6c4a704ef170,0000-0002-2917-9601,Rosario,Giustolisi,rosg@itu.dk,Associate Professor
+b614ac6f-eefa-44a3-8b9a-092b88d86d37,0000-0002-1039-8177,Baki,Cakici,bakc@itu.dk,Associate Professor
+e8e88610-5144-41da-95bf-597abf1d7869,0000-0003-2141-9815,Sami,Brandt,sambr@itu.dk,Professor
+82a68906-d29e-47d3-9b30-ab8c6e916283,0000-0002-0351-6489,Halfdan Hauch,Jensen,halj@itu.dk,Academic Staff
+06d038a4-f659-4c53-8a6d-58e295ab603f,0009-0002-4274-4991,Sunniva,Sandbukt,suns@itu.dk,Assistant Professor
+3dac6e0e-2770-4c5e-b32a-d7750523516f,0000-0002-3366-5573,Jonas Valbjørn,Andersen,jova@itu.dk,Associate Professor
+63342b24-28ec-40c5-a7d9-ec49867dc75d,0000-0001-6838-4854,Pinar,Tözün,pito@itu.dk,Associate Professor
+6c543b1d-8137-489d-b444-d17921fc9de9,0000-0001-9668-6868,Simy Kaur,Gahoonia,sgah@itu.dk,Postdoc
+785a7089-e58e-4aaa-986d-ae0e615ba508,0000-0002-8656-3431,Leon,Derczynski,leod@itu.dk,Associate Professor
+53c45a58-4c3c-424c-80a2-c39e733fd7c3,0000-0001-7201-9905,Radu-Cristian,Curticapean,racu@itu.dk,Associate Professor
+f073ebac-704d-4236-9206-d1d2ef2be9c3,0000-0002-4394-1965,Barbara,Plank,bapl@itu.dk,Guest Researcher
+9cf737ee-bd9a-4f7e-b865-b6ff6ed01fde,0000-0003-1482-3094,Willard,Rafnsson,wilr@itu.dk,Associate Professor
+90b501a9-4d44-460b-b193-4d7d524bb21b,0000-0001-5984-5137,Michele,Coscia,mcos@itu.dk,Associate Professor
+02960d47-7677-4b2c-99d4-490a31fd6885,0000-0003-3944-5261,Mircea,Lungu,mlun@itu.dk,Associate Professor
+f14f4742-c9d8-4a34-b8e2-d713c3a1f437,0000-0003-3876-3604,Oliver,Krancher,olik@itu.dk,Professor
+c596539b-3ceb-497c-9a43-e71d6b0f65a6,0000-0002-4388-2539,Djordje,Grbic,djgr@itu.dk,Associate Professor
+0bdda5a8-b38a-4532-b9a2-e5d9a98c05a7,0000-0002-7812-2652,Hasib,Ahsan,hahs@itu.dk,Guest
+7016a7a0-c187-4a62-baef-0780150912d1,0000-0002-5646-5195,Morten Roed,Frederiksen,mrof@itu.dk,Assistant Professor
+e23e8096-59cb-4ef6-af48-ce9d806fd1eb,0000-0002-5375-9542,Nanna,Inie,nans@itu.dk,Assistant Professor
+c4e4fa45-a84f-4422-a4f5-7cc5706782a2,0009-0003-8441-9238,Mai,Hartmann,maih@itu.dk,PhD fellow
+857b3b5b-92d4-43b3-861c-d8efbdbe3b16,0000-0001-9720-3645,Omar Shahbaz,Khan,omsh@itu.dk,Assistant Professor
+8785f18a-1bf3-4c63-8d8b-d3e5d516ca40,0000-0002-4521-7428,Payam,Zahadat,paza@itu.dk,Associate Professor
+bdc2cd4a-df05-46ca-b027-b038039a58ec,0000-0002-1872-7799,Bernardo Machado,David,beda@itu.dk,Associate Professor
+c649bf10-5588-4d10-8c7c-471874cf98f9,0000-0002-7997-3002,Sebastian,Büttrich,sbut@itu.dk,Special Adviser
+8949ca8c-746d-4a53-b816-ec9ebf06764c,0009-0001-3681-3770,Olivia Thomassen,Harre,olih@itu.dk,Postdoc
+605b59ab-91b4-4f8e-bb12-df68ce0491c5,0000-0002-9065-6884,Cancan,Wang,cawa@itu.dk,Associate Professor
+3ad26d6b-4619-4a9f-a1b6-8424aab1dd52,0000-0001-6135-410X,Tom,Jenkins,tomje@itu.dk,Associate Professor
+2ef641d0-bd79-425b-8b12-b58d74b993ae,0000-0003-3022-2483,Michael,Szell,misz@itu.dk,Associate Professor
+9734ef6f-09d1-4ca1-b968-6ad34872d504,0000-0003-2439-9960,Priscila Santos da,Costa,prsa@itu.dk,Associate Professor
+418f030f-2b26-4c74-a77b-c0c87d13f56d,0000-0002-7558-1028,Roberta,Sinatra,rsin@itu.dk,Professor
+0baaf9f8-3126-4cb1-b22f-b9fceabb8b54,0000-0002-7475-2147,Lara,Tatjana Reime,lata@itu.dk,PhD fellow (enrolled)
+fb4b9d17-f1ec-466b-b222-caba06823edc,0000-0002-4776-883X,Mahsa,Varshosaz,mahv@itu.dk,Associate Professor
+1dbd1112-eb47-4406-936c-6807e8845610,0000-0003-4218-1658,Oksana,Kulyk,okku@itu.dk,Associate Professor
+e383647f-00d3-41b1-ad95-ff69bdfffb42,0000-0001-6740-4550,Jichen,Zhu,jicz@itu.dk,Professor
+20ad2ae0-df32-484d-84ed-f65810600cfa,0009-0002-4687-796X,Konstantinos,Floros,kofl@itu.dk,Guest
+0c46864b-a7f8-4439-aeda-0781f77bfe88,0000-0001-7994-5186,Katrine Meldgaard,Kjær,kakj@itu.dk,Associate Professor
+09813918-f2fa-46c2-a9b1-069b140c2903,0000-0001-8609-0745,Morten Tychsen,Clausen,mocl@itu.dk,PhD fellow (enrolled/guest)
+ef9b447a-d6c4-4250-a506-093730db84d6,0000-0001-8955-0786,Holger,Dell,hold@itu.dk,Associate Professor
+fda8c630-1b0a-4910-ae2a-602850616275,0000-0003-4539-8297,Christoph,Seidl,chse@itu.dk,Associate Professor
+ce1a5350-f645-4a53-a745-fca8d4f1f030,0000-0002-8346-2467,Elda,Paja,elpa@itu.dk,Associate Professor
+d05daa00-c3d6-4a89-ba14-cfd1847fb0cc,0000-0003-0003-7295,Raúl,Pardo Jimenez,raup@itu.dk,Associate Professor
+610312cd-b173-4efa-bbb5-0a22e9b9ce02,0000-0001-6843-5009,Christian,Sivertsen,csiv@itu.dk,Postdoc
+ad50bed7-77fd-4c7f-819c-54455506e3f0,0000-0002-6791-7425,Stella,Grasshof,stgr@itu.dk,Associate Professor
+8e5f2a6c-c817-4a90-b48b-d9171743ad0f,0009-0003-1999-4156,Rob van der,Goot,robv@itu.dk,Associate Professor
+7c852728-c562-4df0-84c1-4488dde7c360,0000-0002-5122-6769,Imke,Grabe,imgr@itu.dk,PhD fellow
+d2ab0b30-780c-495a-abfe-963f1dfaddd3,0000-0002-3683-7713,Marija,Stepanovic,maste@itu.dk,PhD fellow
+1578b20c-b5d0-466f-b114-2582529ddc53,0000-0002-2323-8965,Therese,Graversen,theg@itu.dk,Associate Professor
+98a59a44-499e-4a6e-a8e8-24211f117b23,0000-0002-7875-3251,Elias,Najarro,enaj@itu.dk,Postdoc
+4ca57c3b-1d1f-4ecf-87b0-fe690510c887,0000-0002-6362-8634,Jessamy,Perriam,jper@itu.dk,Associate Professor
+df52a23b-7109-4616-a59a-d6d90f777595,0009-0006-7220-3650,Katja Sara Pape,de Neergaard,knee@itu.dk,PhD student (Sys. ext.)
+8bd9b364-d90f-486f-9965-84cd3dc63ca3,0000-0002-9018-9585,Maria Sinziiana,Astefanoaei,msia@itu.dk,Assistant Professor
+db64c222-0674-4eab-9f09-7f9ea1c483e3,0000-0003-4490-3757,Vedran,Sekara,vsek@itu.dk,Associate Professor
+a0f5a47c-1073-4c01-b62d-51b767f01d69,0000-0001-8079-8363,Melanie Duckert,Schmidt,mela@itu.dk,PhD student (Sys. ext.)
+09ec1bda-4550-4a83-8480-fe742d77e882,0000-0002-3390-2831,Asger Balle,Pedersen,asbp@itu.dk,Assistant Professor
+ff6f398b-4bde-46da-a460-9815134b42eb,0000-0001-7884-9432,Joachim Winther,Pedersen,jwin@itu.dk,Postdoc
+a0e31b8c-3d9c-4b68-834d-d4c06914b69f,0000-0001-9517-8466,Christian Janos,Lebeda,chle@itu.dk,Postdoc
+59264501-60c6-4666-87c2-73d7a42a4ff0,0000-0002-3667-3253,Mike Hyslop,Graham,mihg@itu.dk,Postdoc
+523ffd96-f3b2-49cc-8f24-dc9215b84bed,0000-0002-0006-0658,Maximilian,Müller-Eberstein,mamy@itu.dk,Postdoc
+78a992d3-b8eb-4fd6-8a5e-18c464d0b254,0000-0003-1218-5201,Mike,Zhang,mikz@itu.dk,
+6a57a243-af32-4e1d-849c-75146da60102,0000-0002-5254-6246,Adrian,Hoff,adho@itu.dk,Postdoc
+c6b67626-5ff8-4730-93a6-70ee08f6013e,0009-0003-8374-7571,Elisa,Bassignana,elba@itu.dk,Postdoc
+0284519c-3320-48a2-8b0d-b4ae9351a403,0000-0002-6888-897X,Qiuyu,Jiang,qiji@itu.dk,Postdoc
+9504265d-0046-4e58-b529-256a656c012d,0000-0002-6103-7275,Christian,Hardmeier,chrha@itu.dk,Associate Professor
+6aed9698-9a0c-4956-be0d-ec658bbfe09a,0000-0002-0654-2527,Luca Maria,Aiello,luai@itu.dk,Professor
+1c4bfd79-4336-4b17-a672-9acb465f15c0,0000-0003-0176-9324,Veronika,Cheplygina,vech@itu.dk,Professor
+2575c800-642d-4984-9c56-41601cf07a26,0000-0002-8306-1102,Søren,Knudsen,soekn@itu.dk,Associate Professor
+0309c0d2-f64d-4449-a321-e39e8fba9f83,0000-0001-5851-191X,Jeppe Kilberg,Møller,jeppem@itu.dk,Special Adviser
+91d18624-3489-48a8-834d-8737581b8ff2,0009-0002-0334-4151,Magnus,Ibh,ibhq@itu.dk,PhD student (Sys. ext.)
+02fbfd2f-9290-41dc-b82e-fcc2abcd9b2a,0000-0002-8916-3468,Laura,Weihl,lawe@itu.dk,Guest
+2b7ea821-fddb-4b66-8cb4-15dc343549c9,0000-0003-4193-1373,Kasper Hjort,Berthelsen,khjo@itu.dk,PhD student (Sys. ext.)
+672280b6-17c9-4191-9b00-8f1322fc1d90,0000-0002-4161-4442,Frederik,Haagensen,haag@itu.dk,PhD fellow
+410df04c-bc1d-4cd3-9726-c35469ddab8c,0000-0003-1827-8513,Aske,Mottelson,asmo@itu.dk,Associate Professor
+598de448-af84-43c8-9147-6134a63c9b3c,0000-0001-9093-770X,Bent,Flyvbjerg,befl@itu.dk,Professor
+6800c64b-0e54-49cb-a703-384b4987b70c,0000-0002-6195-1120,Dovile,Juodelyte,doju@itu.dk,PhD student (Sys. ext.)
+fea53dc2-758b-4dc3-962c-68e0b52d2925,0000-0001-7764-8268,Mahya Mohammadi,Kashani,mahmo@itu.dk,PhD fellow
+fc57a764-276e-463a-aa68-fa54ffaf31d6,0000-0002-2138-9946,Sergio Daniel,Quijano,sequ@itu.dk,Guest
+9ccc3d10-9e1d-4947-bd62-5d789604477e,0000-0002-5678-0179,Emily Louisa Laue,Christensen,emic@itu.dk,Postdoc
+a63425bf-3843-42e2-9039-582dddf58821,0000-0002-5106-005X,Matas,Sabalas,msab@itu.dk,Lab Manager
+4634ce05-3fcb-49ca-89c7-080955f450e8,0000-0002-0257-1574,Maaike Annebet,Zwart,mazw@itu.dk,Postdoc
+3f05e4ce-6433-4c5a-b72c-aa89422cf431,0000-0002-0238-1674,Nutan,Limaye,nuli@itu.dk,Professor
+42c316a3-1a31-469b-b436-635edc389e02,0009-0006-3451-5602,Titus Theodorus (Ties),Robroek,titr@itu.dk,Postdoc
+1abda59f-c493-4824-a7b1-7470d66f08d1,0000-0001-9913-3206,Stefan,Heinrich,stehe@itu.dk,Associate Professor
+12df9187-47b5-4d7e-87f5-9089a3d229c1,0000-0002-1997-5161,Dawit,Tirore,dati@itu.dk,Postdoc
+ac400e55-5188-4efd-872a-12df089e7068,0000-0003-0156-1435,Ehsan,Yousefzadeh-Asl-Miandoab,ehyo@itu.dk,Postdoc
+0080607f-9f26-4f73-a974-36b4940fb777,0000-0002-1271-2481,Meisam Jamshidi,Seikavandi,meis@itu.dk,Postdoc (industrial)
+c12518ce-b3ab-469c-81fb-e2178e6b87e3,0000-0002-1939-9053,Mohsen,Ghaffari,mohg@itu.dk,Guest
+d7412bcc-4b0f-4ccf-97e2-11b985e93fd9,0000-0002-6198-7393,Sandro,Sousa,ssou@itu.dk,Postdoc
+0a2a2206-180b-4443-bdb7-92deba889221,0000-0003-0709-0777,Leon Y.,Xiao,lexi@itu.dk,Guest
+39f7afe3-fd9c-4ac5-8ba1-fa2f2826ab8c,0000-0001-9304-4536,Paloma Thomé de,Lima,palt@itu.dk,Associate Professor
+45b600aa-d6c7-4c4b-91b3-1d934aec4402,0000-0002-2404-7271,Ane Rahbek,Vierø,anev@itu.dk,PhD fellow
+d6d93566-d546-42a8-8864-766098389589,0000-0003-3987-9350,Louise Meier,Carlsen,loca@itu.dk,Postdoc
+5f3b7745-99be-4d1b-8ce1-a413325c2008,0000-0002-9328-9784,Carsten Lund,Pedersen,calp@itu.dk,Associate Professor
+fa03d816-cd99-4fea-b45b-efe7ecd3cb0a,0000-0001-8390-1629,Jaike van,Twiller,jaiv@itu.dk,Postdoc
+140f881b-1540-455b-8066-f0bc9ac6d82c,0009-0008-1098-6674,Henriette,Friis,hefh@itu.dk,Lab Manager
+ceef6d97-26fe-4163-9538-6685e98bce2e,0000-0001-8490-7707,Daniel,Fürstenau,dafy@itu.dk,Associate Professor
+3ec363e3-83f0-4dd8-9b2d-b87a7d34dc55,0000-0001-8873-5455,Eleni Tzirita,Zacharatou,elza@itu.dk,Assistant Professor
+f30d35c6-4320-476f-8506-481764e6009e,0000-0003-0778-7662,Peter,Kun,peku@itu.dk,Postdoc
+e175684d-abc3-4ee4-9a12-af6c611e47c0,0000-0002-3498-0970,Sebastian Mateos,Nicolajsen,sebni@itu.dk,Research Assistant
+64730011-f493-4dbb-abf6-b48924ddc794,0000-0001-7870-0603,Amelia Jiménez,Sánchez,amji@itu.dk,Guest Researcher
+b611f406-3531-4b9a-a511-831d28cf62ef,0009-0009-7029-6728,Anna,Brynskov,abry@itu.dk,PhD fellow
+6b81fcf4-173e-4e8b-86d6-2c9e7b4320c6,0000-0003-2176-4678,Jon,Aaen,jonaa@itu.dk,Postdoc
+7e884581-3d40-42e6-af12-453e052c9c87,0009-0009-2177-5482,Thomas Vase Schultz,Volden,thvo@itu.dk,PhD fellow (enrolled/guest)
+efa39e70-a80a-4780-b151-ba31b01726bb,0000-0002-1432-7229,Per Bruun,Brockhoff,pebb@itu.dk,Rector
+cf6cfa0b-e3ac-4164-8de2-b956d8e23825,0000-0003-0076-6703,Elisa,Mekler,elme@itu.dk,Associate Professor
+977ec015-b047-44f1-8aa9-bda7d606c977,0000-0002-2419-9638,Olga,Iarygina,olgl@itu.dk,PhD fellow (enrolled/guest)
+c072fa93-9dbb-4815-b72a-e24dcdd453f8,0000-0001-5314-4962,Piyakorn,Koowattanataworn,piko@itu.dk,PhD fellow
+e20164d2-7e0c-4f05-88be-ca477dfc5f8c,0009-0001-4447-5222,Laurits,Dixen,ldix@itu.dk,PhD fellow (enrolled/guest)
+38e643e8-bd72-40e3-ba25-b031e957b7fb,0009-0005-1904-4024,Camilla Birch,Okkels,cabi@itu.dk,PhD fellow (enrolled/guest)
+cfb0029a-04d0-4606-810f-bf6d6777171b,0009-0006-6561-8292,Luigi,Arminio,luia@itu.dk,PhD fellow (enrolled/guest)
+f09e1c90-dbb8-4379-9905-0086e71503d4,0009-0009-4316-3428,Arianna,Pera,arpe@itu.dk,Guest Researcher
+e726f512-d3fd-4d89-962a-3aa9f532a52f,0000-0003-0716-676X,Toine,Bogers,tobo@itu.dk,Associate Professor
+124de7ea-2c0b-435f-b2bd-3fd5869590e7,0000-0002-8750-6519,Roosa,Piitulainen,ropi@itu.dk,PhD fellow (enrolled/guest)
+ecc36d3e-77ac-4333-9918-2431807cd4e0,0000-0002-8516-7840,Jan Benjamin,Vornhagen,javo@itu.dk,PhD student (Sys. ext.)
+d5c3a434-36d5-4861-862d-3c5b3e332121,0000-0003-4520-5360,Zoi,Kaoudi,zoka@itu.dk,Associate Professor
+fc4a63b2-8edf-4d1c-94a4-2cbfe61adf48,0009-0001-2836-1807,Camille,Rønn,camro@itu.dk,PhD fellow
+dac0e506-da5d-4ee6-8783-5abd2a2096f3,0000-0002-7127-5437,Feng,Feng,fefe@itu.dk,Guest Researcher
+c40e1e8a-50ee-4a7c-b7f0-2fc0fdd62adc,0000-0002-4845-4023,Anna,Rogers,arog@itu.dk,Associate Professor
+8999b149-c410-4fd7-882f-9be2e31a4fe8,0009-0002-1438-6461,Lucia Montesinos,Garcia,lumo@itu.dk,PhD fellow
+7714a7e2-c618-414c-b295-067c651b524b,0000-0002-7440-3510,Milton Llera,Montero,mlle@itu.dk,Postdoc
+17b18c69-c9d0-456a-affa-5396d0a0d09e,0009-0001-1720-6895,Markus Krabbe,Larsen,krml@itu.dk,PhD fellow
+07251d01-c63e-448b-84f2-6e9e128ae147,0009-0008-9737-555X,Anders Giovanni,Møller,agmo@itu.dk,PhD fellow
+c90e23c6-5bf4-4d6f-97d8-b162b8a5b03e,0000-0001-8244-1798,Thomas,Binder,tbin@itu.dk,Professor
+7e6e312c-7d1b-4d6a-ac22-385bab06ee41,0009-0009-9303-9986,Andreas,Björklund,anbjo@itu.dk,Associate Professor
+f240d002-893f-45bd-b9ad-6a6ddc015e40,0000-0002-1092-1140,Alena,Thiel,thie@itu.dk,Postdoc
+81de28ef-db46-405c-a49b-79af67660d89,0009-0005-8959-4355,Kai,Budrikas,kaib@itu.dk,PhD fellow
+0600e907-f51e-4588-923c-9a984592580e,0000-0002-1155-1970,Martin Lund,Trinhammer,mlut@itu.dk,PhD fellow
+d1be56b5-3ded-4aeb-9339-3af4d4c35035,0009-0002-1446-1935,Amir,Nikabadi,amir@itu.dk,PhD fellow
+cb1b6c5f-6206-4a35-b8aa-6a750f9c89a1,0000-0003-4933-7168,Raquel,Robinson,raqr@itu.dk,Postdoc
+864e737f-8deb-4b43-8403-8edb558e8567,0000-0003-2990-5252,Yucheng,Lu,yucl@itu.dk,Postdoc
+8141993a-b522-4f30-8e3c-626566a037b4,0000-0001-8212-4872,Pratik Suresh,Ingle,prin@itu.dk,PhD fellow
+a4d5d125-061e-4594-b4e4-1389a19ff99f,0009-0005-7912-9249,Christina Frederikke,Nissen,chfn@itu.dk,PhD fellow
+41da2096-dc8b-44c2-93ad-6473e220f85e,0000-0002-8087-3981,Justyna,Starostka,juss@itu.dk,Postdoc
+77359666-99eb-4d00-90af-6cbec6c4562b,0000-0002-0497-7172,Rahul Bangalore,Satish,rahs@itu.dk,PhD fellow
+1ee9fda3-cb4e-4c06-82b1-7e248c20a700,0000-0003-0245-1633,Willem Lennert Antoon van der,Maden,wiva@itu.dk,Postdoc
+b55a7155-5e64-4230-b7da-94f7872e9742,0009-0008-7490-3049,Louie Søs,Meyer,,PhD fellow
+b2431f12-bff1-4a97-af68-defe62b81aee,0000-0001-8481-1596,Karl,Werder,karw@itu.dk,Associate Professor
+f72688e0-ad8f-4dc2-bb6b-c22fa14164c3,0009-0009-3084-0071,Clément,Sebastiao,clse@itu.dk,PhD fellow
+c22491da-c338-47a0-ae95-5a51b85e576b,0009-0004-5944-9264,Kamila Anna,Dzierzak,kadz@itu.dk,PhD fellow
+9dd22344-26d5-46f4-9c29-9623e4cc73b5,0000-0003-2305-6683,Mesut,Kaya,meska@itu.dk,Postdoc (industrial)
+20685b27-43b0-4170-bcf8-3cc28832d2e7,0009-0001-6144-0451,Nicklas Engelbrecht,Ravn,nrav@itu.dk,PhD fellow
+bf8d35b0-2ec1-4cd7-a341-51627a0acbb9,0000-0002-4805-0213,Timothée François Nathan,Anne,timl@itu.dk,Postdoc
+7208d996-d004-402b-b6f9-36294ff67fcc,0009-0009-0783-4992,Safra Aurora Noelle,Martinussen,safm@itu.dk,PhD fellow
+8ee88b26-8053-4761-8c8d-91a2941a9df9,0009-0005-1109-9696,Raha,Asadi,asad@itu.dk,PhD fellow
+661b700e-7c1d-4e6d-b90b-4dbbfaab2adf,0000-0003-1650-8442,Mylène,Tanferri,mylt@itu.dk,Postdoc
+70ec5312-dd31-4816-a9f0-d91883214b0a,0000-0002-3685-1654,Fioralba,Ajazi,fiaj@itu.dk,Postdoc
+9034a399-92b2-4ad0-bdfe-d65c494dea58,0000-0002-0572-3721,Prateek,Dwivedi,prdw@itu.dk,Postdoc
+b2d076fd-b924-4251-abbe-d86ecbed2004,0000-0003-0636-0077,Harshit,Harshit,hano@itu.dk,Postdoc
+5417f888-9371-4933-8a2b-7679eb21bd84,0000-0003-0169-2945,Doga Buse,Cavdir,dogc@itu.dk,Assistant Professor
+54e42219-4e3f-42cd-a19d-66c82ee60654,0009-0004-8528-4168,Martin,Hentschel,mhent@itu.dk,Associate Professor
+6abf7fdb-d583-4b32-816b-22fcfde6e74b,0000-0001-7836-5411,Tomasz,Chwalek,tchw@itu.dk,PhD fellow
+35dbc3d0-efc4-4935-960c-beff5c64a758,0000-0002-3772-8922,Nicola Bjerg,Ens,nens@itu.dk,Postdoc
+13f2be7b-37ab-4ab3-b5c3-90d54e1515dc,0000-0002-5728-9269,Jonas,Juul,jjuu@itu.dk,Assistant Professor
+6826c79c-8024-4f3c-bebf-f07d51e8988b,0009-0006-6649-8165,Mark Staun,Poulsen,stpo@itu.dk,PhD fellow
+dda395cd-41ec-469e-a3e9-b1c024bbb1a7,0000-0002-0647-6101,Anna-Mamusu,Wehlitz,aweh@itu.dk,Postdoc
+363f336f-ee57-420f-990f-11e8c2f0e2c6,0009-0002-2990-8752,Bertram,Højer,berh@itu.dk,PhD fellow
+b36939ee-d7f6-4e4d-aebf-ff5d0ea2524a,0000-0002-9919-6191,Leo,Vitasovic,leov@itu.dk,PhD fellow
+cea9fe0e-2aa6-4a19-8a04-13cffe563626,0000-0003-3286-4666,Alessia,Galdeman,gald@itu.dk,Guest
+17d5f65c-93c4-4160-be62-e6fd9260e305,0009-0004-2709-6492,Caroline Costa da Silva,Gaudeoso,ccos@itu.dk,PhD fellow
+7dd2f4fa-dd14-4676-8f1a-f719f213f64f,0000-0002-0996-2543,Eduard,Kamburjan,edka@itu.dk,Assistant Professor
+d9376c00-8047-4c1b-b86a-e2f5e00018b3,0000-0002-3841-3463,Pelin,Karaturhan,peka@itu.dk,Postdoc
+12698500-7fd8-4508-b86a-adafaeaf91a9,0000-0001-6851-3345,David,Struthers,stru@itu.dk,Postdoc
+b8c7a59c-125b-48a6-9a1f-e22b82335828,0000-0002-7866-7484,Luís,Cruz-Filipe,luic@itu.dk,Head of Education
+35cc0100-4ab9-4cc5-9bc7-10b4d671416f,0000-0001-7748-8161,Ricardo Jose Menezes,Maia,rmen@itu.dk,Postdoc
+98276178-6706-48d0-8281-3bd487014112,0000-0001-7371-8644,Inna,Ermilova,iner@itu.dk,Special Consultant
+7df5fb79-5850-4de3-8594-323f1915ff1e,0000-0002-8704-1248,Alejandro Lorite,Mora,lori@itu.dk,PhD fellow
+3e584fc9-4b2e-4d6d-b200-994505d4e809,0000-0001-8052-9286,Daniel,Nickelsen,dnic@itu.dk,Assistant Professor
+bb404350-dc8d-4345-965f-a3602b726014,0000-0002-6447-0568,Tim Frederik,Seppelt,tise@itu.dk,Postdoc
+aabb6eb1-afb9-4570-8e8e-4725a423ee5f,0000-0002-5755-9310,Aycan,Aslan,ayas@itu.dk,Assistant Professor
+82f8ffa4-b7d6-490d-b3b4-2c68b79cd77a,0000-0003-4998-4883,Megan Lynn,Maurer,megm@itu.dk,Assistant Professor
+4277f6ec-bfbb-4bef-bed8-2a3420be1d6e,0000-0001-5555-966X,Sarita de,Berg,debe@itu.dk,Postdoc
+737f8d04-2c81-4e24-a77e-55ffea40c345,0000-0003-2398-7699,Yueran,Tian,yuti@itu.dk,Postdoc
+50d4bf89-8621-4bc3-bdce-6916656c12fa,0009-0006-2624-0231,Ivor van der,Hoog,ivva@itu.dk,Assistant Professor
+4d425855-1065-40b5-9b65-e04126df5838,0000-0002-6961-089X,Manon Brigitte,Blanc,mbrb@itu.dk,Postdoc
+2a0966cb-1bbd-4f5b-8d2e-d68f53acee87,0000-0003-1358-6007,Ida Marie,Schrøder,isch@itu.dk,Associate Professor
+5efe5e56-5ba7-43e0-bd2b-881e088db29e,0000-0001-7379-2502,Stine Loft,Rasmussen,slr@itu.dk,Postdoc
+ad9a85fb-d2fc-4c47-a486-1cc30be3a555,0009-0004-0079-8523,Juliette Marie Victoire,Vlieghe,juvl@itu.dk,PhD fellow
+f14a5893-8cba-4ed5-b066-55c2ea626d24,0000-0002-4619-7940,Ask Greve,Johansen,agjo@itu.dk,Postdoc
+ea2d2480-46fb-493d-8dd4-6f054f58098a,0009-0005-0220-9590,Théo,Sourget,tsou@itu.dk,PhD fellow
+690f2362-8a0e-4011-9928-dcac64f1e09b,0009-0002-4055-3470,Johannes Gabriel,Sindlinger,jgsi@itu.dk,PhD fellow
+06e2c784-e628-4c15-a0d4-478a94e1ee15,0000-0001-7139-4092,Lasse Sascha Stefan,Wulf,lasw@itu.dk,Postdoc
+1d2ee6fa-15cb-416a-b173-2486edca10b8,0000-0002-8583-7955,Mikhail,Fiadotau,mifi@itu.dk,Assistant Professor
+8342fc20-8530-4b6f-8880-660ae75ce6d2,0009-0007-3008-3061,Johanne Müller,Vistisen,jomy@itu.dk,PhD fellow
+d43519a1-5bf4-4290-a053-fe55459ca88a,0000-0002-2604-0487,Sven Matthias,Peldszus,svpe@itu.dk,Guest
+b49cff0e-6cf0-43ac-8e3e-65845cdfff93,0000-0002-3113-5691,Dooley Joel,Murphy,dojo@itu.dk,Postdoc
+0c4bb244-feb1-49f6-b658-ba79b505f679,0000-0002-8772-2959,Eszter,Vigh,esvi@itu.dk,Postdoc
+24475f7d-905a-47cf-89d9-059581d0a7a1,0000-0002-1595-8903,Farley,Nobre,fano@itu.dk,Guest Researcher
+ad34a0be-1ed8-477e-a356-cbe1195ea315,0009-0008-3905-2840,Arzu Burcu,Güven,argy@itu.dk,PhD fellow
+348c7117-a69e-4d7d-b9c3-9505f4a6721a,0000-0002-6802-8531,Srikanth,Tiyyagura,srti@itu.dk,Part-time Lecturer
+07983492-ae22-47c5-915e-a5eec25d555c,0009-0007-2447-877X,Stefano,Vincenti,,Part-time Lecturer
+f6921641-1f0a-4e24-a3a9-546e3927ab72,0000-0002-3438-7288,Signe Louise,Yndigegn,signelouise@itu.dk,Associate Professor
+1bcb6a4e-4298-4ac7-bdc6-c936d3d45055,0000-0001-8639-4116,Debasmita,Lohar,DEBLOH@itu.dk,Assistant Professor
+db87f82a-f4c2-4827-9539-29db1ec01b31,0009-0008-1036-5069,Oleg,Jarma,OLEJAR@itu.dk,PhD fellow
+32e3f75a-df69-476b-92f9-19a464e46e30,0000-0003-1161-7447,Jacob Liam,Curran-Sebastian,JACCUR@itu.dk,Postdoc
+babad22d-82f7-4c3e-b8ca-13bc50f61e39,0009-0006-9455-0637,Thomas,Vallier,thoval@itu.dk,Postdoc
