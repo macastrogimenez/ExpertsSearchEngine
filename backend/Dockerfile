@@ -1,5 +1,5 @@
 
-FROM python:3.12-slim-bookworm as base
+FROM python:3.12-slim-bookworm AS base
 
 # Prevents Python from writing pyc files.
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -40,4 +40,5 @@ COPY . .
 EXPOSE 8000
 
 # Run the application.
-CMD uvicorn api:app --host 0.0.0.0 --port 8000 --reload
+#CMD uvicorn api:app --host 0.0.0.0 --port 8000 --reload
+CMD ["python3", "name.py"]
