@@ -9,14 +9,14 @@ def get_courses_by_person(person_uuid: str) -> list[dict[str, Any]]:
                 """
                 SELECT
                     c.title,
-                    c.semester
-                    c.language
-                    c.abstract
-                    c.description
+                    c.semester,
+                    c.language,
+                    c.abstract,
+                    c.description,
                     c.programme
-                FROM course c
-                JOIN course_contributor cc
-                    ON cc.course_id = c."id"
+                FROM prod.course c
+                JOIN prod.course_contributor cc
+                    ON cc.course_id = c.id
                 WHERE cc.person_uuid = %s
                 """,
                 (person_uuid,),
@@ -27,7 +27,7 @@ def get_courses_by_person(person_uuid: str) -> list[dict[str, Any]]:
     return [
         {
             "title": row[0],
-            "period": row[1] or "",
+            "semester": row[1] or "",
         }
         for row in rows
     ]
