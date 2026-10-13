@@ -28,6 +28,10 @@ def get_courses_by_person(person_uuid: str) -> list[dict[str, Any]]:
         {
             "title": row[0],
             "semester": row[1] or "",
+            "language": row[2] or "",
+            "abstract": row[3] or "",
+            "description": row[4] or "",
+            "programme": row[5] or "",
         }
         for row in rows
     ]
