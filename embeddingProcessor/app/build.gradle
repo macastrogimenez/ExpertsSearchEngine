@@ -23,6 +23,11 @@ dependencies {
 
     // This dependency is used by the application.
     implementation libs.guava
+
+    // Dependency for DB interaction - JDBC 
+    implementation 'org.postgresql:postgresql:42.7.14'
+    implementation 'software.amazon.jdbc:aws-advanced-jdbc-wrapper:4.4.0'
+
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -34,10 +39,12 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'org.example.App'
+    mainClass = 'com.github.macastrogimenez.embeddingProcessor.Main'
 }
 
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+
+    failOnNoDiscoveredTests = false
 }
