@@ -1,14 +1,14 @@
 package com.github.macastrogimenez.embeddingProcessor;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class SearchDocumentRepository {
 
-    public void save(SearchDocument document) {
+    public void save(SearchPaper document) {
         // Send document to Elasticsearch
     }
 
-    public void /*ArrayList<SearchDocument>*/ search() {
-        // Query Elasticsearch
+    public List<SearchPaper> search() {
+        // Query Elasticsearc
     }
 }
