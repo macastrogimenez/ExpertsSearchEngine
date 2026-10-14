@@ -1,0 +1,37 @@
+import psycopg
+from typing import Any
+from dbconfig import DB_CONFIG
+
+def get_courses_by_person(person_uuid: str) -> list[dict[str, Any]]:
+    with psycopg.connect(**DB_CONFIG) as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                SELECT
+                    c.title,
+                    c.semester,
+                    c.language,
+                    c.abstract,
+                    c.description,
+                    c.programme
+                FROM prod.course c
+                JOIN prod.course_contributor cc
+                    ON cc.course_id = c.id
+                WHERE cc.person_uuid = %s
+                """,
+                (person_uuid,),
+            )
+
+            rows = cur.fetchall()
+
+    return [
+        {
+            "title": row[0],
+            "semester": row[1] or "",
+            "language": row[2] or "",
+            "abstract": row[3] or "",
+            "description": row[4] or "",
+            "programme": row[5] or "",
+        }
+        for row in rows
+    ]

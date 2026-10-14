@@ -32,3 +32,4 @@ dist/
 # Temporary files
 *.tmp
 *.temp
+backend/whoosh_index/
