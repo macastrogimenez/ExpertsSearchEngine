@@ -8,7 +8,7 @@ public class SearchDocumentRepository {
         // Send document to Elasticsearch
     }
 
-    public List<SearchPaper> search() {
-        // Query Elasticsearc
+    public void /*List<SearchPaper>*/ search() {
+        // Query Elasticsearch
     }
 }
