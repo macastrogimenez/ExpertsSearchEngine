@@ -5,7 +5,7 @@ import java.util.List;
 public record SearchCourse(
         int id,
         String title,
-        String paperAbstract,
+        String courseAbstract,
         String description,
         String programme,
         String professorId,

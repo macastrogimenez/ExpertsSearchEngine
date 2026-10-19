@@ -28,6 +28,10 @@ dependencies {
     implementation 'org.postgresql:postgresql:42.7.14'
     implementation 'software.amazon.jdbc:aws-advanced-jdbc-wrapper:4.4.0'
 
+    // dependency for parsing json response to string
+    implementation 'com.google.code.gson:gson:2.13.2'
+
+
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
