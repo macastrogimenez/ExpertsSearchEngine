@@ -88,7 +88,7 @@ public class Main {
                                     """);
                             )
                         {
-                            
+                            //  TODO [KAN-102]: create batch processing method for generating and saving embeddings - maybe 50 at a time?
                             int rowCount = 0;
                             while(resultCourses.next()) {
                                 rowCount++;
@@ -136,6 +136,8 @@ public class Main {
                                 // 4. save record in ES
                                 }
                             }
+
+                            // TODO [KAN-103]: vectorise Papers and projects in the same batch fashion as courses
                         }
     }
 }
