@@ -9,8 +9,9 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
 import com.google.gson.Gson;
+
+import netscape.javascript.JSException;
 
 public class EmbeddingService {
         private static final String OLLAMA_URL =
@@ -64,5 +65,41 @@ public class EmbeddingService {
                 }
 
                 return result.embeddings().get(0);
+        }
+
+        public List<List<Double>> batchEmbed (ArrayList<String> list) throws Exception{
+
+                // Construct request body
+                record JsonCall (String model, ArrayList<String> input) {};
+                JsonCall call = new JsonCall(MODEL, list);
+                // parse body to JSON
+                String json = gson.toJson(call);
+
+
+                // construct http request
+                HttpRequest request = HttpRequest.newBuilder()
+                        .uri(URI.create(OLLAMA_URL + "/api/embed"))
+                        .timeout(Duration.ofSeconds(60))
+                        .header("Content-type", "application/json")
+                        .POST(HttpRequest.BodyPublishers.ofString(json))
+                        .build();
+                
+                // send request
+                HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+                
+                // raise error if http response code is anything other than 200 (success)
+                if(response.statusCode() != 200){
+                        throw new RuntimeException(
+                                "Ollama error: " + response.body()
+                        );
+                }
+
+                EmbeddingResponse result = gson.fromJson(response.body(), EmbeddingResponse.class);
+
+                if (result == null || result.embeddings() == null || result.embeddings().isEmpty()) {
+                        throw new IllegalStateException("No embeddings returned");
+                }
+
+                return result.embeddings();
         }
 }

@@ -4,9 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.lang.StringBuilder;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import com.github.macastrogimenez.embeddingProcessor.EmbeddingService;
 
 
 public class Main {
@@ -24,7 +24,7 @@ public class Main {
 
         
         
-
+        // following 5 lines connect to the DB    
         try (Connection connection =
                     DriverManager.getConnection(
                             url,
@@ -33,68 +33,33 @@ public class Main {
                     {
 
                         System.out.println("Connected!");
-
-                        try (
-                                Statement statement = connection.createStatement();
-                                ResultSet result =
-                                    statement.executeQuery("SELECT current_database(), current_user");
-                            )
-                            {
-                                while (result.next()) {
-                                    System.out.println(
-                                            "Database: " + result.getString(1)
-                                    );
-                                    System.out.println(
-                                            "User: " + result.getString(2)
-                                    );
-                                }
-                            }
-
-                        try(
-                            Statement statement = connection.createStatement();
-                            ResultSet result2 = statement.executeQuery("SELECT * FROM prod.person WHERE firstname = 'Toine'");
-                        ) 
-                        {
-                            while (result2.next()) {
-                                StringBuilder s = new StringBuilder();
-                                for (int i = 1; i < 7; i++) {
-                                    if (i<6){
-                                        s.append(result2.getString(i)+" || ");
-                                    }else{
-                                        s.append(result2.getString(i));
-                                        System.out.println(s.toString());
-                                    }
-                                }
-                            }
-                        }
                         
                         // Vectorise courses
                         try(
                                 Statement statement = connection.createStatement();
                                 ResultSet resultCourses = statement.executeQuery(
                                     """ 
-                                        SELECT 
-                                            c.id,
-                                            c.title,
-                                            c.abstract,
-                                            c.description,
-                                            c.programme,
-                                            p.uuid
-                                        FROM prod.course_contributor AS CC
-                                        LEFT JOIN prod.person AS p
-                                            ON p.uuid = cc.person_uuid
-                                        LEFT JOIN prod.course AS c
-                                            ON c.id = cc.course_id;
+                                    SELECT 
+                                        c.id,
+                                        c.title,
+                                        c.abstract,
+                                        c.description,
+                                        c.programme,
+                                        p.uuid
+                                    FROM prod.course_contributor AS CC
+                                    LEFT JOIN prod.person AS p
+                                        ON p.uuid = cc.person_uuid
+                                    LEFT JOIN prod.course AS c
+                                        ON c.id = cc.course_id;
                                     """);
                             )
                         {
-                            //  TODO [KAN-102]: create batch processing method for generating and saving embeddings - maybe 50 at a time?
                             int rowCount = 0;
+                            HashMap<Integer, SearchCourse> searchCourses = new HashMap<>();
+                            ArrayList<String> hundredCourseEmbeddingText = new ArrayList<>();
+                            EmbeddingService embeddingService = new EmbeddingService();
                             while(resultCourses.next()) {
                                 rowCount++;
-                                if (rowCount % 20 == 0){
-                                    System.out.printf("rows processed %d \n",rowCount);
-                                }
                                 StringBuilder courseEmbeddingText = new StringBuilder();
 
                                 int courseId = Integer.parseInt(resultCourses.getString(1));
@@ -103,41 +68,83 @@ public class Main {
                                 String courseDescription = resultCourses.getString(4);
                                 String courseProgramme = resultCourses.getString(5);
                                 String courseProfessor = resultCourses.getString(6);
-
+                                
                                 courseEmbeddingText.append(
+                                    "search_document: "+ "\n" +
                                     "title: " + courseTitle
                                     + "\n"
                                     + "abstract: " + courseAbstract
                                     + "\n"
-                                    + "description: " + courseDescription);
-
-                                EmbeddingService s = new EmbeddingService();
-                                List<Double> embeddedText = s.embed(courseEmbeddingText.toString(), false);
-
-                                SearchCourse c = new SearchCourse(courseId, courseTitle, courseAbstract, courseDescription, courseProgramme, courseProfessor, embeddedText);
-
-                                // System.out.println(c.title());
-                                // System.out.println(c.courseAbstract());
-                                // System.out.println(c.professorId());
-
-                                // StringBuilder embedding = new StringBuilder();
-
-                                // for (Double double1 : c.embedding()) {
-                                //     embedding.append(double1+", ");
-                                // }
-
-                                // System.out.println("embedding: "+embedding);
+                                    + "description: " + courseDescription+ "\n"
+                                );
                                 
-
-                                
-                                // 1. retrieve data - done
-                                // 2. create embedding - done 
-                                // 3. store data and embedding in record
-                                // 4. save record in ES
+                                hundredCourseEmbeddingText.add(courseEmbeddingText.toString());
+                                    
+                                SearchCourse c = new SearchCourse(courseId, courseTitle, courseAbstract, courseDescription, courseProgramme, courseProfessor);
+                                searchCourses.put(rowCount, c);
+                                if (hundredCourseEmbeddingText.size() == 100) {
+                                    embedCourseBatch(embeddingService, hundredCourseEmbeddingText, searchCourses, rowCount);
                                 }
-                            }
 
-                            // TODO [KAN-103]: vectorise Papers and projects in the same batch fashion as courses
+                            }
+                            embedCourseBatch(embeddingService, hundredCourseEmbeddingText, searchCourses, rowCount);
+                            
+                            //TODO [KAN-106]: Pass courses onto FAISS. At this stage, the HashMap searchCourses has the courses and corresponding embedding saved. Next thing would be to pass them on to FAISS. 
                         }
+
+                        try (
+                                Statement statement = connection.createStatement();
+                                ResultSet result = statement.executeQuery(
+                                    """
+                                        SELECT
+                                            p.uuid,
+                                            p.year,
+                                            p.type,
+                                            p.title,
+                                            p.subtitle,
+                                            p.abstract,
+                                            ARRAY_AGG(pc.person_uuid) FILTER (
+                                                WHERE pc.person_uuid IS NOT NULL
+                                            ) AS contributors
+                                        FROM prod.paper p
+                                        LEFT JOIN prod.paper_contributors pc
+                                            ON pc.paper_uuid = p.uuid
+                                        WHERE p.uuid = '00865963-6ad8-41ef-a860-5258d1c67b74'
+                                        GROUP BY
+                                            p.uuid,
+                                            p.year,
+                                            p.type,
+                                            p.title,
+                                            p.subtitle,
+                                            p.abstract;
+                                    """
+                                )
+                        ) {
+
+                        }
+                    }
+    }
+
+    static void embedCourseBatch
+        (
+            EmbeddingService service, 
+            ArrayList<String> texts,
+            HashMap<Integer, SearchCourse> searchCourses,
+            int rowCount
+        ) throws Exception {
+            if (texts.isEmpty()) {
+                return;
+            }
+            List<List<Double>> embeddings = service.batchEmbed(texts);
+            if (embeddings.size() != texts.size()) {
+                throw new IllegalStateException("Expected " + texts.size()
+                        + " embeddings, received " + embeddings.size());
+            }
+            int firstKey = rowCount - texts.size() + 1;
+            for (int i = 0; i < texts.size(); i++) {
+                searchCourses.get(firstKey + i).setEmbedding(embeddings.get(i));
+            }
+            //texts.clear();
+            System.out.printf("rows processed %d%n", rowCount);
     }
 }
