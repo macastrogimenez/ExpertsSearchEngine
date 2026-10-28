@@ -50,7 +50,8 @@ public class Main
                                 LEFT JOIN prod.person AS p
                                     ON p.uuid = cc.person_uuid
                                 LEFT JOIN prod.course AS c
-                                    ON c.id = cc.course_id;
+                                    ON c.id = cc.course_id
+                                    ;
                                 """);
                         )
                     {
@@ -109,7 +110,6 @@ public class Main
                                     FROM prod.paper p
                                     LEFT JOIN prod.paper_contributors pc
                                         ON pc.paper_uuid = p.uuid
-                                    WHERE p.uuid = '00865963-6ad8-41ef-a860-5258d1c67b74'
                                     GROUP BY
                                         p.uuid,
                                         p.year,
@@ -163,23 +163,77 @@ public class Main
                             if (hundredPapersdocStrings.size() == 100){
                                 embedPaperBatch(embeddingService, hundredPapersdocStrings, searchPapers, rowCount);
                             }
-                            embedPaperBatch(embeddingService, hundredPapersdocStrings, searchPapers, rowCount);
+                            //TODO [KAN-109]: Pass papers onto FAISS. At this stage, the HashMap searchPapers has the papers and corresponding embedding saved. Next thing would be to pass them on to FAISS. 
+                            
                         }
+                        embedPaperBatch(embeddingService, hundredPapersdocStrings, searchPapers, rowCount);
                     }
                     try(
                         Statement statement = connection.createStatement();
                         ResultSet resultProjects = statement.executeQuery(
                             """
-                                SELECT
-                                *
-                                FROM 
-                                prod.project
+                                SELECT 
+                                    pj.uuid, 
+                                    pj.title, 
+                                    pj.description, 
+                                    ARRAY_AGG(pjp.person_uuid) FILTER (
+                                        WHERE pjp.person_uuid IS NOT NULL
+                                    ) AS participants
+                                FROM prod.project pj
+                                LEFT JOIN prod.project_participants pjp ON
+                                    pj.uuid = pjp.project_uuid
+                                GROUP BY 
+                                    pj.uuid, 
+                                    pj.title, 
+                                    pj.description
+                                ;
                             """
                         )
                     ){
+                        int rowCount = 0;
+                        HashMap<Integer, SearchProject> searchProjects = new HashMap<>();
+                        ArrayList<String> hundredProjectsdocStrings = new ArrayList<>();
+                        EmbeddingService embeddingService = new EmbeddingService();
 
+                        while (resultProjects.next()) {
+                            rowCount++;
+
+                            String uuid = resultProjects.getString(1);
+                            String title = resultProjects.getString(2);
+                            String description = resultProjects.getString(3);
+                            Array sqlParticipants = resultProjects.getArray(4);
+                            List<String> participants = new ArrayList<>();
+
+                            if (sqlParticipants != null){
+                                try {
+                                        participants = Arrays.stream((Object[])sqlParticipants.getArray()).map((Object v) -> v.toString()).toList();
+                                    }
+                                finally {
+                                    
+                                    sqlParticipants.free();
+                                }
+                            }
+
+                            StringBuilder s = new StringBuilder();
+
+                            s.append(
+                                "search_document: "+ "\n" +
+                                "title: " + title
+                                + "\n"
+                                + "description: " + description
+                            );
+
+                            hundredProjectsdocStrings.add(s.toString());
+                            SearchProject p = new SearchProject(uuid, title, description, participants);
+                            searchProjects.put(rowCount, p);
+
+                            if(hundredProjectsdocStrings.size()==100){
+                                embedProjectBatch(embeddingService, hundredProjectsdocStrings, searchProjects, rowCount);
+                            }
+                        }
+                        embedProjectBatch(embeddingService, hundredProjectsdocStrings, searchProjects, rowCount);
                     }
-
+                    //TODO [KAN-110]: Pass projects onto FAISS. At this stage, the HashMap searchProjects has the projects and corresponding embedding saved. Next thing would be to pass them on to FAISS. 
                 }
             }
 
@@ -202,8 +256,9 @@ public class Main
                 for (int i = 0; i < texts.size(); i++) {
                     searchCourses.get(firstKey + i).setEmbedding(embeddings.get(i));
                 }
+                embeddings = null;
                 texts.clear();
-                System.out.printf("Courses rows processed %d%n", rowCount);
+                System.out.printf("Course rows processed: %d%n", rowCount);
             }
 
         static void embedPaperBatch
@@ -226,6 +281,29 @@ public class Main
                     searchPapers.get(firstKey + i).setEmbedding(embeddings.get(i));
                 }
                 texts.clear();
-                System.out.printf("Papers rows processed %d%n", rowCount);
+                System.out.printf("Paper rows processed: %d%n", rowCount);
+            }
+            
+            static void embedProjectBatch
+            (
+                EmbeddingService service, 
+                ArrayList<String> texts,
+                HashMap<Integer, SearchProject> searchProjects,
+                int rowCount
+            ) throws Exception {
+                if (texts.isEmpty()) {
+                    return;
+                }
+                List<List<Double>> embeddings = service.batchEmbed(texts);
+                if (embeddings.size() != texts.size()) {
+                    throw new IllegalStateException("Expected " + texts.size()
+                            + " embeddings, received " + embeddings.size());
+                }
+                int firstKey = rowCount - texts.size() + 1;
+                for (int i = 0; i < texts.size(); i++) {
+                    searchProjects.get(firstKey + i).setEmbedding(embeddings.get(i));
+                }
+                texts.clear();
+                System.out.printf("Project rows processed: %d%n", rowCount);
             }
     }
