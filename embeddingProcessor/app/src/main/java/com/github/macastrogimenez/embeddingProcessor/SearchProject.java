@@ -24,6 +24,11 @@ public class SearchProject {
         this.embedding = embedding;
     }
 
+    public SearchProject(String uuid, List<Double> embedding) {
+        this.uuid = uuid;
+        this.embedding = embedding;
+    }
+
     public String getUuid() {
         return uuid;
     }

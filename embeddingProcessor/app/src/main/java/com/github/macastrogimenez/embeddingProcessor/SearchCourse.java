@@ -27,6 +27,14 @@ public class SearchCourse{
                 this.professorId = professorId;
         }
 
+        public SearchCourse(
+                int id,
+                List<Double> embedding
+        ) {
+                this.id = id;
+                this.embedding = embedding;
+        }
+
         public int getId() {
                 return id;
         }

@@ -1,6 +1,8 @@
 services:
   ollama:
     image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
     volumes:
       - ollama-data:/root/.ollama
 
@@ -21,6 +23,16 @@ services:
       OLLAMA_URL: http://ollama:11434
     depends_on:
       - ollama
+    
+  faiss:
+    build:
+      context: ./faiss
+    ports:
+      - "127.0.0.1:8001:8001"
+    volumes:
+      - faiss-data:/data
+    restart: unless-stopped
 
 volumes:
   ollama-data:
+  faiss-data:

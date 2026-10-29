@@ -33,6 +33,11 @@ public class SearchPaper {
         this.embedding = embedding;
     }
 
+    public SearchPaper(String uuid, List<Double> embedding) {
+        this.uuid = uuid;
+        this.embedding = embedding;
+    }
+
     public String getUuid() {
         return uuid;
     }
