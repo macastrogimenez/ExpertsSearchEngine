@@ -83,7 +83,27 @@ public class MilvusRepositoryTest {
         } catch (Exception e) {
             System.out.println(e);
         }
-        
-        
     }
+
+    @Test
+    void testingSecondQueryForSemanticSearch (){
+        try {
+            // Create query for one of them
+            String query = "soccer";
+            // create embedding for query
+            List<Double> queryEmbeddings = s.embed(query, true);
+            // search milvus for query, k = 1
+            List<VectorSearchResult> results = mr.searchKNN(queryEmbeddings, 1);
+            
+            String resultId = results.get(0).documentId();
+            int expectedRes = 1;
+
+            System.out.printf("\nThe expected doc id was %s and the actual doc was %s", expectedRes, resultId);
+            // check that the result includes only the relevant doc
+            assertEquals(Integer.toString(expectedRes),resultId );
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+    
 }
