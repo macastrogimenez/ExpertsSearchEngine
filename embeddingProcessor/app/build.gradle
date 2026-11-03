@@ -31,7 +31,12 @@ dependencies {
     // dependency for parsing json response to string
     implementation 'com.google.code.gson:gson:2.13.2'
 
+    // milvus for vector storage and similarity search
+    implementation 'io.milvus:milvus-sdk-java:3.0.10'
 
+    // Milvus requires SLF4J; include a provider for console logging at runtime.
+    implementation 'org.slf4j:slf4j-api:2.0.17'
+    runtimeOnly 'org.slf4j:slf4j-simple:2.0.17'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

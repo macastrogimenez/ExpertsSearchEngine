@@ -85,3 +85,6 @@ gradle-app.setting
 ### Gradle Patch ###
 # Java heap dump
 *.hprof
+
+# Ignoring Milvus - local embedding db data
+/milvus/volumes/

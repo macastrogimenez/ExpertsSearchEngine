@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 public class EmbeddingServiceTest {
     private ArrayList<String> l = new ArrayList<>();
     private EmbeddingService s = new EmbeddingService();
- 
+
     
     @BeforeEach
     void setUp() {
