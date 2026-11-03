@@ -65,7 +65,7 @@ public class MilvusRepositoryTest {
 
     
     @Test
-    void savingDocIsSuccessful (){
+    void savingDocIsSuccessfulAndSearchWorksCorrectly (){
         try {
             // Create query for one of them
             String query = "artificial intelligence";
@@ -74,8 +74,12 @@ public class MilvusRepositoryTest {
             // search milvus for query, k = 1
             List<VectorSearchResult> results = mr.searchKNN(queryEmbeddings, 1);
             
+            String resultId = results.get(0).documentId();
+            int expectedRes = 0;
+
+            System.out.printf("\nThe expected doc id was %s and the actual doc was %s", expectedRes, resultId);
             // check that the result includes only the relevant doc
-            assertEquals("0", results.get(0).documentId());
+            assertEquals(Integer.toString(expectedRes),resultId );
         } catch (Exception e) {
             System.out.println(e);
         }

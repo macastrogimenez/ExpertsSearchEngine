@@ -56,4 +56,8 @@ tasks.named('test') {
     useJUnitPlatform()
 
     failOnNoDiscoveredTests = false
+    testLogging {
+        events "passed", "skipped", "failed"
+        showStandardStreams = true
+    }
 }
