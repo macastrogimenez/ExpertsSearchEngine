@@ -5,13 +5,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.sql.Array;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Vector;
 
-import com.google.common.collect.Lists;
 public class Main 
     {
         public static void main(String[] args) throws Exception {
@@ -27,7 +23,7 @@ public class Main
                     database;
 
             try(
-                MilvusRepository milvusRepository = new MilvusRepository()
+                MilvusRepository milvusRepository = new MilvusRepository(true)
             ){
                 milvusRepository.initializeCollection();
 
@@ -42,7 +38,7 @@ public class Main
                         
                         // Vectorise courses
                         try(
-                                Statement statement = connection.createStatement();
+                                Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
                                 ResultSet resultCourses = statement.executeQuery(
                                     """ 
                                     SELECT 
@@ -61,11 +57,14 @@ public class Main
                                     """);
                             )
                         {
+                            resultCourses.last();
+                            int setSize = resultCourses.getRow();
+                            VectorDocument[] searchCourses = new VectorDocument[setSize+1];
+                            
                             int rowCount = 0;
-                            ArrayList<VectorDocument> searchCourses = new ArrayList<>();
-    
                             ArrayList<String> hundredCourseEmbeddingText = new ArrayList<>();
                             EmbeddingService embeddingService = new EmbeddingService();
+                            resultCourses.beforeFirst();
                             while(resultCourses.next()) {
                                 rowCount++;
                                 StringBuilder courseEmbeddingText = new StringBuilder();
@@ -74,8 +73,8 @@ public class Main
                                 String courseTitle = resultCourses.getString(2);
                                 String courseAbstract = resultCourses.getString(3);
                                 String courseDescription = resultCourses.getString(4);
-                                String courseProgramme = resultCourses.getString(5);
-                                String courseProfessor = resultCourses.getString(6);
+                                // String courseProgramme = resultCourses.getString(5);
+                                // String courseProfessor = resultCourses.getString(6);
                                 
                                 courseEmbeddingText.append(
                                     "search_document: "+ "\n" +
@@ -92,7 +91,7 @@ public class Main
                                 //searchCourses.put(rowCount, c);
     
                                 VectorDocument d = new VectorDocument("course", courseId);
-                                searchCourses.add(rowCount, d);
+                                searchCourses[rowCount] = d;
     
                                 if (hundredCourseEmbeddingText.size() == 100) {
                                     embedCourseBatch(embeddingService, hundredCourseEmbeddingText, searchCourses, rowCount, milvusRepository);
@@ -100,12 +99,12 @@ public class Main
     
                             }
                             embedCourseBatch(embeddingService, hundredCourseEmbeddingText, searchCourses, rowCount, milvusRepository);
-                            
-                            //TODO [KAN-106]: Pass courses onto FAISS. At this stage, the HashMap searchCourses has the courses and corresponding embedding saved. Next thing would be to pass them on to FAISS. 
+                            hundredCourseEmbeddingText.clear();
+                            searchCourses = null;
                         }
     
                         try (
-                                Statement statement = connection.createStatement();
+                                Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
                                 ResultSet resultPapers = statement.executeQuery(
                                     """
                                         SELECT
@@ -120,8 +119,11 @@ public class Main
                                 )
                         ) 
                         {
+                            resultPapers.last();
+                            int setSize = resultPapers.getRow();
+                            VectorDocument[] searchPapers = new VectorDocument[setSize + 1];
+                            resultPapers.beforeFirst();
                             int rowCount = 0;
-                            ArrayList<VectorDocument> searchPapers = new ArrayList<>();
                             ArrayList<String> hundredPapersdocStrings = new ArrayList<>();
                             EmbeddingService embeddingService = new EmbeddingService();
                             while (resultPapers.next()){
@@ -129,8 +131,8 @@ public class Main
                                 StringBuilder s = new StringBuilder();
     
                                 String uuid = resultPapers.getString(1);
-                                String year = resultPapers.getString(2);
-                                String paperType = resultPapers.getString(3);
+                                // String year = resultPapers.getString(2);
+                                // String paperType = resultPapers.getString(3);
                                 String title = resultPapers.getString(4);
                                 String subtitle = resultPapers.getString(5);
                                 String paperAbstract = resultPapers.getString(6);
@@ -156,20 +158,20 @@ public class Main
                                 );
     
                                 hundredPapersdocStrings.add(s.toString());
-                                //SearchPaper sp = new SearchPaper(uuid, Integer.parseInt(year), paperType, title, subtitle, paperAbstract, contrList);
                                 VectorDocument sp = new VectorDocument("paper", uuid);
-                                searchPapers.add(rowCount, sp);
+                                searchPapers[rowCount] = sp;
     
                                 if (hundredPapersdocStrings.size() == 100){
                                     embedPaperBatch(embeddingService, hundredPapersdocStrings, searchPapers, rowCount, milvusRepository);
                                 }
-                                //TODO [KAN-109]: Pass papers onto FAISS. At this stage, the HashMap searchPapers has the papers and corresponding embedding saved. Next thing would be to pass them on to FAISS. 
                                 
                             }
                             embedPaperBatch(embeddingService, hundredPapersdocStrings, searchPapers, rowCount, milvusRepository);
+                            hundredPapersdocStrings.clear();
+                            searchPapers = null;
                         }
                         try(
-                            Statement statement = connection.createStatement();
+                            Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
                             ResultSet resultProjects = statement.executeQuery(
                                 """
                                     SELECT 
@@ -181,8 +183,11 @@ public class Main
                                 """
                             )
                         ){
+                            resultProjects.last();
+                            int setSize = resultProjects.getRow();
+                            VectorDocument[] searchProjects = new VectorDocument[setSize + 1];
+                            resultProjects.beforeFirst();
                             int rowCount = 0;
-                            ArrayList<VectorDocument> searchProjects = new ArrayList<>();
                             ArrayList<String> hundredProjectsdocStrings = new ArrayList<>();
                             EmbeddingService embeddingService = new EmbeddingService();
     
@@ -217,13 +222,15 @@ public class Main
                                 hundredProjectsdocStrings.add(s.toString());
                                 //SearchProject p = new SearchProject(uuid, title, description, participants);
                                 VectorDocument p = new VectorDocument("project", uuid);
-                                searchProjects.add(rowCount, p);
+                                searchProjects[rowCount] = p;
     
                                 if(hundredProjectsdocStrings.size()==100){
                                     embedProjectBatch(embeddingService, hundredProjectsdocStrings, searchProjects, rowCount, milvusRepository);
                                 }
                             }
                             embedProjectBatch(embeddingService, hundredProjectsdocStrings, searchProjects, rowCount, milvusRepository);
+                            hundredProjectsdocStrings.clear();
+                            searchProjects = null;
                         }
                         //TODO [KAN-110]: Pass projects onto FAISS. At this stage, the HashMap searchProjects has the projects and corresponding embedding saved. Next thing would be to pass them on to FAISS. 
                     }
@@ -235,86 +242,106 @@ public class Main
             (
                 EmbeddingService service, 
                 ArrayList<String> texts,
-                ArrayList<VectorDocument> searchCourses,
+                VectorDocument[] searchCourses,
                 int rowCount,
                 MilvusRepository milvusRepository
             ) throws Exception {
                 if (texts.isEmpty()) {
                     return;
                 }
+                // select only the relevant search courses
+                VectorDocument[] scCopy = Arrays.copyOfRange(
+                    searchCourses,
+                    rowCount - texts.size() + 1,
+                    rowCount + 1
+                );
+                
+                // generate embeddings for all texts
                 List<List<Double>> embeddings = service.batchEmbed(texts);
+                
+                //check correct size of embeddings list
                 if (embeddings.size() != texts.size()) {
                     throw new IllegalStateException("Expected " + texts.size()
-                            + " embeddings, received " + embeddings.size());
+                    + " embeddings, received " + embeddings.size());
                 }
-                int firstKey = rowCount - texts.size() + 1;
-                for (int i = 0; i < texts.size(); i++) {
-                    searchCourses.get(firstKey + i).setEmbedding(embeddings.get(i));
+                
+                int i = 0;
+                for (List<Double> docVector : embeddings) {
+                    scCopy[i].setEmbedding(docVector);
+                    i++;     
                 }
-
-                //saving all VectorDocuments to Milvus vector db  here and clear searchCoursesww
-                milvusRepository.saveBatch(searchCourses);
-                searchCourses.clear();
-
+                
+                // turn array into list
+                List<VectorDocument> spList = Arrays.asList(scCopy); 
+                    
+                //saving all VectorDocuments to Milvus vector db  here and clear searchCourses
+                milvusRepository.saveBatch(spList);
+                spList = null;
                 embeddings = null;
                 texts.clear();
-                System.out.printf("Course rows processed: %d%n", rowCount);
+                System.out.printf("\nCourse rows processed: %d%n", rowCount);
             }
 
         static void embedPaperBatch
             (
                 EmbeddingService service, 
                 ArrayList<String> texts,
-                ArrayList<VectorDocument> searchPapers,
+                VectorDocument[] searchPapers,
                 int rowCount,
                 MilvusRepository milvusRepository
             ) throws Exception {
                 if (texts.isEmpty()) {
                     return;
                 }
+                VectorDocument[] batchPapers = Arrays.copyOfRange(
+                    searchPapers,
+                    rowCount - texts.size() + 1,
+                    rowCount + 1
+                );
                 List<List<Double>> embeddings = service.batchEmbed(texts);
                 if (embeddings.size() != texts.size()) {
                     throw new IllegalStateException("Expected " + texts.size()
                             + " embeddings, received " + embeddings.size());
                 }
-                int firstKey = rowCount - texts.size() + 1;
                 for (int i = 0; i < texts.size(); i++) {
-                    searchPapers.get(firstKey + i).setEmbedding(embeddings.get(i));
+                    batchPapers[i].setEmbedding(embeddings.get(i));
                 }
-                // save all VectorDocuments to Milvus vector db here and clear searchPapers
-                milvusRepository.saveBatch(searchPapers);
-                searchPapers.clear();
+                // Save only the documents in this batch.
+                milvusRepository.saveBatch(Arrays.asList(batchPapers));
 
                 texts.clear();
-                System.out.printf("Paper rows processed: %d%n", rowCount);
+                System.out.printf("\nPaper rows processed: %d%n", rowCount);
             }
             
             static void embedProjectBatch
             (
                 EmbeddingService service, 
                 ArrayList<String> texts,
-                ArrayList<VectorDocument> searchProjects,
+                VectorDocument[] searchProjects,
                 int rowCount,
                 MilvusRepository milvusRepository
             ) throws Exception {
                 if (texts.isEmpty()) {
                     return;
                 }
+                VectorDocument[] batchProjects = Arrays.copyOfRange(
+                    searchProjects,
+                    rowCount - texts.size() + 1,
+                    rowCount + 1
+                );
                 List<List<Double>> embeddings = service.batchEmbed(texts);
                 if (embeddings.size() != texts.size()) {
                     throw new IllegalStateException("Expected " + texts.size()
                             + " embeddings, received " + embeddings.size());
                 }
-                int firstKey = rowCount - texts.size() + 1;
                 for (int i = 0; i < texts.size(); i++) {
-                    searchProjects.get(firstKey + i).setEmbedding(embeddings.get(i));
+                    batchProjects[i].setEmbedding(embeddings.get(i));
                 }
-                //saving all VectorDocuments to Milvus vector db  here and clear searchProjects
-                milvusRepository.saveBatch(searchProjects);
-                searchProjects.clear();
+                // Save only the documents in this batch.
+                milvusRepository.saveBatch(Arrays.asList(batchProjects));
 
                 texts.clear();
-                System.out.printf("Project rows processed: %d%n", rowCount);
+                System.out.printf("\nProject rows processed: %d%n", rowCount);
             }
 
 

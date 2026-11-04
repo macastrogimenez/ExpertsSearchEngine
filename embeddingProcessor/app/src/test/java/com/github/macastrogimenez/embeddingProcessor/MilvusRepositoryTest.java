@@ -37,8 +37,9 @@ public class MilvusRepositoryTest {
         
         //create vect docs to send to milvus
         vectorsDocs = new ArrayList<>();
-        mr = new MilvusRepository();
+        mr = new MilvusRepository(true);
         mr.initializeCollection();
+        //mr.clearCollection();
         try{
             // Create 2 Embeddings for them 
             List<Double> vectorP1 = s.embed(paperText1, false);

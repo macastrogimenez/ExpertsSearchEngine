@@ -8,35 +8,32 @@ import io.milvus.v2.client.MilvusClientV2;
 import io.milvus.v2.common.ConsistencyLevel;
 import io.milvus.v2.common.DataType;
 import io.milvus.v2.common.IndexParam;
-import io.milvus.v2.common.IndexParam.IndexParamBuilder;
 import io.milvus.v2.service.collection.request.AddFieldReq;
 import io.milvus.v2.service.collection.request.CreateCollectionReq;
-import io.milvus.v2.service.collection.request.DescribeCollectionReq;
+import io.milvus.v2.service.collection.request.DropCollectionReq;
 import io.milvus.v2.service.collection.request.GetLoadStateReq;
 import io.milvus.v2.service.collection.request.HasCollectionReq;
 import io.milvus.v2.service.collection.request.LoadCollectionReq;
-import io.milvus.v2.service.collection.response.DescribeCollectionResp;
-import io.milvus.v2.service.vector.request.QueryReq;
 import io.milvus.v2.service.vector.request.SearchReq;
 import io.milvus.v2.service.vector.request.UpsertReq;
 import io.milvus.v2.service.vector.request.data.FloatVec;
-import io.milvus.v2.service.vector.response.QueryResp;
 import io.milvus.v2.service.vector.response.SearchResp;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
 
 public class MilvusRepository implements AutoCloseable {
     
     private static final String COLLECTION = "academic_documents";
+    private static final String TEST_COLLECTION = "test";
+    private boolean test = false;
     private static final int DIMENSIONS = 768;
     private final MilvusClientV2 client;
     private final Gson gson = new Gson();
 
-    public MilvusRepository (){
+    public MilvusRepository (boolean test){
+        this.test = test;
         String uri = System.getenv().getOrDefault(
             "MILVUS_URL", "http://localhost:19530"
         );
@@ -55,7 +52,7 @@ public class MilvusRepository implements AutoCloseable {
     public void initializeCollection(){
         boolean exists = client.hasCollection(
             HasCollectionReq.builder()
-                .collectionName(COLLECTION)
+                .collectionName(test ? TEST_COLLECTION : COLLECTION)
                 .build()   
         );
 
@@ -104,25 +101,25 @@ public class MilvusRepository implements AutoCloseable {
 
             client.createCollection(
                 CreateCollectionReq.builder()
-                .collectionName(COLLECTION)
+                .collectionName(test ? TEST_COLLECTION : COLLECTION)
                 .collectionSchema(schema)
                 .indexParams(List.of(index))
                 .build()
             );
 
-            System.out.printf("Created the collection: %s", COLLECTION);
+            System.out.printf("Created the collection: %s", test ? TEST_COLLECTION : COLLECTION);
         }
 
         boolean loaded = client.getLoadState(
             GetLoadStateReq.builder()
-            .collectionName(COLLECTION)
+            .collectionName(test ? TEST_COLLECTION : COLLECTION)
             .build()
         );
 
         if (loaded == false) {
             client.loadCollection(
                 LoadCollectionReq.builder()
-                    .collectionName(COLLECTION)
+                    .collectionName(test ? TEST_COLLECTION : COLLECTION)
                     .build()
             );
         }
@@ -222,12 +219,12 @@ public class MilvusRepository implements AutoCloseable {
         // 12. client upsert rows 
         client.upsert(
             UpsertReq.builder()
-                .collectionName(COLLECTION)
+                .collectionName(test ? TEST_COLLECTION : COLLECTION)
                 .data(rows)
                 .build()   
         );
 
-        System.out.printf("%d documents have been inserted in Milvus collection: %s", documents.size(), COLLECTION);
+        System.out.printf("\n%d documents have been inserted in Milvus collection: %s", documents.size(), test ? TEST_COLLECTION : COLLECTION);
         // 13. if success return docs inserted
     }
 
@@ -245,7 +242,7 @@ public class MilvusRepository implements AutoCloseable {
         // 3. construct response using SearchResp
         SearchResp response = client.search(
             SearchReq.builder()
-            .collectionName(COLLECTION)
+            .collectionName(test ? TEST_COLLECTION : COLLECTION)
             .annsField("embeddings")
             .data(List.of(qE))
             .limit(topK)
@@ -282,6 +279,14 @@ public class MilvusRepository implements AutoCloseable {
         }
         // 6. return list object
         return  results;
+    }
+
+    public void dropCollection(){
+        DropCollectionReq dropCollectionParam = DropCollectionReq.builder()
+        .collectionName(test ? TEST_COLLECTION : COLLECTION)
+        .build();
+
+        client.dropCollection(dropCollectionParam);
     }
 
 }
