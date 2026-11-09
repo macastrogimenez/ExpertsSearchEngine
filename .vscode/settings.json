@@ -29,5 +29,6 @@
         "statusBar.inactiveBackground": "#832561"
     },
     "peacock.color": "#832561",
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.compile.nullAnalysis.mode": "automatic"
 }

@@ -7,6 +7,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import org.springframework.boot.SpringApplication;
 public class Main 
     {
         public static void main(String[] args) throws Exception {
@@ -27,12 +29,12 @@ public class Main
             }
             String mode = args[0];
             if (mode.equals("search")){
-
+                SpringApplication.run(SearchApplication.class);
             }
             else if (mode.equals("embeddingGen"))
             {
                 try(
-                    MilvusRepository milvusRepository = new MilvusRepository(true)
+                    MilvusRepository milvusRepository = new MilvusRepository(false)
                 ){
                     milvusRepository.initializeCollection();
     

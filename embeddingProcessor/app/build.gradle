@@ -9,7 +9,6 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
 }
-
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -34,9 +33,13 @@ dependencies {
     // milvus for vector storage and similarity search
     implementation 'io.milvus:milvus-sdk-java:3.0.10'
 
-    // Milvus requires SLF4J; include a provider for console logging at runtime.
-    implementation 'org.slf4j:slf4j-api:2.0.17'
-    runtimeOnly 'org.slf4j:slf4j-simple:2.0.17'
+    // // Milvus requires SLF4J; include a provider for console logging at runtime. -> UPDATE: Commenting them out because SB already supplies logging
+    // implementation 'org.slf4j:slf4j-api:2.0.17'
+    // runtimeOnly 'org.slf4j:slf4j-simple:2.0.17'
+
+    // Spring Boot dependencies for API endpoint - enabling embedding of query and subsequent search
+    implementation platform('org.springframework.boot:spring-boot-dependencies:4.1.2')
+    implementation 'org.springframework.boot:spring-boot-starter-webmvc'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
