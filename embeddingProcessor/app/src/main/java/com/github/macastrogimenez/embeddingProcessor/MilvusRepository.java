@@ -228,6 +228,70 @@ public class MilvusRepository implements AutoCloseable {
         // 13. if success return docs inserted
     }
 
+    public List<VectorSearchResult> searchFilter(List<Double> queryEmbedding, int topK, String filter){
+        // 1. check topK is positive else return error
+        if (topK<1){
+            throw new IllegalArgumentException(
+                "Top k must be a positive number"
+            );
+        }
+
+        // 2. turn the vector from list of double to array of float
+        FloatVec qE = new FloatVec(toFloatArray(queryEmbedding));
+
+        String filterVal = "document_type == \""+filter+"\"";
+
+        // 3. construct response using SearchResp
+        SearchResp response = client.search(
+            SearchReq.builder()
+            .collectionName(test ? TEST_COLLECTION : COLLECTION)
+            .annsField("embeddings")
+            .data(List.of(qE))
+            .limit(topK)
+            .filter(filterVal)
+            .outputFields(
+                List.of(
+                    "document_type",
+                    "document_id"
+                )
+            )
+            .consistencyLevel(ConsistencyLevel.STRONG)
+            .build()
+        );
+            
+        // 4. create List of VectorSearchResult object
+        List<VectorSearchResult> results = new ArrayList<>();
+
+        
+        // 5. copy results with foreach to new list object
+        // get metadata
+        // extract doc type and doc id
+        // get score 
+
+        // Milvus allows to search for more than a single query, therefore its search results are a list of lists, if we are only checking for searching for 
+        // kNN to a single query, then we can access the first list in the list of lists
+        for (SearchResp.SearchResult sr : response.getSearchResults().get(0)) {
+            Map<String,Object> metadata = sr.getEntity();
+
+            String docType = metadata.get("document_type").toString();
+            String docId = metadata.get("document_id").toString();
+            float score = sr.getScore();
+
+            VectorSearchResult vr = new VectorSearchResult(docType, docId, score);
+            results.add(vr);
+        }
+        // 6. return list object
+        return  results;
+    }
+
+    public void dropCollection(){
+        DropCollectionReq dropCollectionParam = DropCollectionReq.builder()
+        .collectionName(test ? TEST_COLLECTION : COLLECTION)
+        .build();
+
+        client.dropCollection(dropCollectionParam);
+    }
+
     public List<VectorSearchResult> searchKNN(List<Double> queryEmbedding, int topK){
         // 1. check topK is positive else return error
         if (topK<1){
@@ -279,14 +343,6 @@ public class MilvusRepository implements AutoCloseable {
         }
         // 6. return list object
         return  results;
-    }
-
-    public void dropCollection(){
-        DropCollectionReq dropCollectionParam = DropCollectionReq.builder()
-        .collectionName(test ? TEST_COLLECTION : COLLECTION)
-        .build();
-
-        client.dropCollection(dropCollectionParam);
     }
 
 }

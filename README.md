@@ -39,11 +39,12 @@ set -a
 source embeddingProcessor/env.sh
 set +a
 
-docker compose build embedding-processor
 docker compose -f milvus/docker-compose.yml up -d --wait
+
 docker compose up -d ollama
 docker compose exec ollama ollama pull nomic-embed-text
-docker compose run --rm --build embedding-processor
+
+docker compose up -d --build embedding-processor
 ```
 
 Milvus runs in its existing separate Compose stack. On Docker Desktop, the
@@ -51,6 +52,17 @@ processor uses `http://host.docker.internal:19530` to reach Milvus through its
 published port. Override `MILVUS_URL` and `MILVUS_TOKEN` if using another server.
 Inside the processor container, `localhost` refers to the processor itself. If
 PostgreSQL runs on your Mac, set `DB_HOST=host.docker.internal` before running it.
+
+## Backend: Semantic search
+
+Test to check the semantic search is running:
+
+```Bash
+curl --get 'http://localhost:8080/semanticSearch' \
+  --data-urlencode 'query=machine learning in agriculture' \
+  --data-urlencode 'K=5' \
+  --data-urlencode 'filter=paper'
+```
 
 ## Backend: Embedding model
 
@@ -74,9 +86,3 @@ curl http://localhost:11434/api/embed \
   }'
 ```
 
-/*
-TODO: Continue from https://chatgpt.com/s/t_6ad53828a9008191bbf95ecfc19df6fd
-    where it says: "The nomic-embed-text model is available directly through Ollama and is designed specifically for embedding generation."
-    check if any docker related stuff should be included in gitignore
-
-*/
