@@ -18,6 +18,8 @@ Run these commands from the repository root. First load the PostgreSQL settings
 (`DB_HOST`, `DB_NAME`, `DB_USERNAME`, `DB_PASSWORD`) from your local `env.sh`.
 The script and `.env` files are excluded from the image build context.
 
+### command to generate embedding DB
+
 ```Bash
 set -a
 source embeddingProcessor/env.sh
@@ -27,7 +29,21 @@ docker compose build embedding-processor
 docker compose -f milvus/docker-compose.yml up -d --wait
 docker compose up -d ollama
 docker compose exec ollama ollama pull nomic-embed-text
-docker compose run --rm embedding-processor
+docker compose run --rm --build embedding-processor embeddingGen
+```
+
+### command to run vector search app
+
+```Bash
+set -a
+source embeddingProcessor/env.sh
+set +a
+
+docker compose build embedding-processor
+docker compose -f milvus/docker-compose.yml up -d --wait
+docker compose up -d ollama
+docker compose exec ollama ollama pull nomic-embed-text
+docker compose run --rm --build embedding-processor
 ```
 
 Milvus runs in its existing separate Compose stack. On Docker Desktop, the

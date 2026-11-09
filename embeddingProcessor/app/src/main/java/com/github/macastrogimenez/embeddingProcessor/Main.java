@@ -7,7 +7,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 public class Main 
     {
         public static void main(String[] args) throws Exception {
@@ -21,221 +20,232 @@ public class Main
                     host +
                     ":5432/" +
                     database;
+            if (args.length == 0) {
+                throw new IllegalArgumentException(
+                    "Expected a mode: search or embeddingGen"
+                );
+            }
+            String mode = args[0];
+            if (mode.equals("search")){
 
-            try(
-                MilvusRepository milvusRepository = new MilvusRepository(true)
-            ){
-                milvusRepository.initializeCollection();
-
-                // following 5 lines connect to the DB    
-                try (Connection connection =
-                            DriverManager.getConnection(
-                                    url,
-                                    username,
-                                    password)) 
-                    {
-                        System.out.println("Connected!");
-                        
-                        // Vectorise courses
-                        try(
-                                Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-                                ResultSet resultCourses = statement.executeQuery(
-                                    """ 
-                                    SELECT 
-                                        c.id,
-                                        c.title,
-                                        c.abstract,
-                                        c.description,
-                                        c.programme,
-                                        p.uuid
-                                    FROM prod.course_contributor AS CC
-                                    LEFT JOIN prod.person AS p
-                                        ON p.uuid = cc.person_uuid
-                                    LEFT JOIN prod.course AS c
-                                        ON c.id = cc.course_id
-                                        ;
-                                    """);
-                            )
+            }
+            else if (mode.equals("embeddingGen"))
+            {
+                try(
+                    MilvusRepository milvusRepository = new MilvusRepository(true)
+                ){
+                    milvusRepository.initializeCollection();
+    
+                    // following 5 lines connect to the DB    
+                    try (Connection connection =
+                                DriverManager.getConnection(
+                                        url,
+                                        username,
+                                        password)) 
                         {
-                            resultCourses.last();
-                            int setSize = resultCourses.getRow();
-                            VectorDocument[] searchCourses = new VectorDocument[setSize+1];
+                            System.out.println("Connected!");
                             
-                            int rowCount = 0;
-                            ArrayList<String> hundredCourseEmbeddingText = new ArrayList<>();
-                            EmbeddingService embeddingService = new EmbeddingService();
-                            resultCourses.beforeFirst();
-                            while(resultCourses.next()) {
-                                rowCount++;
-                                StringBuilder courseEmbeddingText = new StringBuilder();
-    
-                                String courseId = resultCourses.getString(1);
-                                String courseTitle = resultCourses.getString(2);
-                                String courseAbstract = resultCourses.getString(3);
-                                String courseDescription = resultCourses.getString(4);
-                                // String courseProgramme = resultCourses.getString(5);
-                                // String courseProfessor = resultCourses.getString(6);
+                            // Vectorise courses
+                            try(
+                                    Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+                                    ResultSet resultCourses = statement.executeQuery(
+                                        """ 
+                                        SELECT 
+                                            c.id,
+                                            c.title,
+                                            c.abstract,
+                                            c.description,
+                                            c.programme,
+                                            p.uuid
+                                        FROM prod.course_contributor AS CC
+                                        LEFT JOIN prod.person AS p
+                                            ON p.uuid = cc.person_uuid
+                                        LEFT JOIN prod.course AS c
+                                            ON c.id = cc.course_id
+                                            ;
+                                        """);
+                                )
+                            {
+                                resultCourses.last();
+                                int setSize = resultCourses.getRow();
+                                VectorDocument[] searchCourses = new VectorDocument[setSize+1];
                                 
-                                courseEmbeddingText.append(
-                                    "search_document: "+ "\n" +
-                                    "title: " + courseTitle
-                                    + "\n"
-                                    + "abstract: " + courseAbstract
-                                    + "\n"
-                                    + "description: " + courseDescription
-                                );
-                                
-                                hundredCourseEmbeddingText.add(courseEmbeddingText.toString());
+                                int rowCount = 0;
+                                ArrayList<String> hundredCourseEmbeddingText = new ArrayList<>();
+                                EmbeddingService embeddingService = new EmbeddingService();
+                                resultCourses.beforeFirst();
+                                while(resultCourses.next()) {
+                                    rowCount++;
+                                    StringBuilder courseEmbeddingText = new StringBuilder();
+        
+                                    String courseId = resultCourses.getString(1);
+                                    String courseTitle = resultCourses.getString(2);
+                                    String courseAbstract = resultCourses.getString(3);
+                                    String courseDescription = resultCourses.getString(4);
+                                    // String courseProgramme = resultCourses.getString(5);
+                                    // String courseProfessor = resultCourses.getString(6);
                                     
-                                //SearchCourse c = new SearchCourse(courseId, courseTitle, courseAbstract, courseDescription, courseProgramme, courseProfessor);
-                                //searchCourses.put(rowCount, c);
-    
-                                VectorDocument d = new VectorDocument("course", courseId);
-                                searchCourses[rowCount] = d;
-    
-                                if (hundredCourseEmbeddingText.size() == 100) {
-                                    embedCourseBatch(embeddingService, hundredCourseEmbeddingText, searchCourses, rowCount, milvusRepository);
+                                    courseEmbeddingText.append(
+                                        "search_document: "+ "\n" +
+                                        "title: " + courseTitle
+                                        + "\n"
+                                        + "abstract: " + courseAbstract
+                                        + "\n"
+                                        + "description: " + courseDescription
+                                    );
+                                    
+                                    hundredCourseEmbeddingText.add(courseEmbeddingText.toString());
+                                        
+                                    //SearchCourse c = new SearchCourse(courseId, courseTitle, courseAbstract, courseDescription, courseProgramme, courseProfessor);
+                                    //searchCourses.put(rowCount, c);
+        
+                                    VectorDocument d = new VectorDocument("course", courseId);
+                                    searchCourses[rowCount] = d;
+        
+                                    if (hundredCourseEmbeddingText.size() == 100) {
+                                        embedCourseBatch(embeddingService, hundredCourseEmbeddingText, searchCourses, rowCount, milvusRepository);
+                                    }
+        
                                 }
-    
+                                embedCourseBatch(embeddingService, hundredCourseEmbeddingText, searchCourses, rowCount, milvusRepository);
+                                hundredCourseEmbeddingText.clear();
+                                searchCourses = null;
                             }
-                            embedCourseBatch(embeddingService, hundredCourseEmbeddingText, searchCourses, rowCount, milvusRepository);
-                            hundredCourseEmbeddingText.clear();
-                            searchCourses = null;
-                        }
-    
-                        try (
+        
+                            try (
+                                    Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+                                    ResultSet resultPapers = statement.executeQuery(
+                                        """
+                                            SELECT
+                                                p.uuid,
+                                                p.year,
+                                                p.type,
+                                                p.title,
+                                                p.subtitle,
+                                                p.abstract
+                                            FROM prod.paper p
+                                        """
+                                    )
+                            ) 
+                            {
+                                resultPapers.last();
+                                int setSize = resultPapers.getRow();
+                                VectorDocument[] searchPapers = new VectorDocument[setSize + 1];
+                                resultPapers.beforeFirst();
+                                int rowCount = 0;
+                                ArrayList<String> hundredPapersdocStrings = new ArrayList<>();
+                                EmbeddingService embeddingService = new EmbeddingService();
+                                while (resultPapers.next()){
+                                    rowCount++;
+                                    StringBuilder s = new StringBuilder();
+        
+                                    String uuid = resultPapers.getString(1);
+                                    // String year = resultPapers.getString(2);
+                                    // String paperType = resultPapers.getString(3);
+                                    String title = resultPapers.getString(4);
+                                    String subtitle = resultPapers.getString(5);
+                                    String paperAbstract = resultPapers.getString(6);
+                                    // Array sqlContributors = resultPapers.getArray(7);
+        
+                                    // List<String> contrList = new ArrayList<>();
+                                    // if (sqlContributors != null){
+                                    //     try{
+                                    //         Object[] values = (Object[]) sqlContributors.getArray();
+                                    //         contrList = Arrays.stream(values).map((Object v) -> v.toString()).toList();
+                                    //     } finally{
+                                    //         sqlContributors.free();
+                                    //     }
+                                    // }
+                                                
+                                    s.append(
+                                        "search_document: "+ "\n" +
+                                        "title: " + title
+                                        + "\n"
+                                        + "subtitle: " + subtitle
+                                        + "\n"
+                                        + "abstract: " + paperAbstract
+                                    );
+        
+                                    hundredPapersdocStrings.add(s.toString());
+                                    VectorDocument sp = new VectorDocument("paper", uuid);
+                                    searchPapers[rowCount] = sp;
+        
+                                    if (hundredPapersdocStrings.size() == 100){
+                                        embedPaperBatch(embeddingService, hundredPapersdocStrings, searchPapers, rowCount, milvusRepository);
+                                    }
+                                    
+                                }
+                                embedPaperBatch(embeddingService, hundredPapersdocStrings, searchPapers, rowCount, milvusRepository);
+                                hundredPapersdocStrings.clear();
+                                searchPapers = null;
+                            }
+                            try(
                                 Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-                                ResultSet resultPapers = statement.executeQuery(
+                                ResultSet resultProjects = statement.executeQuery(
                                     """
-                                        SELECT
-                                            p.uuid,
-                                            p.year,
-                                            p.type,
-                                            p.title,
-                                            p.subtitle,
-                                            p.abstract
-                                        FROM prod.paper p
+                                        SELECT 
+                                            pj.uuid, 
+                                            pj.title, 
+                                            pj.description
+                                        FROM prod.project pj
+                                        ;
                                     """
                                 )
-                        ) 
-                        {
-                            resultPapers.last();
-                            int setSize = resultPapers.getRow();
-                            VectorDocument[] searchPapers = new VectorDocument[setSize + 1];
-                            resultPapers.beforeFirst();
-                            int rowCount = 0;
-                            ArrayList<String> hundredPapersdocStrings = new ArrayList<>();
-                            EmbeddingService embeddingService = new EmbeddingService();
-                            while (resultPapers.next()){
-                                rowCount++;
-                                StringBuilder s = new StringBuilder();
-    
-                                String uuid = resultPapers.getString(1);
-                                // String year = resultPapers.getString(2);
-                                // String paperType = resultPapers.getString(3);
-                                String title = resultPapers.getString(4);
-                                String subtitle = resultPapers.getString(5);
-                                String paperAbstract = resultPapers.getString(6);
-                                // Array sqlContributors = resultPapers.getArray(7);
-    
-                                // List<String> contrList = new ArrayList<>();
-                                // if (sqlContributors != null){
-                                //     try{
-                                //         Object[] values = (Object[]) sqlContributors.getArray();
-                                //         contrList = Arrays.stream(values).map((Object v) -> v.toString()).toList();
-                                //     } finally{
-                                //         sqlContributors.free();
-                                //     }
-                                // }
+                            ){
+                                resultProjects.last();
+                                int setSize = resultProjects.getRow();
+                                VectorDocument[] searchProjects = new VectorDocument[setSize + 1];
+                                resultProjects.beforeFirst();
+                                int rowCount = 0;
+                                ArrayList<String> hundredProjectsdocStrings = new ArrayList<>();
+                                EmbeddingService embeddingService = new EmbeddingService();
+        
+                                while (resultProjects.next()) {
+                                    rowCount++;
+        
+                                    String uuid = resultProjects.getString(1);
+                                    String title = resultProjects.getString(2);
+                                    String description = resultProjects.getString(3);
+                                    // Array sqlParticipants = resultProjects.getArray(4);
+                                    // List<String> participants = new ArrayList<>();
+        
+                                    // if (sqlParticipants != null){
+                                    //     try {
+                                    //             participants = Arrays.stream((Object[])sqlParticipants.getArray()).map((Object v) -> v.toString()).toList();
+                                    //         }
+                                    //     finally {
                                             
-                                s.append(
-                                    "search_document: "+ "\n" +
-                                    "title: " + title
-                                    + "\n"
-                                    + "subtitle: " + subtitle
-                                    + "\n"
-                                    + "abstract: " + paperAbstract
-                                );
-    
-                                hundredPapersdocStrings.add(s.toString());
-                                VectorDocument sp = new VectorDocument("paper", uuid);
-                                searchPapers[rowCount] = sp;
-    
-                                if (hundredPapersdocStrings.size() == 100){
-                                    embedPaperBatch(embeddingService, hundredPapersdocStrings, searchPapers, rowCount, milvusRepository);
+                                    //         sqlParticipants.free();
+                                    //     }
+                                    // }
+        
+                                    StringBuilder s = new StringBuilder();
+        
+                                    s.append(
+                                        "search_document: "+ "\n" +
+                                        "title: " + title
+                                        + "\n"
+                                        + "description: " + description
+                                    );
+        
+                                    hundredProjectsdocStrings.add(s.toString());
+                                    //SearchProject p = new SearchProject(uuid, title, description, participants);
+                                    VectorDocument p = new VectorDocument("project", uuid);
+                                    searchProjects[rowCount] = p;
+        
+                                    if(hundredProjectsdocStrings.size()==100){
+                                        embedProjectBatch(embeddingService, hundredProjectsdocStrings, searchProjects, rowCount, milvusRepository);
+                                    }
                                 }
-                                
+                                embedProjectBatch(embeddingService, hundredProjectsdocStrings, searchProjects, rowCount, milvusRepository);
+                                hundredProjectsdocStrings.clear();
+                                searchProjects = null;
                             }
-                            embedPaperBatch(embeddingService, hundredPapersdocStrings, searchPapers, rowCount, milvusRepository);
-                            hundredPapersdocStrings.clear();
-                            searchPapers = null;
+                            //TODO [KAN-110]: Pass projects onto FAISS. At this stage, the HashMap searchProjects has the projects and corresponding embedding saved. Next thing would be to pass them on to FAISS. 
                         }
-                        try(
-                            Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-                            ResultSet resultProjects = statement.executeQuery(
-                                """
-                                    SELECT 
-                                        pj.uuid, 
-                                        pj.title, 
-                                        pj.description
-                                    FROM prod.project pj
-                                    ;
-                                """
-                            )
-                        ){
-                            resultProjects.last();
-                            int setSize = resultProjects.getRow();
-                            VectorDocument[] searchProjects = new VectorDocument[setSize + 1];
-                            resultProjects.beforeFirst();
-                            int rowCount = 0;
-                            ArrayList<String> hundredProjectsdocStrings = new ArrayList<>();
-                            EmbeddingService embeddingService = new EmbeddingService();
-    
-                            while (resultProjects.next()) {
-                                rowCount++;
-    
-                                String uuid = resultProjects.getString(1);
-                                String title = resultProjects.getString(2);
-                                String description = resultProjects.getString(3);
-                                // Array sqlParticipants = resultProjects.getArray(4);
-                                // List<String> participants = new ArrayList<>();
-    
-                                // if (sqlParticipants != null){
-                                //     try {
-                                //             participants = Arrays.stream((Object[])sqlParticipants.getArray()).map((Object v) -> v.toString()).toList();
-                                //         }
-                                //     finally {
-                                        
-                                //         sqlParticipants.free();
-                                //     }
-                                // }
-    
-                                StringBuilder s = new StringBuilder();
-    
-                                s.append(
-                                    "search_document: "+ "\n" +
-                                    "title: " + title
-                                    + "\n"
-                                    + "description: " + description
-                                );
-    
-                                hundredProjectsdocStrings.add(s.toString());
-                                //SearchProject p = new SearchProject(uuid, title, description, participants);
-                                VectorDocument p = new VectorDocument("project", uuid);
-                                searchProjects[rowCount] = p;
-    
-                                if(hundredProjectsdocStrings.size()==100){
-                                    embedProjectBatch(embeddingService, hundredProjectsdocStrings, searchProjects, rowCount, milvusRepository);
-                                }
-                            }
-                            embedProjectBatch(embeddingService, hundredProjectsdocStrings, searchProjects, rowCount, milvusRepository);
-                            hundredProjectsdocStrings.clear();
-                            searchProjects = null;
-                        }
-                        //TODO [KAN-110]: Pass projects onto FAISS. At this stage, the HashMap searchProjects has the projects and corresponding embedding saved. Next thing would be to pass them on to FAISS. 
                     }
-                }
             }
+        }
                     
 
         static void embedCourseBatch

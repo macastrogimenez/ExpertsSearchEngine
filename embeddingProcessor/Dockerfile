@@ -17,3 +17,5 @@ COPY --from=build --chown=10001:10001 /workspace/app/build/install/app/ ./
 USER 10001:10001
 
 ENTRYPOINT ["/app/bin/app"]
+# search is default for the embeddingProcessor 
+CMD ["search"]
