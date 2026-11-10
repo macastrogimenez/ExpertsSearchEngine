@@ -61,7 +61,6 @@ Test to check the semantic search is running:
 curl --get 'http://localhost:8080/semanticSearch' \
   --data-urlencode 'query=machine learning in agriculture' \
   --data-urlencode 'K=5' \
-  --data-urlencode 'filter=paper'
 ```
 
 ## Backend: Embedding model
@@ -85,4 +84,3 @@ curl http://localhost:11434/api/embed \
     "input": "search_query: machine learning"
   }'
 ```
-
