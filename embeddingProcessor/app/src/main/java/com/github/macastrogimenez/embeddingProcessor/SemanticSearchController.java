@@ -24,8 +24,8 @@ public class SemanticSearchController {
     }
 
     // TODO [KAN-115]: implement search that checks a certain number of projects, courses and papers and returns those
-    @GetMapping("/semanticSearch")
-    public List<VectorSearchResult> semanticSearch(
+    @GetMapping("/semanticSearchFiltered")
+    public List<VectorSearchResult> semanticSearchFiltered(
         @RequestParam("query") String query,
         @RequestParam ("K") int k,
         @RequestParam ("filter") String filter
@@ -39,6 +39,26 @@ public class SemanticSearchController {
             else try {
                 List<Double> embedding = embeddingService.embed(query, false);
                 List<VectorSearchResult> searchResults = milvusRepository.searchFilter(embedding, k,filter);
+                return searchResults;
+            } catch (Exception e) {
+                throw new Exception(e);
+            }
+    }
+
+    @GetMapping("/semanticSearch")
+    public List<VectorSearchResult> semanticSearch(
+        @RequestParam("query") String query,
+        @RequestParam ("K") int k
+    ) throws Exception {
+            if (query.isBlank()){
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Query cannot be blank");
+            }
+            if (k<1 || k>100){
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"K needs to be between 1 and 100");
+            }
+            else try {
+                List<Double> embedding = embeddingService.embed(query, false);
+                List<VectorSearchResult> searchResults = milvusRepository.searchKNN(embedding, k);
                 return searchResults;
             } catch (Exception e) {
                 throw new Exception(e);

@@ -47,10 +47,13 @@ public class MilvusRepositoryTest {
             // add vectors to a list of vectors
             vectorsList.add(0,vectorP1);
             vectorsList.add(1,vectorP2);
-            
+
+            List<String> contributors = new ArrayList<>();
+            contributors.add("miguel");    
+            contributors.add("peter");    
             
             for (int i = 0; i < 2; i++) {
-                VectorDocument vd = new VectorDocument("paper", Integer.toString(i));
+                VectorDocument vd = new VectorDocument("paper", Integer.toString(i),contributors);
                 vd.setEmbedding(vectorsList.get(i));
                 vectorsDocs.add(i,vd);
             }

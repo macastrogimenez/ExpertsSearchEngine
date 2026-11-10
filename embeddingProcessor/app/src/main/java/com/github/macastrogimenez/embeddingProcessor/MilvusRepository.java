@@ -87,6 +87,15 @@ public class MilvusRepository implements AutoCloseable {
 
             schema.addField(
                 AddFieldReq.builder()
+                .fieldName("contributors")
+                .dataType(DataType.Array)
+                .elementType(DataType.VarChar)
+                .dimension(DIMENSIONS)
+                .build()
+            );
+
+            schema.addField(
+                AddFieldReq.builder()
                 .fieldName("embeddings")
                 .dataType(DataType.FloatVector)
                 .dimension(DIMENSIONS)
@@ -182,6 +191,7 @@ public class MilvusRepository implements AutoCloseable {
             // 3. extract doc type and doc id
             String docType = document.getDocumentType();
             String docId = document.getDocumentId();
+            List<String> docContributors = document.getContributors();
 
             // 4. check for null doc id, blank doc id, length longer than 256 and length of doc id + doc type shorter than 256
             if(
@@ -205,6 +215,11 @@ public class MilvusRepository implements AutoCloseable {
             row.addProperty("document_type", docType);
             row.addProperty("document_id", docId);
             // 8. add to json object docID
+
+            row.add(
+                "contributors",
+                gson.toJsonTree(docContributors.toArray())
+            );
 
             // 10. add embeddings to json 
             row.add(
@@ -252,7 +267,8 @@ public class MilvusRepository implements AutoCloseable {
             .outputFields(
                 List.of(
                     "document_type",
-                    "document_id"
+                    "document_id",
+                    "contributors"
                 )
             )
             .consistencyLevel(ConsistencyLevel.STRONG)
@@ -275,9 +291,18 @@ public class MilvusRepository implements AutoCloseable {
 
             String docType = metadata.get("document_type").toString();
             String docId = metadata.get("document_id").toString();
+            
+            // extracting contributors and passing the data as a stream into a List
+            List<String> contributors = List.of();
+            Object value = metadata.get("contributors");
+            if(value instanceof List<?> values){
+                contributors = values.stream()
+                    .map(String.class::cast).toList();
+            }
+            
             float score = sr.getScore();
 
-            VectorSearchResult vr = new VectorSearchResult(docType, docId, score);
+            VectorSearchResult vr = new VectorSearchResult(docType, docId, contributors ,score);
             results.add(vr);
         }
         // 6. return list object
@@ -313,7 +338,8 @@ public class MilvusRepository implements AutoCloseable {
             .outputFields(
                 List.of(
                     "document_type",
-                    "document_id"
+                    "document_id",
+                    "contributors"
                 )
             )
             .consistencyLevel(ConsistencyLevel.STRONG)
@@ -338,7 +364,14 @@ public class MilvusRepository implements AutoCloseable {
             String docId = metadata.get("document_id").toString();
             float score = sr.getScore();
 
-            VectorSearchResult vr = new VectorSearchResult(docType, docId, score);
+            List<String> contributors = new ArrayList<>();
+            Object value = metadata.get("contributors");
+            if (value instanceof List<?> values ){
+                contributors = values.stream()
+                    .map((item) -> (String) item).toList();
+            }
+
+            VectorSearchResult vr = new VectorSearchResult(docType, docId, contributors, score);
             results.add(vr);
         }
         // 6. return list object

@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.sql.Array;
 import java.util.List;
 
 import org.springframework.boot.SpringApplication;
@@ -57,7 +58,6 @@ public class Main
                                             c.title,
                                             c.abstract,
                                             c.description,
-                                            c.programme,
                                             p.uuid
                                         FROM prod.course_contributor AS CC
                                         LEFT JOIN prod.person AS p
@@ -84,8 +84,10 @@ public class Main
                                     String courseTitle = resultCourses.getString(2);
                                     String courseAbstract = resultCourses.getString(3);
                                     String courseDescription = resultCourses.getString(4);
-                                    // String courseProgramme = resultCourses.getString(5);
-                                    // String courseProfessor = resultCourses.getString(6);
+                                    String courseProfessor = resultCourses.getString(5);
+
+                                    List<String> contrList = new ArrayList<>();
+                                    contrList.add(courseProfessor);
                                     
                                     courseEmbeddingText.append(
                                         "search_document: "+ "\n" +
@@ -101,7 +103,7 @@ public class Main
                                     //SearchCourse c = new SearchCourse(courseId, courseTitle, courseAbstract, courseDescription, courseProgramme, courseProfessor);
                                     //searchCourses.put(rowCount, c);
         
-                                    VectorDocument d = new VectorDocument("course", courseId);
+                                    VectorDocument d = new VectorDocument("course", courseId, contrList);
                                     searchCourses[rowCount] = d;
         
                                     if (hundredCourseEmbeddingText.size() == 100) {
@@ -117,15 +119,21 @@ public class Main
                             try (
                                     Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
                                     ResultSet resultPapers = statement.executeQuery(
+                                    // this query returns papers and their contributors in an array - if a paper has no contributors it is left out
                                         """
                                             SELECT
                                                 p.uuid,
-                                                p.year,
-                                                p.type,
                                                 p.title,
                                                 p.subtitle,
-                                                p.abstract
+                                                p.abstract,
+                                                ARRAY_AGG(pc.person_uuid) FILTER (
+                                                    WHERE pc.person_uuid IS NOT NULL
+                                                ) AS contributors
                                             FROM prod.paper p
+                                            LEFT JOIN prod.paper_contributors pc
+                                                ON pc.paper_uuid = p.uuid
+                                            GROUP BY p.uuid
+                                            HAVING COUNT(pc.person_uuid) > 0;
                                         """
                                     )
                             ) 
@@ -144,20 +152,20 @@ public class Main
                                     String uuid = resultPapers.getString(1);
                                     // String year = resultPapers.getString(2);
                                     // String paperType = resultPapers.getString(3);
-                                    String title = resultPapers.getString(4);
-                                    String subtitle = resultPapers.getString(5);
-                                    String paperAbstract = resultPapers.getString(6);
-                                    // Array sqlContributors = resultPapers.getArray(7);
+                                    String title = resultPapers.getString(2);
+                                    String subtitle = resultPapers.getString(3);
+                                    String paperAbstract = resultPapers.getString(4);
+                                    Array sqlContributors = resultPapers.getArray(5);
         
-                                    // List<String> contrList = new ArrayList<>();
-                                    // if (sqlContributors != null){
-                                    //     try{
-                                    //         Object[] values = (Object[]) sqlContributors.getArray();
-                                    //         contrList = Arrays.stream(values).map((Object v) -> v.toString()).toList();
-                                    //     } finally{
-                                    //         sqlContributors.free();
-                                    //     }
-                                    // }
+                                    List<String> contrList = new ArrayList<>();
+                                    if (sqlContributors != null){
+                                        try{
+                                            Object[] values = (Object[]) sqlContributors.getArray();
+                                            contrList = Arrays.stream(values).map((Object v) -> v.toString()).toList();
+                                        } finally{
+                                            sqlContributors.free();
+                                        }
+                                    }
                                                 
                                     s.append(
                                         "search_document: "+ "\n" +
@@ -169,7 +177,7 @@ public class Main
                                     );
         
                                     hundredPapersdocStrings.add(s.toString());
-                                    VectorDocument sp = new VectorDocument("paper", uuid);
+                                    VectorDocument sp = new VectorDocument("paper", uuid, contrList);
                                     searchPapers[rowCount] = sp;
         
                                     if (hundredPapersdocStrings.size() == 100){
@@ -184,12 +192,20 @@ public class Main
                             try(
                                 Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
                                 ResultSet resultProjects = statement.executeQuery(
+                                    // aggregates participants and only shows projects that have more than 0 participants.
                                     """
                                         SELECT 
                                             pj.uuid, 
                                             pj.title, 
-                                            pj.description
+                                            pj.description,
+                                            ARRAY_AGG(pp.person_uuid) FILTER (
+                                                WHERE pp.person_uuid iS NOT NULL
+                                                ) AS participants
                                         FROM prod.project pj
+                                        LEFT JOIN prod.project_participants pp
+                                            ON pp.project_uuid = pj.uuid 
+                                        GROUP BY 1,2,3
+                                        HAVING COUNT (pp.person_uuid) > 0
                                         ;
                                     """
                                 )
@@ -208,18 +224,18 @@ public class Main
                                     String uuid = resultProjects.getString(1);
                                     String title = resultProjects.getString(2);
                                     String description = resultProjects.getString(3);
-                                    // Array sqlParticipants = resultProjects.getArray(4);
-                                    // List<String> participants = new ArrayList<>();
+                                    Array sqlParticipants = resultProjects.getArray(4);
+                                    List<String> participants = new ArrayList<>();
         
-                                    // if (sqlParticipants != null){
-                                    //     try {
-                                    //             participants = Arrays.stream((Object[])sqlParticipants.getArray()).map((Object v) -> v.toString()).toList();
-                                    //         }
-                                    //     finally {
+                                    if (sqlParticipants != null){
+                                        try {
+                                                participants = Arrays.stream((Object[])sqlParticipants.getArray()).map((Object v) -> v.toString()).toList();
+                                            }
+                                        finally {
                                             
-                                    //         sqlParticipants.free();
-                                    //     }
-                                    // }
+                                            sqlParticipants.free();
+                                        }
+                                    }
         
                                     StringBuilder s = new StringBuilder();
         
@@ -232,7 +248,7 @@ public class Main
         
                                     hundredProjectsdocStrings.add(s.toString());
                                     //SearchProject p = new SearchProject(uuid, title, description, participants);
-                                    VectorDocument p = new VectorDocument("project", uuid);
+                                    VectorDocument p = new VectorDocument("project", uuid, participants);
                                     searchProjects[rowCount] = p;
         
                                     if(hundredProjectsdocStrings.size()==100){
@@ -243,7 +259,6 @@ public class Main
                                 hundredProjectsdocStrings.clear();
                                 searchProjects = null;
                             }
-                            //TODO [KAN-110]: Pass projects onto FAISS. At this stage, the HashMap searchProjects has the projects and corresponding embedding saved. Next thing would be to pass them on to FAISS. 
                         }
                     }
             }

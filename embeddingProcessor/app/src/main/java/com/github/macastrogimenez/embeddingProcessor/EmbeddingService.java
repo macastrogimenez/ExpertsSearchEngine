@@ -11,8 +11,6 @@ import java.util.List;
 import java.util.Map;
 import com.google.gson.Gson;
 
-import netscape.javascript.JSException;
-
 public class EmbeddingService {
         private static final String OLLAMA_URL =
                 System.getenv().getOrDefault(

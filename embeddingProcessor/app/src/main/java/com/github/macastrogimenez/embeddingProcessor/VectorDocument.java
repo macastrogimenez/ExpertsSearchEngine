@@ -4,9 +4,11 @@ import java.util.List;
 public class VectorDocument{
         private String documentType;
         private String documentId;
+        private List<String> contributors;
         private List<Double> embedding;
 
-        public VectorDocument (String docType, String docID ){
+        public VectorDocument (String docType, String docID, List<String> contrList ){
+                this.contributors = contrList;
                 this.documentType = docType;
                 this.documentId = docID;
         }
@@ -21,6 +23,10 @@ public class VectorDocument{
                 this.documentId = documentId;
         }
 
+        public void setContributors(List<String> contributors) {
+                this.contributors = contributors;
+        }
+
 
         public void setEmbedding(List<Double> embedding) {
                 this.embedding = embedding;
@@ -33,6 +39,10 @@ public class VectorDocument{
 
         public String getDocumentId() {
                 return documentId;
+        }
+
+        public List<String> getContributors() {
+                return contributors;
         }
 
         public List<Double> getEmbedding() {
