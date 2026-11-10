@@ -50,6 +50,7 @@ public class MilvusRepository implements AutoCloseable {
     }
 
     public void initializeCollection(){
+        //this.dropCollection();
         boolean exists = client.hasCollection(
             HasCollectionReq.builder()
                 .collectionName(test ? TEST_COLLECTION : COLLECTION)
@@ -90,7 +91,8 @@ public class MilvusRepository implements AutoCloseable {
                 .fieldName("contributors")
                 .dataType(DataType.Array)
                 .elementType(DataType.VarChar)
-                .dimension(DIMENSIONS)
+                .maxCapacity(100)
+                .maxLength(256)
                 .build()
             );
 
