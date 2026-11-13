@@ -13,10 +13,10 @@ def get_papers_by_person(person_uuid: str) -> list[dict[str, Any]]:
                     p.subtitle,
                     p.year,
                     p.abstract,
-                    p."file"
-                FROM paper p
-                JOIN paper_contributors pc
-                    ON pc.paper_uuid = p."UUID"
+                    p.file_url
+                FROM prod.paper p
+                JOIN prod.paper_contributors pc
+                    ON pc.paper_uuid = p.uuid
                 WHERE pc.person_uuid = %s
                 """,
                 (person_uuid,),
@@ -28,7 +28,7 @@ def get_papers_by_person(person_uuid: str) -> list[dict[str, Any]]:
         {
             "title": row[0],
             "subtitle": row[1] or "",
-            "year": row[2] or "",
+            "year": row[2] if row[2] is not None else "",
             "abstract": row[3] or "",
             "file_url": row[4] or "",
         }
