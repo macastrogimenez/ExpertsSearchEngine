@@ -1,0 +1,21 @@
+{
+  "queries": 452,
+  "unique_queries": 427,
+  "depths": [
+    10,
+    25,
+    50,
+    75,
+    100,
+    150,
+    250,
+    500
+  ],
+  "top_k": 10,
+  "methods": [
+    "combsum",
+    "discounted"
+  ],
+  "index": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_index",
+  "note": "Known-positive relevance judgments are incomplete. The query set is used for exploratory parameter tuning."
+}

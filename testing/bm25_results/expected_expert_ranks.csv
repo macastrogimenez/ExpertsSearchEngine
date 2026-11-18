@@ -1,0 +1,587 @@
+query_id,query,query_type,expected_expert,combsum_rank,discounted_rank,combsum_found,discounted_found,rank_improvement
+1,digital biomarkers for mental health,academic,martin lund trinhammer,not_in_top_k,not_in_top_k,0,0,
+1,digital biomarkers for mental health,academic,stella grasshof,not_in_top_k,not_in_top_k,0,0,
+2,Can AI use facial expressions to help understand mental health?,student_style,martin lund trinhammer,not_in_top_k,not_in_top_k,0,0,
+2,Can AI use facial expressions to help understand mental health?,student_style,stella grasshof,6,5,1,1,1
+3,intelligent building blocks and robotics,academic,andres faina,not_in_top_k,not_in_top_k,0,0,
+3,intelligent building blocks and robotics,academic,rodrigo moreno garcia,not_in_top_k,not_in_top_k,0,0,
+3,intelligent building blocks and robotics,academic,sebastian risi,2,2,1,1,0
+4,Can we build furniture that knows its own shape?,student_style,andres faina,not_in_top_k,not_in_top_k,0,0,
+4,Can we build furniture that knows its own shape?,student_style,rodrigo moreno garcia,not_in_top_k,not_in_top_k,0,0,
+4,Can we build furniture that knows its own shape?,student_style,sebastian risi,2,2,1,1,0
+5,uncertainty communication in language models,academic,christian hardmeier,2,2,1,1,0
+6,How can chatbots tell us when they are unsure?,student_style,christian hardmeier,not_in_top_k,not_in_top_k,0,0,
+7,sustainable resilient energy systems,academic,yvonne dittrich,5,3,1,1,2
+8,How can technology make renewable energy systems more reliable?,student_style,yvonne dittrich,not_in_top_k,not_in_top_k,0,0,
+9,psychology and human computer interaction design,academic,elisa mekler,not_in_top_k,not_in_top_k,0,0,
+10,How can psychology help us design better apps?,student_style,elisa mekler,not_in_top_k,not_in_top_k,0,0,
+11,telemedicine and video consultations,academic,cæcilie sloth laursen,2,2,1,1,0
+12,How do video appointments change the way doctors treat patients?,student_style,cæcilie sloth laursen,not_in_top_k,7,0,1,
+13,self-healing AI hardware,academic,sebastian risi,4,3,1,1,1
+14,Can computers repair themselves when something breaks?,student_style,sebastian risi,8,8,1,1,0
+15,trust in artificial intelligence,academic,aske mottelson,not_in_top_k,not_in_top_k,0,0,
+16,Why do people lose trust in AI systems?,student_style,aske mottelson,not_in_top_k,not_in_top_k,0,0,
+17,digital welfare state,academic,irina papazu,1,2,1,1,-1
+18,How does digitalisation affect people using public services?,student_style,irina papazu,1,2,1,1,-1
+19,human AI interaction and system failure,academic,paolo burelli,not_in_top_k,not_in_top_k,0,0,
+20,How do people respond when automated systems make mistakes?,student_style,paolo burelli,not_in_top_k,not_in_top_k,0,0,
+21,cyberattacks on critical infrastructure,academic,oksana kulyk,8,4,1,1,4
+22,What would happen if hackers attacked critical infrastructure?,student_style,oksana kulyk,not_in_top_k,not_in_top_k,0,0,
+23,payment system resilience,academic,sunniva sandbukt,not_in_top_k,not_in_top_k,0,0,
+24,Could we still pay for things if digital payments went down?,student_style,sunniva sandbukt,4,1,1,1,3
+25,cyber defence security tools,academic,willard rafnsson,5,6,1,1,-1
+26,How can companies know if their security software actually works?,student_style,willard rafnsson,1,2,1,1,-1
+27,Theoretical computer and european conference,academic,riko jacob,not_in_top_k,not_in_top_k,0,0,
+27,Theoretical computer and european conference,academic,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+28,How could I use or study theoretical computer in a university project?,student_style,riko jacob,not_in_top_k,not_in_top_k,0,0,
+28,How could I use or study theoretical computer in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+29,complex networks and supply chain disruptions,academic,jonas juul,9,8,1,1,1
+30,How can we predict disruptions in shipping networks?,student_style,jonas juul,not_in_top_k,not_in_top_k,0,0,
+31,responsible AI in digital design,academic,jichen zhu,2,1,1,1,1
+32,How should designers use AI responsibly?,student_style,jichen zhu,1,1,1,1,0
+33,privacy preserving communication,academic,rosario giustolisi,9,8,1,1,1
+34,Can we keep our messages private from surveillance?,student_style,rosario giustolisi,not_in_top_k,not_in_top_k,0,0,
+35,computational complexity theory,academic,nutan limaye,not_in_top_k,not_in_top_k,0,0,
+36,What kinds of problems are too hard for computers to solve?,student_style,nutan limaye,not_in_top_k,not_in_top_k,0,0,
+37,Concrete examples and technical solution,academic,raha asadi,not_in_top_k,not_in_top_k,0,0,
+38,How could I use or study concrete examples in a university project?,student_style,raha asadi,not_in_top_k,not_in_top_k,0,0,
+39,Proposal blocked and blocked german,academic,carsten schürmann,not_in_top_k,not_in_top_k,0,0,
+40,How could I use or study proposal blocked in a university project?,student_style,carsten schürmann,not_in_top_k,9,0,1,
+41,linguistically grounded language models,academic,rob van der goot,1,1,1,1,0
+42,Why do language models struggle to understand how people actually speak?,student_style,rob van der goot,1,1,1,1,0
+43,Information systems and award presented,academic,asger balle pedersen,not_in_top_k,not_in_top_k,0,0,
+43,Information systems and award presented,academic,louise harder fischer,not_in_top_k,not_in_top_k,0,0,
+44,How could I use or study information systems in a university project?,student_style,asger balle pedersen,not_in_top_k,not_in_top_k,0,0,
+44,How could I use or study information systems in a university project?,student_style,louise harder fischer,not_in_top_k,not_in_top_k,0,0,
+45,human AI collaboration and responsible AI,academic,jichen zhu,1,1,1,1,0
+46,How does working with AI change human decisions?,student_style,jichen zhu,1,1,1,1,0
+47,Large language and language models,academic,christian hardmeier,not_in_top_k,not_in_top_k,0,0,
+48,How could I use or study large language in a university project?,student_style,christian hardmeier,10,7,1,1,3
+49,evolutionary algorithms and AI,academic,sebastian risi,1,1,1,1,0
+50,Can we use evolution to create better AI?,student_style,sebastian risi,2,1,1,1,1
+51,organizational learning and digital workplaces,academic,oliver krancher,not_in_top_k,not_in_top_k,0,0,
+52,How do employees learn to use new digital tools?,student_style,oliver krancher,not_in_top_k,not_in_top_k,0,0,
+53,climate change and human behaviour,academic,vedran sekara,not_in_top_k,not_in_top_k,0,0,
+54,How does climate change affect human behaviour?,student_style,vedran sekara,4,4,1,1,0
+55,machine learning and brain signals,academic,paolo burelli,not_in_top_k,not_in_top_k,0,0,
+56,Can AI predict what someone will do from brain data?,student_style,paolo burelli,4,3,1,1,1
+57,mathematical foundations of computer science,academic,rasmus ejlers møgelberg,10,not_in_top_k,1,0,
+58,How does advanced maths help us understand programming?,student_style,rasmus ejlers møgelberg,8,not_in_top_k,1,0,
+59,Early stage and andrzej wąsowski,academic,alessandro bruni,not_in_top_k,not_in_top_k,0,0,
+59,Early stage and andrzej wąsowski,academic,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+59,Early stage and andrzej wąsowski,academic,aske mottelson,not_in_top_k,not_in_top_k,0,0,
+60,How could I use or study early stage in a university project?,student_style,alessandro bruni,not_in_top_k,not_in_top_k,0,0,
+60,How could I use or study early stage in a university project?,student_style,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+60,How could I use or study early stage in a university project?,student_style,aske mottelson,not_in_top_k,not_in_top_k,0,0,
+61,Software correctness and going solve,academic,marco carbone,not_in_top_k,not_in_top_k,0,0,
+62,How could I use or study software correctness in a university project?,student_style,marco carbone,not_in_top_k,not_in_top_k,0,0,
+63,High stakes and stein mixture,academic,andrzej wasowski,not_in_top_k,10,0,1,
+63,High stakes and stein mixture,academic,christian hardmeier,8,9,1,1,-1
+64,How could I use or study high stakes in a university project?,student_style,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+64,How could I use or study high stakes in a university project?,student_style,christian hardmeier,not_in_top_k,not_in_top_k,0,0,
+65,Dkk million independent and million independent fund,academic,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+66,How could I use or study dkk million independent in a university project?,student_style,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+67,Sapere aude and assistant received,academic,eduard kamburjan,not_in_top_k,not_in_top_k,0,0,
+68,How could I use or study sapere aude in a university project?,student_style,eduard kamburjan,not_in_top_k,not_in_top_k,0,0,
+69,Mixed reality and sami brandt,academic,christian sivertsen,not_in_top_k,not_in_top_k,0,0,
+69,Mixed reality and sami brandt,academic,justyna starostka,not_in_top_k,not_in_top_k,0,0,
+70,How could I use or study mixed reality in a university project?,student_style,christian sivertsen,not_in_top_k,not_in_top_k,0,0,
+70,How could I use or study mixed reality in a university project?,student_style,justyna starostka,not_in_top_k,not_in_top_k,0,0,
+71,Design culture and great deal,academic,thomas binder,10,4,1,1,6
+72,How could I use or study design culture in a university project?,student_style,thomas binder,9,6,1,1,3
+73,Teams algorithms and cheetah challenges,academic,veronika cheplygina,not_in_top_k,not_in_top_k,0,0,
+74,How could I use or study teams algorithms in a university project?,student_style,veronika cheplygina,not_in_top_k,not_in_top_k,0,0,
+75,Mads elmkvist and defence academy,academic,carsten schürmann,not_in_top_k,not_in_top_k,0,0,
+76,How could I use or study mads elmkvist in a university project?,student_style,carsten schürmann,not_in_top_k,9,0,1,
+77,Complexity theory and looks like,academic,nutan limaye,not_in_top_k,not_in_top_k,0,0,
+78,How could I use or study complexity theory in a university project?,student_style,nutan limaye,not_in_top_k,not_in_top_k,0,0,
+79,Chronic illness and auditorium lecture,academic,anna vallgårda,not_in_top_k,not_in_top_k,0,0,
+80,How could I use or study chronic illness in a university project?,student_style,anna vallgårda,not_in_top_k,not_in_top_k,0,0,
+81,Cyber attacks and science festival,academic,carsten schürmann,not_in_top_k,7,0,1,
+81,Cyber attacks and science festival,academic,oksana kulyk,3,3,1,1,0
+82,How could I use or study cyber attacks in a university project?,student_style,carsten schürmann,6,1,1,1,5
+82,How could I use or study cyber attacks in a university project?,student_style,oksana kulyk,10,8,1,1,2
+83,High school and school teachers,academic,louise meier carlsen,2,1,1,1,1
+84,How could I use or study high school in a university project?,student_style,louise meier carlsen,9,5,1,1,4
+85,Foundation developing and machine learning,academic,alessandro bruni,not_in_top_k,not_in_top_k,0,0,
+86,How could I use or study foundation developing in a university project?,student_style,alessandro bruni,not_in_top_k,not_in_top_k,0,0,
+87,Social groups and lecture watch,academic,vasilis galis,3,3,1,1,0
+88,How could I use or study social groups in a university project?,student_style,vasilis galis,not_in_top_k,not_in_top_k,0,0,
+89,Internet election and election day,academic,carsten schürmann,1,1,1,1,0
+90,How could I use or study internet election in a university project?,student_style,carsten schürmann,1,1,1,1,0
+91,Probabilistic session and session types,academic,marco carbone,1,1,1,1,0
+92,How could I use or study probabilistic session in a university project?,student_style,marco carbone,1,1,1,1,0
+93,Social network and impact social,academic,michael szell,3,3,1,1,0
+94,How could I use or study social network in a university project?,student_style,michael szell,5,3,1,1,2
+95,Statistical methods and want data,academic,jonas juul,not_in_top_k,not_in_top_k,0,0,
+96,How could I use or study statistical methods in a university project?,student_style,jonas juul,not_in_top_k,not_in_top_k,0,0,
+97,Algorithms diverse and lead better algorithms,academic,veronika cheplygina,not_in_top_k,not_in_top_k,0,0,
+98,How could I use or study algorithms diverse in a university project?,student_style,veronika cheplygina,not_in_top_k,not_in_top_k,0,0,
+99,Red teaming and llm output,academic,leon derczynski,3,2,1,1,1
+99,Red teaming and llm output,academic,nanna inie,2,1,1,1,1
+100,How could I use or study red teaming in a university project?,student_style,leon derczynski,not_in_top_k,9,0,1,
+100,How could I use or study red teaming in a university project?,student_style,nanna inie,6,1,1,1,5
+101,Human brain and artificial intelligence,academic,paolo burelli,4,5,1,1,-1
+102,How could I use or study human brain in a university project?,student_style,paolo burelli,not_in_top_k,not_in_top_k,0,0,
+103,Villum fonden and synergy grant,academic,anna rogers,not_in_top_k,not_in_top_k,0,0,
+104,How could I use or study villum fonden in a university project?,student_style,anna rogers,not_in_top_k,not_in_top_k,0,0,
+105,Query optimisation and tech summit,academic,zoi kaoudi,4,1,1,1,3
+106,How could I use or study query optimisation in a university project?,student_style,zoi kaoudi,not_in_top_k,not_in_top_k,0,0,
+107,Public schools and understanding data,academic,irina papazu,2,1,1,1,1
+107,Public schools and understanding data,academic,simy kaur gahoonia,not_in_top_k,not_in_top_k,0,0,
+108,How could I use or study public schools in a university project?,student_style,irina papazu,2,2,1,1,0
+108,How could I use or study public schools in a university project?,student_style,simy kaur gahoonia,not_in_top_k,not_in_top_k,0,0,
+109,Large language and models llms,academic,leon derczynski,5,5,1,1,0
+110,How could I use or study large language in a university project?,student_style,leon derczynski,4,3,1,1,1
+111,Start package and package grant,academic,martin hentschel,not_in_top_k,not_in_top_k,0,0,
+112,How could I use or study start package in a university project?,student_style,martin hentschel,not_in_top_k,not_in_top_k,0,0,
+113,Erc starting and starting grant,academic,alena thiel,not_in_top_k,not_in_top_k,0,0,
+114,How could I use or study erc starting in a university project?,student_style,alena thiel,not_in_top_k,not_in_top_k,0,0,
+115,Nordic baltic and green transition,academic,vasilis galis,7,5,1,1,2
+116,How could I use or study nordic baltic in a university project?,student_style,vasilis galis,not_in_top_k,not_in_top_k,0,0,
+117,Hate speech and eu supported,academic,christian hardmeier,2,2,1,1,0
+117,Hate speech and eu supported,academic,luca rossi,7,3,1,1,4
+118,How could I use or study hate speech in a university project?,student_style,christian hardmeier,not_in_top_k,not_in_top_k,0,0,
+118,How could I use or study hate speech in a university project?,student_style,luca rossi,not_in_top_k,not_in_top_k,0,0,
+119,Business models and horizon europe,academic,camille rønn,not_in_top_k,not_in_top_k,0,0,
+119,Business models and horizon europe,academic,daniel fürstenau,not_in_top_k,10,0,1,
+120,How could I use or study business models in a university project?,student_style,camille rønn,not_in_top_k,not_in_top_k,0,0,
+120,How could I use or study business models in a university project?,student_style,daniel fürstenau,not_in_top_k,5,0,1,
+121,Artificial intelligence and human characteristics,academic,nanna inie,not_in_top_k,not_in_top_k,0,0,
+122,How could I use or study artificial intelligence in a university project?,student_style,nanna inie,not_in_top_k,not_in_top_k,0,0,
+123,Recruitment process and ai act,academic,mesut kaya,not_in_top_k,not_in_top_k,0,0,
+123,Recruitment process and ai act,academic,toine bogers,not_in_top_k,not_in_top_k,0,0,
+124,How could I use or study recruitment process in a university project?,student_style,mesut kaya,not_in_top_k,not_in_top_k,0,0,
+124,How could I use or study recruitment process in a university project?,student_style,toine bogers,not_in_top_k,not_in_top_k,0,0,
+125,Eye trackers and marie skłodowska,academic,dan witzner hansen,1,1,1,1,0
+126,How could I use or study eye trackers in a university project?,student_style,dan witzner hansen,1,1,1,1,0
+127,Assistant aims and main area,academic,elisa mekler,not_in_top_k,not_in_top_k,0,0,
+127,Assistant aims and main area,academic,mylène tanferri,not_in_top_k,not_in_top_k,0,0,
+127,Assistant aims and main area,academic,raquel robinson,not_in_top_k,not_in_top_k,0,0,
+127,Assistant aims and main area,academic,steffen dalsgaard,5,4,1,1,1
+128,How could I use or study assistant aims in a university project?,student_style,elisa mekler,not_in_top_k,not_in_top_k,0,0,
+128,How could I use or study assistant aims in a university project?,student_style,mylène tanferri,not_in_top_k,not_in_top_k,0,0,
+128,How could I use or study assistant aims in a university project?,student_style,raquel robinson,not_in_top_k,not_in_top_k,0,0,
+128,How could I use or study assistant aims in a university project?,student_style,steffen dalsgaard,not_in_top_k,not_in_top_k,0,0,
+129,Sami brandt and mixed reality,academic,sami brandt,not_in_top_k,not_in_top_k,0,0,
+130,How could I use or study sami brandt in a university project?,student_style,sami brandt,not_in_top_k,not_in_top_k,0,0,
+131,Query optimisation and query plans,academic,zoi kaoudi,3,2,1,1,1
+132,How could I use or study query optimisation in a university project?,student_style,zoi kaoudi,not_in_top_k,not_in_top_k,0,0,
+133,Training data and villum young,academic,anna rogers,not_in_top_k,not_in_top_k,0,0,
+134,How could I use or study training data in a university project?,student_style,anna rogers,6,4,1,1,2
+135,Just streets and social groups,academic,michael szell,6,3,1,1,3
+136,How could I use or study just streets in a university project?,student_style,michael szell,not_in_top_k,not_in_top_k,0,0,
+137,Computational complexity and outstanding contributions,academic,nutan limaye,not_in_top_k,not_in_top_k,0,0,
+137,Computational complexity and outstanding contributions,academic,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+138,How could I use or study computational complexity in a university project?,student_style,nutan limaye,not_in_top_k,not_in_top_k,0,0,
+138,How could I use or study computational complexity in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+139,Big things and journalist dan,academic,bent flyvbjerg,9,4,1,1,5
+140,How could I use or study big things in a university project?,student_style,bent flyvbjerg,3,1,1,1,2
+141,Public libraries and authorities companies,academic,jörn christiansson,4,2,1,1,2
+142,How could I use or study public libraries in a university project?,student_style,jörn christiansson,6,3,1,1,3
+143,Language models and ultimately want,academic,elisa bassignana,not_in_top_k,not_in_top_k,0,0,
+144,How could I use or study language models in a university project?,student_style,elisa bassignana,not_in_top_k,not_in_top_k,0,0,
+145,Social networks and network analysis,academic,michele coscia,1,1,1,1,0
+146,How could I use or study social networks in a university project?,student_style,michele coscia,1,2,1,1,-1
+147,Financial times and big things,academic,bent flyvbjerg,not_in_top_k,6,0,1,
+148,How could I use or study financial times in a university project?,student_style,bent flyvbjerg,not_in_top_k,not_in_top_k,0,0,
+149,Nordic council and law enforcement,academic,jörn christiansson,6,8,1,1,-2
+149,Nordic council and law enforcement,academic,vasilis galis,2,3,1,1,-1
+150,How could I use or study nordic council in a university project?,student_style,jörn christiansson,not_in_top_k,not_in_top_k,0,0,
+150,How could I use or study nordic council in a university project?,student_style,vasilis galis,not_in_top_k,not_in_top_k,0,0,
+151,Villum experiment and written language,academic,mircea lungu,not_in_top_k,not_in_top_k,0,0,
+152,How could I use or study villum experiment in a university project?,student_style,mircea lungu,not_in_top_k,not_in_top_k,0,0,
+153,Real time and marie skłodowska,academic,alena thiel,not_in_top_k,not_in_top_k,0,0,
+154,How could I use or study real time in a university project?,student_style,alena thiel,not_in_top_k,not_in_top_k,0,0,
+155,Affect relationship and core group,academic,anna vallgårda,not_in_top_k,not_in_top_k,0,0,
+155,Affect relationship and core group,academic,erik grönvall,not_in_top_k,not_in_top_k,0,0,
+155,Affect relationship and core group,academic,jonas fritsch,not_in_top_k,8,0,1,
+156,How could I use or study affect relationship in a university project?,student_style,anna vallgårda,not_in_top_k,not_in_top_k,0,0,
+156,How could I use or study affect relationship in a university project?,student_style,erik grönvall,not_in_top_k,not_in_top_k,0,0,
+156,How could I use or study affect relationship in a university project?,student_style,jonas fritsch,not_in_top_k,not_in_top_k,0,0,
+157,Transformer language and language models,academic,anna rogers,5,3,1,1,2
+158,How could I use or study transformer language in a university project?,student_style,anna rogers,not_in_top_k,9,0,1,
+159,Lundbeck foundation and early signs,academic,stella grasshof,not_in_top_k,not_in_top_k,0,0,
+160,How could I use or study lundbeck foundation in a university project?,student_style,stella grasshof,not_in_top_k,not_in_top_k,0,0,
+161,Science group and human centered,academic,aske mottelson,not_in_top_k,not_in_top_k,0,0,
+162,How could I use or study science group in a university project?,student_style,aske mottelson,not_in_top_k,not_in_top_k,0,0,
+163,Center computing and computing education,academic,claus brabrand,3,1,1,1,2
+164,How could I use or study center computing in a university project?,student_style,claus brabrand,not_in_top_k,not_in_top_k,0,0,
+165,Hate speech and social media platforms,academic,leon derczynski,5,3,1,1,2
+166,How could I use or study hate speech in a university project?,student_style,leon derczynski,not_in_top_k,not_in_top_k,0,0,
+167,Ai powered and learning tools,academic,kasper støy,not_in_top_k,not_in_top_k,0,0,
+168,How could I use or study ai powered in a university project?,student_style,kasper støy,not_in_top_k,not_in_top_k,0,0,
+169,Investigator programme and villum fonden,academic,radu-cristian curticapean,not_in_top_k,not_in_top_k,0,0,
+170,How could I use or study investigator programme in a university project?,student_style,radu-cristian curticapean,not_in_top_k,not_in_top_k,0,0,
+171,Neural networks and nervous systems,academic,sebastian risi,1,1,1,1,0
+172,How could I use or study neural networks in a university project?,student_style,sebastian risi,1,1,1,1,0
+173,Officially launched and business unit,academic,martin pichlmair,not_in_top_k,not_in_top_k,0,0,
+174,How could I use or study officially launched in a university project?,student_style,martin pichlmair,not_in_top_k,not_in_top_k,0,0,
+175,Cooperative enterprise and labour market,academic,lene nielsen,not_in_top_k,not_in_top_k,0,0,
+176,How could I use or study cooperative enterprise in a university project?,student_style,lene nielsen,not_in_top_k,not_in_top_k,0,0,
+177,Complexity theory and erc starting,academic,radu-cristian curticapean,9,3,1,1,6
+178,How could I use or study complexity theory in a university project?,student_style,radu-cristian curticapean,not_in_top_k,not_in_top_k,0,0,
+179,Internet voting and kroner respective,academic,oksana kulyk,1,1,1,1,0
+179,Internet voting and kroner respective,academic,paloma thomé de lima,not_in_top_k,not_in_top_k,0,0,
+180,How could I use or study internet voting in a university project?,student_style,oksana kulyk,1,1,1,1,0
+180,How could I use or study internet voting in a university project?,student_style,paloma thomé de lima,not_in_top_k,not_in_top_k,0,0,
+181,Center climate and climate emergency,academic,steffen dalsgaard,1,1,1,1,0
+182,How could I use or study center climate in a university project?,student_style,steffen dalsgaard,not_in_top_k,not_in_top_k,0,0,
+183,Modl ai and video game,academic,sebastian risi,1,1,1,1,0
+184,How could I use or study modl ai in a university project?,student_style,sebastian risi,5,3,1,1,2
+185,Scale projects and percent large,academic,bent flyvbjerg,9,6,1,1,3
+186,How could I use or study scale projects in a university project?,student_style,bent flyvbjerg,4,4,1,1,0
+187,Qualitative quantitative and data strong,academic,bent flyvbjerg,not_in_top_k,not_in_top_k,0,0,
+188,How could I use or study qualitative quantitative in a university project?,student_style,bent flyvbjerg,not_in_top_k,not_in_top_k,0,0,
+189,Cooperative enterprise and labour market,academic,hanne westh,6,6,1,1,0
+189,Cooperative enterprise and labour market,academic,lene nielsen,not_in_top_k,not_in_top_k,0,0,
+189,Cooperative enterprise and labour market,academic,vasiliki baka,not_in_top_k,not_in_top_k,0,0,
+190,How could I use or study cooperative enterprise in a university project?,student_style,hanne westh,not_in_top_k,not_in_top_k,0,0,
+190,How could I use or study cooperative enterprise in a university project?,student_style,lene nielsen,not_in_top_k,not_in_top_k,0,0,
+190,How could I use or study cooperative enterprise in a university project?,student_style,vasiliki baka,not_in_top_k,not_in_top_k,0,0,
+191,Innovation projects and nikolaj oppermann,academic,cancan wang,not_in_top_k,not_in_top_k,0,0,
+192,How could I use or study innovation projects in a university project?,student_style,cancan wang,not_in_top_k,not_in_top_k,0,0,
+193,Young academy and networks data,academic,michael szell,1,2,1,1,-1
+194,How could I use or study young academy in a university project?,student_style,michael szell,not_in_top_k,not_in_top_k,0,0,
+195,Social cultural and humanities social,academic,luca rossi,3,1,1,1,2
+195,Social cultural and humanities social,academic,vasilieos-spyridon vlassis,not_in_top_k,not_in_top_k,0,0,
+196,How could I use or study social cultural in a university project?,student_style,luca rossi,4,3,1,1,1
+196,How could I use or study social cultural in a university project?,student_style,vasilieos-spyridon vlassis,not_in_top_k,not_in_top_k,0,0,
+197,Mega projects and villum kann,academic,bent flyvbjerg,5,5,1,1,0
+198,How could I use or study mega projects in a university project?,student_style,bent flyvbjerg,5,4,1,1,1
+199,Science design and air lab,academic,jonas fritsch,not_in_top_k,not_in_top_k,0,0,
+199,Science design and air lab,academic,rasmus ejlers møgelberg,not_in_top_k,not_in_top_k,0,0,
+200,How could I use or study science design in a university project?,student_style,jonas fritsch,not_in_top_k,not_in_top_k,0,0,
+200,How could I use or study science design in a university project?,student_style,rasmus ejlers møgelberg,not_in_top_k,not_in_top_k,0,0,
+201,Emotional response and children suffer,academic,morten roed frederiksen,6,5,1,1,1
+202,How could I use or study emotional response in a university project?,student_style,morten roed frederiksen,8,9,1,1,-1
+203,Cellular automata and reinforcement learning,academic,sebastian risi,1,1,1,1,0
+204,How could I use or study cellular automata in a university project?,student_style,sebastian risi,3,1,1,1,2
+205,City planners and gaps bicycle,academic,michael szell,1,1,1,1,0
+206,How could I use or study city planners in a university project?,student_style,michael szell,not_in_top_k,not_in_top_k,0,0,
+207,Consolidator grant and solving climate,academic,cancan wang,not_in_top_k,not_in_top_k,0,0,
+207,Consolidator grant and solving climate,academic,hasib ahsan,not_in_top_k,not_in_top_k,0,0,
+207,Consolidator grant and solving climate,academic,james maguire,7,6,1,1,1
+207,Consolidator grant and solving climate,academic,priscila santos da costa,not_in_top_k,9,0,1,
+207,Consolidator grant and solving climate,academic,steffen dalsgaard,4,1,1,1,3
+208,How could I use or study consolidator grant in a university project?,student_style,cancan wang,not_in_top_k,not_in_top_k,0,0,
+208,How could I use or study consolidator grant in a university project?,student_style,hasib ahsan,not_in_top_k,not_in_top_k,0,0,
+208,How could I use or study consolidator grant in a university project?,student_style,james maguire,not_in_top_k,not_in_top_k,0,0,
+208,How could I use or study consolidator grant in a university project?,student_style,priscila santos da costa,not_in_top_k,not_in_top_k,0,0,
+208,How could I use or study consolidator grant in a university project?,student_style,steffen dalsgaard,not_in_top_k,not_in_top_k,0,0,
+209,Brit ross and ross winthereik,academic,james maguire,1,1,1,1,0
+210,How could I use or study brit ross in a university project?,student_style,james maguire,not_in_top_k,not_in_top_k,0,0,
+211,Small scale and creating sustainable,academic,priscila santos da costa,not_in_top_k,not_in_top_k,0,0,
+211,Small scale and creating sustainable,academic,steffen dalsgaard,7,4,1,1,3
+212,How could I use or study small scale in a university project?,student_style,priscila santos da costa,not_in_top_k,not_in_top_k,0,0,
+212,How could I use or study small scale in a university project?,student_style,steffen dalsgaard,not_in_top_k,not_in_top_k,0,0,
+213,Machine learning and interaction user,academic,christopher gad,not_in_top_k,not_in_top_k,0,0,
+213,Machine learning and interaction user,academic,jonas fritsch,not_in_top_k,not_in_top_k,0,0,
+214,How could I use or study machine learning in a university project?,student_style,christopher gad,not_in_top_k,not_in_top_k,0,0,
+214,How could I use or study machine learning in a university project?,student_style,jonas fritsch,not_in_top_k,not_in_top_k,0,0,
+215,Young researcher and carlsberg foundation,academic,luca maria aiello,not_in_top_k,not_in_top_k,0,0,
+216,How could I use or study young researcher in a university project?,student_style,luca maria aiello,not_in_top_k,not_in_top_k,0,0,
+217,Data storage and anders kjærulff,academic,james maguire,7,6,1,1,1
+218,How could I use or study data storage in a university project?,student_style,james maguire,7,7,1,1,0
+219,Knowledge transfer and global scale,academic,michele coscia,not_in_top_k,not_in_top_k,0,0,
+220,How could I use or study knowledge transfer in a university project?,student_style,michele coscia,not_in_top_k,not_in_top_k,0,0,
+221,Law enforcement and civil liberties,academic,vasilis galis,3,3,1,1,0
+222,How could I use or study law enforcement in a university project?,student_style,vasilis galis,not_in_top_k,not_in_top_k,0,0,
+223,Inge lehmann and lehmann programme,academic,therese graversen,not_in_top_k,not_in_top_k,0,0,
+223,Inge lehmann and lehmann programme,academic,veronika cheplygina,not_in_top_k,not_in_top_k,0,0,
+224,How could I use or study inge lehmann in a university project?,student_style,therese graversen,not_in_top_k,not_in_top_k,0,0,
+224,How could I use or study inge lehmann in a university project?,student_style,veronika cheplygina,not_in_top_k,not_in_top_k,0,0,
+225,Center welfare and policy making,academic,irina papazu,9,7,1,1,2
+226,How could I use or study center welfare in a university project?,student_style,irina papazu,4,4,1,1,0
+227,Anastassia vybornova and bicycle infrastructures,academic,michael szell,1,1,1,1,0
+228,How could I use or study anastassia vybornova in a university project?,student_style,michael szell,not_in_top_k,not_in_top_k,0,0,
+229,Eye information and eye movement,academic,dan witzner hansen,1,1,1,1,0
+230,How could I use or study eye information in a university project?,student_style,dan witzner hansen,1,1,1,1,0
+231,Large companies and create basis,academic,michael hockenhull,not_in_top_k,not_in_top_k,0,0,
+232,How could I use or study large companies in a university project?,student_style,michael hockenhull,not_in_top_k,not_in_top_k,0,0,
+233,Test subjects and scientific paper,academic,aske mottelson,not_in_top_k,not_in_top_k,0,0,
+234,How could I use or study test subjects in a university project?,student_style,aske mottelson,not_in_top_k,not_in_top_k,0,0,
+235,Best paper award and computational complexity,academic,nutan limaye,not_in_top_k,not_in_top_k,0,0,
+235,Best paper award and computational complexity,academic,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+236,How could I use or study best paper award in a university project?,student_style,nutan limaye,not_in_top_k,not_in_top_k,0,0,
+236,How could I use or study best paper award in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+237,Million dkk and awarded close,academic,priscila santos da costa,not_in_top_k,not_in_top_k,0,0,
+237,Million dkk and awarded close,academic,steffen dalsgaard,not_in_top_k,not_in_top_k,0,0,
+238,How could I use or study million dkk in a university project?,student_style,priscila santos da costa,not_in_top_k,not_in_top_k,0,0,
+238,How could I use or study million dkk in a university project?,student_style,steffen dalsgaard,not_in_top_k,not_in_top_k,0,0,
+239,Personal data and privacy issues,academic,louise barkhuus,6,2,1,1,4
+240,How could I use or study personal data in a university project?,student_style,louise barkhuus,10,4,1,1,6
+241,Comply law and make difficult,academic,thomas hildebrandt,10,4,1,1,6
+242,How could I use or study comply law in a university project?,student_style,thomas hildebrandt,not_in_top_k,not_in_top_k,0,0,
+243,Image analysis and indian institute,academic,yvonne dittrich,not_in_top_k,not_in_top_k,0,0,
+244,How could I use or study image analysis in a university project?,student_style,yvonne dittrich,7,4,1,1,3
+245,Villum synergy and synergy grant,academic,anders sundnes løvlie,not_in_top_k,not_in_top_k,0,0,
+245,Villum synergy and synergy grant,academic,sebastian risi,not_in_top_k,not_in_top_k,0,0,
+246,How could I use or study villum synergy in a university project?,student_style,anders sundnes løvlie,3,3,1,1,0
+246,How could I use or study villum synergy in a university project?,student_style,sebastian risi,not_in_top_k,not_in_top_k,0,0,
+247,Villum experiment and public trust,academic,oksana kulyk,7,6,1,1,1
+248,How could I use or study villum experiment in a university project?,student_style,oksana kulyk,not_in_top_k,not_in_top_k,0,0,
+249,Climate crisis and inaugural lecture,academic,steffen dalsgaard,2,1,1,1,1
+250,How could I use or study climate crisis in a university project?,student_style,steffen dalsgaard,not_in_top_k,10,0,1,
+251,Computing education and teaching practices,academic,claus brabrand,4,1,1,1,3
+251,Computing education and teaching practices,academic,pawel grabarczyk,not_in_top_k,not_in_top_k,0,0,
+251,Computing education and teaching practices,academic,therese graversen,not_in_top_k,not_in_top_k,0,0,
+252,How could I use or study computing education in a university project?,student_style,claus brabrand,4,2,1,1,2
+252,How could I use or study computing education in a university project?,student_style,pawel grabarczyk,not_in_top_k,not_in_top_k,0,0,
+252,How could I use or study computing education in a university project?,student_style,therese graversen,not_in_top_k,not_in_top_k,0,0,
+253,Deep learning and natural language,academic,barbara plank,4,3,1,1,1
+254,How could I use or study deep learning in a university project?,student_style,barbara plank,not_in_top_k,not_in_top_k,0,0,
+255,Mental healthcare and refugee camps,academic,hasib ahsan,1,1,1,1,0
+255,Mental healthcare and refugee camps,academic,lars rune christensen,2,2,1,1,0
+256,How could I use or study mental healthcare in a university project?,student_style,hasib ahsan,7,2,1,1,5
+256,How could I use or study mental healthcare in a university project?,student_style,lars rune christensen,8,3,1,1,5
+257,Neural networks and creative ai,academic,sebastian risi,1,1,1,1,0
+258,How could I use or study neural networks in a university project?,student_style,sebastian risi,1,1,1,1,0
+259,Online discourse and social media platforms,academic,leon derczynski,not_in_top_k,not_in_top_k,0,0,
+259,Online discourse and social media platforms,academic,nanna inie,not_in_top_k,not_in_top_k,0,0,
+260,How could I use or study online discourse in a university project?,student_style,leon derczynski,not_in_top_k,not_in_top_k,0,0,
+260,How could I use or study online discourse in a university project?,student_style,nanna inie,10,8,1,1,2
+261,Kann rasmussen and villum fonden,academic,bent flyvbjerg,not_in_top_k,5,0,1,
+262,How could I use or study kann rasmussen in a university project?,student_style,bent flyvbjerg,not_in_top_k,not_in_top_k,0,0,
+263,Billion word and misinformation detection,academic,leon derczynski,1,1,1,1,0
+264,How could I use or study billion word in a university project?,student_style,leon derczynski,not_in_top_k,not_in_top_k,0,0,
+265,Law human and bicycle infrastructure,academic,michael szell,1,1,1,1,0
+266,How could I use or study law human in a university project?,student_style,michael szell,not_in_top_k,not_in_top_k,0,0,
+267,Piece software and software runs,academic,marco carbone,not_in_top_k,not_in_top_k,0,0,
+268,How could I use or study piece software in a university project?,student_style,marco carbone,not_in_top_k,not_in_top_k,0,0,
+269,Billion word and misinformation detection,academic,leon derczynski,1,1,1,1,0
+270,How could I use or study billion word in a university project?,student_style,leon derczynski,not_in_top_k,not_in_top_k,0,0,
+271,Welfare state and podcast series,academic,kasper støy,not_in_top_k,not_in_top_k,0,0,
+271,Welfare state and podcast series,academic,michael hockenhull,not_in_top_k,not_in_top_k,0,0,
+272,How could I use or study welfare state in a university project?,student_style,kasper støy,not_in_top_k,not_in_top_k,0,0,
+272,How could I use or study welfare state in a university project?,student_style,michael hockenhull,not_in_top_k,not_in_top_k,0,0,
+273,Welfare seekers and anette petersen,academic,lars rune christensen,not_in_top_k,not_in_top_k,0,0,
+273,Welfare seekers and anette petersen,academic,thomas hildebrandt,not_in_top_k,not_in_top_k,0,0,
+274,How could I use or study welfare seekers in a university project?,student_style,lars rune christensen,not_in_top_k,not_in_top_k,0,0,
+274,How could I use or study welfare seekers in a university project?,student_style,thomas hildebrandt,not_in_top_k,not_in_top_k,0,0,
+275,Public services and user involvement,academic,jörn christiansson,2,2,1,1,0
+276,How could I use or study public services in a university project?,student_style,jörn christiansson,4,2,1,1,2
+277,Pioneer centre and dan witzner,academic,barbara plank,not_in_top_k,7,0,1,
+277,Pioneer centre and dan witzner,academic,peter sestoft,not_in_top_k,not_in_top_k,0,0,
+278,How could I use or study pioneer centre in a university project?,student_style,barbara plank,not_in_top_k,not_in_top_k,0,0,
+278,How could I use or study pioneer centre in a university project?,student_style,peter sestoft,not_in_top_k,not_in_top_k,0,0,
+279,Climate initiatives and papua guinea,academic,steffen dalsgaard,1,1,1,1,0
+280,How could I use or study climate initiatives in a university project?,student_style,steffen dalsgaard,not_in_top_k,not_in_top_k,0,0,
+281,Face recognition and data analytics,academic,vasilis galis,not_in_top_k,not_in_top_k,0,0,
+282,How could I use or study face recognition in a university project?,student_style,vasilis galis,not_in_top_k,not_in_top_k,0,0,
+283,Start package and foundation start,academic,jichen zhu,not_in_top_k,not_in_top_k,0,0,
+284,How could I use or study start package in a university project?,student_style,jichen zhu,not_in_top_k,not_in_top_k,0,0,
+285,Velux foundation and young investigator,academic,roberta sinatra,not_in_top_k,not_in_top_k,0,0,
+286,How could I use or study velux foundation in a university project?,student_style,roberta sinatra,not_in_top_k,not_in_top_k,0,0,
+287,Data scientists and hardware resources,academic,pinar tözün,1,1,1,1,0
+288,How could I use or study data scientists in a university project?,student_style,pinar tözün,3,5,1,1,-2
+289,Cyber security and goes wrong,academic,oksana kulyk,3,3,1,1,0
+290,How could I use or study cyber security in a university project?,student_style,oksana kulyk,2,2,1,1,0
+291,Gender inequality and women men,academic,roberta sinatra,not_in_top_k,10,0,1,
+292,How could I use or study gender inequality in a university project?,student_style,roberta sinatra,not_in_top_k,not_in_top_k,0,0,
+293,Training program and european commission,academic,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+294,How could I use or study training program in a university project?,student_style,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+295,Natural language and language processing,academic,anders giovanni møller,not_in_top_k,not_in_top_k,0,0,
+295,Natural language and language processing,academic,barbara plank,2,2,1,1,0
+295,Natural language and language processing,academic,rob van der goot,1,1,1,1,0
+296,How could I use or study natural language in a university project?,student_style,anders giovanni møller,not_in_top_k,not_in_top_k,0,0,
+296,How could I use or study natural language in a university project?,student_style,barbara plank,6,4,1,1,2
+296,How could I use or study natural language in a university project?,student_style,rob van der goot,1,1,1,1,0
+297,Centre government and lars frelle,academic,bent flyvbjerg,not_in_top_k,not_in_top_k,0,0,
+297,Centre government and lars frelle,academic,jens schmidt,7,7,1,1,0
+297,Centre government and lars frelle,academic,peter sestoft,not_in_top_k,not_in_top_k,0,0,
+298,How could I use or study centre government in a university project?,student_style,bent flyvbjerg,not_in_top_k,not_in_top_k,0,0,
+298,How could I use or study centre government in a university project?,student_style,jens schmidt,not_in_top_k,not_in_top_k,0,0,
+298,How could I use or study centre government in a university project?,student_style,peter sestoft,not_in_top_k,not_in_top_k,0,0,
+299,Training data and robot solve,academic,sebastian risi,not_in_top_k,not_in_top_k,0,0,
+300,How could I use or study training data in a university project?,student_style,sebastian risi,not_in_top_k,not_in_top_k,0,0,
+301,Cyber security and level cybersecurity,academic,carsten schürmann,2,1,1,1,1
+301,Cyber security and level cybersecurity,academic,oksana kulyk,3,2,1,1,1
+302,How could I use or study cyber security in a university project?,student_style,carsten schürmann,1,1,1,1,0
+302,How could I use or study cyber security in a university project?,student_style,oksana kulyk,2,2,1,1,0
+303,Fake news and social dynamics,academic,luca rossi,1,1,1,1,0
+303,Fake news and social dynamics,academic,michele coscia,8,4,1,1,4
+304,How could I use or study fake news in a university project?,student_style,luca rossi,not_in_top_k,9,0,1,
+304,How could I use or study fake news in a university project?,student_style,michele coscia,not_in_top_k,not_in_top_k,0,0,
+305,Data relation and big data,academic,james maguire,10,not_in_top_k,1,0,
+306,How could I use or study data relation in a university project?,student_style,james maguire,6,6,1,1,0
+307,Mental health and healthcare providers,academic,leon derczynski,6,8,1,1,-2
+308,How could I use or study mental health in a university project?,student_style,leon derczynski,not_in_top_k,not_in_top_k,0,0,
+309,Software engineering and computer science social,academic,yvonne dittrich,1,1,1,1,0
+310,How could I use or study software engineering in a university project?,student_style,yvonne dittrich,1,1,1,1,0
+311,Elections voting and risk limiting,academic,carsten schürmann,1,1,1,1,0
+312,How could I use or study elections voting in a university project?,student_style,carsten schürmann,1,2,1,1,-1
+313,Inauguration lecture and seeks make,academic,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+314,How could I use or study inauguration lecture in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+315,Smart contracts and ai methods,academic,barbara plank,not_in_top_k,not_in_top_k,0,0,
+315,Smart contracts and ai methods,academic,bernardo machado david,not_in_top_k,9,0,1,
+315,Smart contracts and ai methods,academic,leon derczynski,not_in_top_k,not_in_top_k,0,0,
+315,Smart contracts and ai methods,academic,sebastian risi,2,1,1,1,1
+315,Smart contracts and ai methods,academic,steffen dalsgaard,not_in_top_k,not_in_top_k,0,0,
+316,How could I use or study smart contracts in a university project?,student_style,barbara plank,not_in_top_k,not_in_top_k,0,0,
+316,How could I use or study smart contracts in a university project?,student_style,bernardo machado david,not_in_top_k,not_in_top_k,0,0,
+316,How could I use or study smart contracts in a university project?,student_style,leon derczynski,not_in_top_k,not_in_top_k,0,0,
+316,How could I use or study smart contracts in a university project?,student_style,sebastian risi,not_in_top_k,not_in_top_k,0,0,
+316,How could I use or study smart contracts in a university project?,student_style,steffen dalsgaard,not_in_top_k,not_in_top_k,0,0,
+317,Primary schools and sector create,academic,vasilis galis,not_in_top_k,not_in_top_k,0,0,
+318,How could I use or study primary schools in a university project?,student_style,vasilis galis,not_in_top_k,not_in_top_k,0,0,
+319,Blockchain systems and dkk million grant,academic,bernardo machado david,1,1,1,1,0
+320,How could I use or study blockchain systems in a university project?,student_style,bernardo machado david,1,2,1,1,-1
+321,Refugee camps and rohingya refugees,academic,hasib ahsan,1,1,1,1,0
+321,Refugee camps and rohingya refugees,academic,lars rune christensen,2,2,1,1,0
+322,How could I use or study refugee camps in a university project?,student_style,hasib ahsan,9,7,1,1,2
+322,How could I use or study refugee camps in a university project?,student_style,lars rune christensen,10,8,1,1,2
+323,Want change and used real,academic,bernardo machado david,1,2,1,1,-1
+324,How could I use or study want change in a university project?,student_style,bernardo machado david,not_in_top_k,not_in_top_k,0,0,
+325,Data data and natural language,academic,barbara plank,10,5,1,1,5
+326,How could I use or study data data in a university project?,student_style,barbara plank,not_in_top_k,not_in_top_k,0,0,
+327,Fake news and crisis situations,academic,leon derczynski,4,4,1,1,0
+328,How could I use or study fake news in a university project?,student_style,leon derczynski,not_in_top_k,not_in_top_k,0,0,
+329,Language understanding and natural language,academic,barbara plank,2,2,1,1,0
+330,How could I use or study language understanding in a university project?,student_style,barbara plank,7,5,1,1,2
+331,Air lab and emotional aspects,academic,jonas fritsch,not_in_top_k,not_in_top_k,0,0,
+332,How could I use or study air lab in a university project?,student_style,jonas fritsch,not_in_top_k,not_in_top_k,0,0,
+333,Data protection and allow understand,academic,marisa cohn,not_in_top_k,not_in_top_k,0,0,
+333,Data protection and allow understand,academic,rachel douglas-jones,not_in_top_k,not_in_top_k,0,0,
+334,How could I use or study data protection in a university project?,student_style,marisa cohn,not_in_top_k,not_in_top_k,0,0,
+334,How could I use or study data protection in a university project?,student_style,rachel douglas-jones,not_in_top_k,not_in_top_k,0,0,
+335,Women data and receives dkk,academic,barbara plank,not_in_top_k,not_in_top_k,0,0,
+335,Women data and receives dkk,academic,natalie schluter,not_in_top_k,not_in_top_k,0,0,
+336,How could I use or study women data in a university project?,student_style,barbara plank,not_in_top_k,not_in_top_k,0,0,
+336,How could I use or study women data in a university project?,student_style,natalie schluter,not_in_top_k,not_in_top_k,0,0,
+337,Carbon emissions and actually make,academic,steffen dalsgaard,1,1,1,1,0
+338,How could I use or study carbon emissions in a university project?,student_style,steffen dalsgaard,2,1,1,1,1
+339,Game theory and algorithmic game,academic,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+340,How could I use or study game theory in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+341,Flow robotics and make easy,academic,kasper støy,2,1,1,1,1
+342,How could I use or study flow robotics in a university project?,student_style,kasper støy,2,3,1,1,-1
+343,Privacy users and andrzej wąsowski,academic,andrzej wasowski,7,6,1,1,1
+344,How could I use or study privacy users in a university project?,student_style,andrzej wasowski,not_in_top_k,10,0,1,
+345,Artificial life and young investigator,academic,sebastian risi,2,2,1,1,0
+346,How could I use or study artificial life in a university project?,student_style,sebastian risi,2,1,1,1,1
+347,Public schools and understand data,academic,christopher gad,not_in_top_k,not_in_top_k,0,0,
+348,How could I use or study public schools in a university project?,student_style,christopher gad,not_in_top_k,not_in_top_k,0,0,
+349,Irina shklovski and virt eu,academic,rachel douglas-jones,8,3,1,1,5
+350,How could I use or study irina shklovski in a university project?,student_style,rachel douglas-jones,not_in_top_k,not_in_top_k,0,0,
+351,Ai generated and super mario,academic,sebastian risi,1,1,1,1,0
+352,How could I use or study ai generated in a university project?,student_style,sebastian risi,5,3,1,1,2
+353,Nathan fielder and american tv,academic,carsten schürmann,not_in_top_k,not_in_top_k,0,0,
+354,How could I use or study nathan fielder in a university project?,student_style,carsten schürmann,not_in_top_k,9,0,1,
+355,Andrzej wąsowski and basic idea,academic,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+356,How could I use or study andrzej wąsowski in a university project?,student_style,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+357,Payment systems and vulnerable groups,academic,sunniva sandbukt,5,4,1,1,1
+358,How could I use or study payment systems in a university project?,student_style,sunniva sandbukt,not_in_top_k,not_in_top_k,0,0,
+359,Interactive theorem and leading researcher,academic,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+360,How could I use or study interactive theorem in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+361,Big tech and energy grid,academic,james maguire,9,2,1,1,7
+362,How could I use or study big tech in a university project?,student_style,james maguire,not_in_top_k,not_in_top_k,0,0,
+363,Mobile phones and make practical,academic,lars rune christensen,not_in_top_k,not_in_top_k,0,0,
+364,How could I use or study mobile phones in a university project?,student_style,lars rune christensen,not_in_top_k,not_in_top_k,0,0,
+365,Election result and democratic process,academic,carsten schürmann,1,1,1,1,0
+366,How could I use or study election result in a university project?,student_style,carsten schürmann,1,1,1,1,0
+367,European blockchain and roman beck,academic,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+368,How could I use or study european blockchain in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+369,Self driving and personal data,academic,kasper støy,not_in_top_k,not_in_top_k,0,0,
+369,Self driving and personal data,academic,søren debois,not_in_top_k,not_in_top_k,0,0,
+370,How could I use or study self driving in a university project?,student_style,kasper støy,not_in_top_k,not_in_top_k,0,0,
+370,How could I use or study self driving in a university project?,student_style,søren debois,not_in_top_k,not_in_top_k,0,0,
+371,Commonly used and world changes,academic,peter sestoft,not_in_top_k,not_in_top_k,0,0,
+372,How could I use or study commonly used in a university project?,student_style,peter sestoft,not_in_top_k,not_in_top_k,0,0,
+373,Multiparty computation and world leading,academic,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+374,How could I use or study multiparty computation in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+375,Mobile phones and jari kickbusch,academic,luca rossi,not_in_top_k,not_in_top_k,0,0,
+375,Mobile phones and jari kickbusch,academic,vasilis galis,not_in_top_k,not_in_top_k,0,0,
+376,How could I use or study mobile phones in a university project?,student_style,luca rossi,not_in_top_k,not_in_top_k,0,0,
+376,How could I use or study mobile phones in a university project?,student_style,vasilis galis,not_in_top_k,not_in_top_k,0,0,
+377,Case management and management systems,academic,thomas hildebrandt,6,2,1,1,4
+378,How could I use or study case management in a university project?,student_style,thomas hildebrandt,6,3,1,1,3
+379,Reinforcement learning and step forward,academic,sebastian risi,1,1,1,1,0
+380,How could I use or study reinforcement learning in a university project?,student_style,sebastian risi,1,1,1,1,0
+381,Fake news and center information,academic,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+382,How could I use or study fake news in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+383,Voting machines and used elections,academic,carsten schürmann,3,2,1,1,1
+384,How could I use or study voting machines in a university project?,student_style,carsten schürmann,5,2,1,1,3
+385,Relatively open and public debate,academic,luca rossi,8,7,1,1,1
+386,How could I use or study relatively open in a university project?,student_style,luca rossi,not_in_top_k,not_in_top_k,0,0,
+387,Voting machine and wall street,academic,carsten schürmann,5,2,1,1,3
+388,How could I use or study voting machine in a university project?,student_style,carsten schürmann,8,2,1,1,6
+389,Make robot and extreme conditions,academic,sebastian risi,9,6,1,1,3
+390,How could I use or study make robot in a university project?,student_style,sebastian risi,not_in_top_k,not_in_top_k,0,0,
+391,Case management and phd projects,academic,thomas hildebrandt,3,3,1,1,0
+392,How could I use or study case management in a university project?,student_style,thomas hildebrandt,6,3,1,1,3
+393,Security critical and trust outcome,academic,carsten schürmann,2,1,1,1,1
+393,Security critical and trust outcome,academic,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+394,How could I use or study security critical in a university project?,student_style,carsten schürmann,1,1,1,1,0
+394,How could I use or study security critical in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+395,Science talk and algorithmic decision,academic,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+396,How could I use or study science talk in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+397,Efficient algorithms and rasmus pagh,academic,thore husfeldt,2,3,1,1,-1
+398,How could I use or study efficient algorithms in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+399,Quality assurance and robots humans,academic,andrzej wasowski,6,4,1,1,2
+399,Quality assurance and robots humans,academic,claus brabrand,not_in_top_k,not_in_top_k,0,0,
+399,Quality assurance and robots humans,academic,yvonne dittrich,10,7,1,1,3
+400,How could I use or study quality assurance in a university project?,student_style,andrzej wasowski,not_in_top_k,5,0,1,
+400,How could I use or study quality assurance in a university project?,student_style,claus brabrand,not_in_top_k,not_in_top_k,0,0,
+400,How could I use or study quality assurance in a university project?,student_style,yvonne dittrich,6,2,1,1,4
+401,Algorithmic game and game theory,academic,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+402,How could I use or study algorithmic game in a university project?,student_style,thore husfeldt,not_in_top_k,not_in_top_k,0,0,
+403,Health care and example communication,academic,erik grönvall,1,1,1,1,0
+404,How could I use or study health care in a university project?,student_style,erik grönvall,3,2,1,1,1
+405,Eu funded and goal creating,academic,kasper støy,not_in_top_k,not_in_top_k,0,0,
+406,How could I use or study eu funded in a university project?,student_style,kasper støy,not_in_top_k,not_in_top_k,0,0,
+407,Social dynamics and best ideas,academic,hanne westh,not_in_top_k,9,0,1,
+408,How could I use or study social dynamics in a university project?,student_style,hanne westh,not_in_top_k,not_in_top_k,0,0,
+409,Software engineering and financial sector,academic,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+410,How could I use or study software engineering in a university project?,student_style,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+411,Ethos lab and novo nordisk,academic,rachel douglas-jones,5,4,1,1,1
+412,How could I use or study ethos lab in a university project?,student_style,rachel douglas-jones,not_in_top_k,not_in_top_k,0,0,
+413,Academic boundaries and ethos lab,academic,michael hockenhull,not_in_top_k,not_in_top_k,0,0,
+414,How could I use or study academic boundaries in a university project?,student_style,michael hockenhull,not_in_top_k,not_in_top_k,0,0,
+415,Risk limiting and washington dc,academic,carsten schürmann,1,1,1,1,0
+416,How could I use or study risk limiting in a university project?,student_style,carsten schürmann,1,1,1,1,0
+417,Building robots and way build,academic,kasper støy,1,1,1,1,0
+418,How could I use or study building robots in a university project?,student_style,kasper støy,3,2,1,1,1
+419,Art culture and left right,academic,anders sundnes løvlie,8,4,1,1,4
+419,Art culture and left right,academic,martin pichlmair,not_in_top_k,not_in_top_k,0,0,
+420,How could I use or study art culture in a university project?,student_style,anders sundnes løvlie,2,1,1,1,1
+420,How could I use or study art culture in a university project?,student_style,martin pichlmair,not_in_top_k,not_in_top_k,0,0,
+421,Old software and software systems,academic,marisa cohn,not_in_top_k,not_in_top_k,0,0,
+422,How could I use or study old software in a university project?,student_style,marisa cohn,10,not_in_top_k,1,0,
+423,Think solution and example know,academic,søren debois,not_in_top_k,not_in_top_k,0,0,
+424,How could I use or study think solution in a university project?,student_style,søren debois,not_in_top_k,not_in_top_k,0,0,
+425,Eye tracking and eye movements,academic,dan witzner hansen,1,1,1,1,0
+426,How could I use or study eye tracking in a university project?,student_style,dan witzner hansen,1,1,1,1,0
+427,Electrical impulses and dk email,academic,anna vallgårda,not_in_top_k,not_in_top_k,0,0,
+427,Electrical impulses and dk email,academic,erik grönvall,not_in_top_k,10,0,1,
+427,Electrical impulses and dk email,academic,jonas fritsch,not_in_top_k,not_in_top_k,0,0,
+428,How could I use or study electrical impulses in a university project?,student_style,anna vallgårda,not_in_top_k,not_in_top_k,0,0,
+428,How could I use or study electrical impulses in a university project?,student_style,erik grönvall,not_in_top_k,not_in_top_k,0,0,
+428,How could I use or study electrical impulses in a university project?,student_style,jonas fritsch,not_in_top_k,not_in_top_k,0,0,
+429,Politics facebook and social media,academic,luca rossi,1,1,1,1,0
+430,How could I use or study politics facebook in a university project?,student_style,luca rossi,not_in_top_k,10,0,1,
+431,Design information and email akav,academic,anna vallgårda,not_in_top_k,not_in_top_k,0,0,
+432,How could I use or study design information in a university project?,student_style,anna vallgårda,not_in_top_k,not_in_top_k,0,0,
+433,Service design and design perspective,academic,lars rune christensen,not_in_top_k,not_in_top_k,0,0,
+433,Service design and design perspective,academic,lene nielsen,1,1,1,1,0
+434,How could I use or study service design in a university project?,student_style,lars rune christensen,not_in_top_k,not_in_top_k,0,0,
+434,How could I use or study service design in a university project?,student_style,lene nielsen,1,1,1,1,0
+435,Microbial fuel and fuel cells,academic,kasper støy,1,1,1,1,0
+436,How could I use or study microbial fuel in a university project?,student_style,kasper støy,7,3,1,1,4
+437,Microbial fuel and fuel cells,academic,kasper støy,1,1,1,1,0
+438,How could I use or study microbial fuel in a university project?,student_style,kasper støy,7,3,1,1,4
+439,Flow robotics and robots able,academic,andres faina,3,3,1,1,0
+439,Flow robotics and robots able,academic,kasper støy,1,1,1,1,0
+440,How could I use or study flow robotics in a university project?,student_style,andres faina,1,1,1,1,0
+440,How could I use or study flow robotics in a university project?,student_style,kasper støy,2,3,1,1,-1
+441,Called deep and computer programs,academic,sebastian risi,4,1,1,1,3
+442,How could I use or study called deep in a university project?,student_style,sebastian risi,4,1,1,1,3
+443,Best paper award and emotional state,academic,sebastian risi,8,not_in_top_k,1,0,
+444,How could I use or study best paper award in a university project?,student_style,sebastian risi,not_in_top_k,not_in_top_k,0,0,
+445,Carnegie mellon and education science,academic,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+446,How could I use or study carnegie mellon in a university project?,student_style,andrzej wasowski,not_in_top_k,not_in_top_k,0,0,
+447,Theoretical computer and aim develop,academic,rasmus ejlers møgelberg,not_in_top_k,not_in_top_k,0,0,
+448,How could I use or study theoretical computer in a university project?,student_style,rasmus ejlers møgelberg,9,not_in_top_k,1,0,
+449,Life easier and considered insufficient,academic,peter sestoft,not_in_top_k,not_in_top_k,0,0,
+450,How could I use or study life easier in a university project?,student_style,peter sestoft,not_in_top_k,not_in_top_k,0,0,
+451,Health care and like health,academic,erik grönvall,2,2,1,1,0
+452,How could I use or study health care in a university project?,student_style,erik grönvall,3,2,1,1,1

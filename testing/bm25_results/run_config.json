@@ -1,0 +1,8 @@
+{
+  "query_count": 452,
+  "unique_query_count": 427,
+  "limit": 10,
+  "document_limit": 100,
+  "index": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_index",
+  "evaluation_note": "Known positives only; incomplete labels"
+}

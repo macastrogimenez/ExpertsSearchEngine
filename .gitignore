@@ -33,3 +33,4 @@ dist/
 *.tmp
 *.temp
 backend/whoosh_index/
+backend/whoosh_bm25_final_index/

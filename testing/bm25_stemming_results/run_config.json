@@ -1,0 +1,11 @@
+{
+  "queries": 452,
+  "unique_queries": 427,
+  "document_limit": 100,
+  "top_k": 10,
+  "aggregation": "discounted_combsum",
+  "stopwords": "disabled for both",
+  "baseline_index": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_index",
+  "stemming_index": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_stemming_index",
+  "evaluation_note": "Incomplete known-positive judgments; not exhaustive relevance labels"
+}

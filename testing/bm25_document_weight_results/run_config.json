@@ -1,0 +1,148 @@
+{
+  "index": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_stemming_stopwords_index",
+  "queries": 452,
+  "depth": 100,
+  "top_k": 10,
+  "configurations": {
+    "baseline": {
+      "paper": 1.0,
+      "project": 1.0,
+      "course": 1.0
+    },
+    "paper1_project1_course2": {
+      "paper": 1.0,
+      "project": 1.0,
+      "course": 2.0
+    },
+    "paper1_project1_course3": {
+      "paper": 1.0,
+      "project": 1.0,
+      "course": 3.0
+    },
+    "paper1_project2_course1": {
+      "paper": 1.0,
+      "project": 2.0,
+      "course": 1.0
+    },
+    "paper1_project2_course2": {
+      "paper": 1.0,
+      "project": 2.0,
+      "course": 2.0
+    },
+    "paper1_project2_course3": {
+      "paper": 1.0,
+      "project": 2.0,
+      "course": 3.0
+    },
+    "paper1_project3_course1": {
+      "paper": 1.0,
+      "project": 3.0,
+      "course": 1.0
+    },
+    "paper1_project3_course2": {
+      "paper": 1.0,
+      "project": 3.0,
+      "course": 2.0
+    },
+    "paper1_project3_course3": {
+      "paper": 1.0,
+      "project": 3.0,
+      "course": 3.0
+    },
+    "paper2_project1_course1": {
+      "paper": 2.0,
+      "project": 1.0,
+      "course": 1.0
+    },
+    "paper2_project1_course2": {
+      "paper": 2.0,
+      "project": 1.0,
+      "course": 2.0
+    },
+    "paper2_project1_course3": {
+      "paper": 2.0,
+      "project": 1.0,
+      "course": 3.0
+    },
+    "paper2_project2_course1": {
+      "paper": 2.0,
+      "project": 2.0,
+      "course": 1.0
+    },
+    "paper2_project2_course2": {
+      "paper": 2.0,
+      "project": 2.0,
+      "course": 2.0
+    },
+    "paper2_project2_course3": {
+      "paper": 2.0,
+      "project": 2.0,
+      "course": 3.0
+    },
+    "paper2_project3_course1": {
+      "paper": 2.0,
+      "project": 3.0,
+      "course": 1.0
+    },
+    "paper2_project3_course2": {
+      "paper": 2.0,
+      "project": 3.0,
+      "course": 2.0
+    },
+    "paper2_project3_course3": {
+      "paper": 2.0,
+      "project": 3.0,
+      "course": 3.0
+    },
+    "paper3_project1_course1": {
+      "paper": 3.0,
+      "project": 1.0,
+      "course": 1.0
+    },
+    "paper3_project1_course2": {
+      "paper": 3.0,
+      "project": 1.0,
+      "course": 2.0
+    },
+    "paper3_project1_course3": {
+      "paper": 3.0,
+      "project": 1.0,
+      "course": 3.0
+    },
+    "paper3_project2_course1": {
+      "paper": 3.0,
+      "project": 2.0,
+      "course": 1.0
+    },
+    "paper3_project2_course2": {
+      "paper": 3.0,
+      "project": 2.0,
+      "course": 2.0
+    },
+    "paper3_project2_course3": {
+      "paper": 3.0,
+      "project": 2.0,
+      "course": 3.0
+    },
+    "paper3_project3_course1": {
+      "paper": 3.0,
+      "project": 3.0,
+      "course": 1.0
+    },
+    "paper3_project3_course2": {
+      "paper": 3.0,
+      "project": 3.0,
+      "course": 2.0
+    },
+    "paper3_project3_course3": {
+      "paper": 3.0,
+      "project": 3.0,
+      "course": 3.0
+    }
+  },
+  "preprocessing": "stemming and stopword removal",
+  "field_boosts": "all fields = 1",
+  "aggregation": "course-title harmonic-discounted CombSUM",
+  "baseline_verified_against_existing_discounted_combsum": true,
+  "notes": "Known-positive labels incomplete; queries may share article sources. Type weights are applied after retrieval; course duplicates retain harmonic discount."
+}

@@ -1,0 +1,453 @@
+query_id,stemming_no_stopwords,stemming_with_stopwords,delta,query,query_type
+1,0.0,0.0,0.0,digital biomarkers for mental health,academic
+2,0.2371977127692962,0.2371977127692962,0.0,Can AI use facial expressions to help understand mental health?,student_style
+3,0.4981892574664128,0.6045093387918965,0.1063200813254837,intelligent building blocks and robotics,academic
+4,0.1815417925373526,0.0,-0.1815417925373526,Can we build furniture that knows its own shape?,student_style
+5,0.5,0.6309297535714575,0.13092975357145753,uncertainty communication in language models,academic
+6,0.0,0.0,0.0,How can chatbots tell us when they are unsure?,student_style
+7,0.5,0.430676558073393,-0.069323441926607,sustainable resilient energy systems,academic
+8,0.0,0.0,0.0,How can technology make renewable energy systems more reliable?,student_style
+9,0.0,0.0,0.0,psychology and human computer interaction design,academic
+10,0.0,0.0,0.0,How can psychology help us design better apps?,student_style
+11,0.6309297535714575,0.5,-0.13092975357145753,telemedicine and video consultations,academic
+12,0.3154648767857287,0.3154648767857287,0.0,How do video appointments change the way doctors treat patients?,student_style
+13,0.5,0.5,0.0,self-healing AI hardware,academic
+14,0.0,0.0,0.0,Can computers repair themselves when something breaks?,student_style
+15,0.0,0.0,0.0,trust in artificial intelligence,academic
+16,0.0,0.0,0.0,Why do people lose trust in AI systems?,student_style
+17,0.6309297535714575,0.6309297535714575,0.0,digital welfare state,academic
+18,0.6309297535714575,0.6309297535714575,0.0,How does digitalisation affect people using public services?,student_style
+19,0.0,0.0,0.0,human AI interaction and system failure,academic
+20,0.0,0.0,0.0,How do people respond when automated systems make mistakes?,student_style
+21,0.3010299956639812,0.3154648767857287,0.014434881121747511,cyberattacks on critical infrastructure,academic
+22,0.6309297535714575,0.6309297535714575,0.0,What would happen if hackers attacked critical infrastructure?,student_style
+23,0.5,0.5,0.0,payment system resilience,academic
+24,0.6309297535714575,1.0,0.36907024642854247,Could we still pay for things if digital payments went down?,student_style
+25,0.3562071871080222,0.3562071871080222,0.0,cyber defence security tools,academic
+26,0.6309297535714575,1.0,0.36907024642854247,How can companies know if their security software actually works?,student_style
+27,0.0,0.0,0.0,Theoretical computer and european conference,academic
+28,0.0,0.0,0.0,How could I use or study theoretical computer in a university project?,student_style
+29,0.0,0.0,0.0,complex networks and supply chain disruptions,academic
+30,0.0,0.0,0.0,How can we predict disruptions in shipping networks?,student_style
+31,1.0,1.0,0.0,responsible AI in digital design,academic
+32,1.0,1.0,0.0,How should designers use AI responsibly?,student_style
+33,0.3333333333333333,0.3333333333333333,0.0,privacy preserving communication,academic
+34,0.0,0.0,0.0,Can we keep our messages private from surveillance?,student_style
+35,0.0,0.0,0.0,computational complexity theory,academic
+36,0.0,0.0,0.0,What kinds of problems are too hard for computers to solve?,student_style
+37,0.0,0.0,0.0,Concrete examples and technical solution,academic
+38,0.0,0.0,0.0,How could I use or study concrete examples in a university project?,student_style
+39,0.0,0.0,0.0,Proposal blocked and blocked german,academic
+40,0.0,0.0,0.0,How could I use or study proposal blocked in a university project?,student_style
+41,1.0,1.0,0.0,linguistically grounded language models,academic
+42,1.0,1.0,0.0,Why do language models struggle to understand how people actually speak?,student_style
+43,0.0,0.0,0.0,Information systems and award presented,academic
+44,0.0,0.0,0.0,How could I use or study information systems in a university project?,student_style
+45,1.0,1.0,0.0,human AI collaboration and responsible AI,academic
+46,1.0,1.0,0.0,How does working with AI change human decisions?,student_style
+47,0.0,0.0,0.0,Large language and language models,academic
+48,0.0,0.2890648263178879,0.2890648263178879,How could I use or study large language in a university project?,student_style
+49,0.5,0.6309297535714575,0.13092975357145753,evolutionary algorithms and AI,academic
+50,1.0,1.0,0.0,Can we use evolution to create better AI?,student_style
+51,0.0,0.0,0.0,organizational learning and digital workplaces,academic
+52,0.0,0.0,0.0,How do employees learn to use new digital tools?,student_style
+53,0.3562071871080222,0.3333333333333333,-0.022873853774688868,climate change and human behaviour,academic
+54,0.3154648767857287,0.2890648263178879,-0.02640005046784083,How does climate change affect human behaviour?,student_style
+55,0.0,0.0,0.0,machine learning and brain signals,academic
+56,0.430676558073393,0.0,-0.430676558073393,Can AI predict what someone will do from brain data?,student_style
+57,0.430676558073393,0.5,0.069323441926607,mathematical foundations of computer science,academic
+58,0.3010299956639812,0.0,-0.3010299956639812,How does advanced maths help us understand programming?,student_style
+59,0.0,0.0,0.0,Early stage and andrzej wąsowski,academic
+60,0.0,0.0,0.0,How could I use or study early stage in a university project?,student_style
+61,0.0,0.0,0.0,Software correctness and going solve,academic
+62,0.0,0.0,0.0,How could I use or study software correctness in a university project?,student_style
+63,0.6509209298071326,0.6131471927654584,-0.037773737041674194,High stakes and stein mixture,academic
+64,0.0,0.0,0.0,How could I use or study high stakes in a university project?,student_style
+65,0.0,0.0,0.0,Dkk million independent and million independent fund,academic
+66,0.0,0.0,0.0,How could I use or study dkk million independent in a university project?,student_style
+67,0.0,0.0,0.0,Sapere aude and assistant received,academic
+68,0.0,0.0,0.0,How could I use or study sapere aude in a university project?,student_style
+69,0.0,0.0,0.0,Mixed reality and sami brandt,academic
+70,0.0,0.0,0.0,How could I use or study mixed reality in a university project?,student_style
+71,0.430676558073393,0.430676558073393,0.0,Design culture and great deal,academic
+72,0.3333333333333333,0.0,-0.3333333333333333,How could I use or study design culture in a university project?,student_style
+73,0.0,0.0,0.0,Teams algorithms and cheetah challenges,academic
+74,0.0,0.0,0.0,How could I use or study teams algorithms in a university project?,student_style
+75,0.0,0.0,0.0,Mads elmkvist and defence academy,academic
+76,0.0,0.3562071871080222,0.3562071871080222,How could I use or study mads elmkvist in a university project?,student_style
+77,0.0,0.0,0.0,Complexity theory and looks like,academic
+78,0.0,0.0,0.0,How could I use or study complexity theory in a university project?,student_style
+79,0.0,0.0,0.0,Chronic illness and auditorium lecture,academic
+80,0.0,0.0,0.0,How could I use or study chronic illness in a university project?,student_style
+81,0.6509209298071326,0.9197207891481876,0.268799859341055,Cyber attacks and science festival,academic
+82,0.6509209298071326,1.0,0.34907907019286744,How could I use or study cyber attacks in a university project?,student_style
+83,1.0,1.0,0.0,High school and school teachers,academic
+84,0.430676558073393,0.5,0.069323441926607,How could I use or study high school in a university project?,student_style
+85,0.3562071871080222,0.3333333333333333,-0.022873853774688868,Foundation developing and machine learning,academic
+86,0.3333333333333333,0.3562071871080222,0.022873853774688868,How could I use or study foundation developing in a university project?,student_style
+87,0.3562071871080222,0.0,-0.3562071871080222,Social groups and lecture watch,academic
+88,0.0,0.0,0.0,How could I use or study social groups in a university project?,student_style
+89,1.0,1.0,0.0,Internet election and election day,academic
+90,1.0,1.0,0.0,How could I use or study internet election in a university project?,student_style
+91,1.0,1.0,0.0,Probabilistic session and session types,academic
+92,1.0,1.0,0.0,How could I use or study probabilistic session in a university project?,student_style
+93,0.5,0.5,0.0,Social network and impact social,academic
+94,0.5,0.5,0.0,How could I use or study social network in a university project?,student_style
+95,0.0,0.0,0.0,Statistical methods and want data,academic
+96,0.0,0.0,0.0,How could I use or study statistical methods in a university project?,student_style
+97,0.0,0.0,0.0,Algorithms diverse and lead better algorithms,academic
+98,0.0,0.0,0.0,How could I use or study algorithms diverse in a university project?,student_style
+99,0.6934264036172708,0.6934264036172708,0.0,Red teaming and llm output,academic
+100,0.1845756967795681,0.2371977127692962,0.0526220159897281,How could I use or study red teaming in a university project?,student_style
+101,0.3562071871080222,0.3868528072345416,0.03064562012651939,Human brain and artificial intelligence,academic
+102,0.0,0.0,0.0,How could I use or study human brain in a university project?,student_style
+103,0.0,0.0,0.0,Villum fonden and synergy grant,academic
+104,0.0,0.0,0.0,How could I use or study villum fonden in a university project?,student_style
+105,0.3868528072345416,0.430676558073393,0.04382375083885143,Query optimisation and tech summit,academic
+106,0.0,0.3154648767857287,0.3154648767857287,How could I use or study query optimisation in a university project?,student_style
+107,0.6131471927654584,0.8503449055347546,0.23719771276929624,Public schools and understanding data,academic
+108,0.8175295903539445,0.9197207891481876,0.1021911987942431,How could I use or study public schools in a university project?,student_style
+109,0.3562071871080222,0.3333333333333333,-0.022873853774688868,Large language and models llms,academic
+110,0.430676558073393,0.3154648767857287,-0.11521168128766429,How could I use or study large language in a university project?,student_style
+111,0.0,0.0,0.0,Start package and package grant,academic
+112,0.0,0.0,0.0,How could I use or study start package in a university project?,student_style
+113,0.0,0.0,0.0,Erc starting and starting grant,academic
+114,0.0,0.0,0.0,How could I use or study erc starting in a university project?,student_style
+115,0.3868528072345416,0.3868528072345416,0.0,Nordic baltic and green transition,academic
+116,0.0,0.0,0.0,How could I use or study nordic baltic in a university project?,student_style
+117,0.8175295903539445,0.8065735963827293,-0.010955993971215161,Hate speech and eu supported,academic
+118,0.0,0.6131471927654584,0.6131471927654584,How could I use or study hate speech in a university project?,student_style
+119,0.1934264036172708,0.2043823975884861,0.0109559939712153,Business models and horizon europe,academic
+120,0.3065735963827292,0.2640681225725909,-0.042505473810138306,How could I use or study business models in a university project?,student_style
+121,0.0,0.0,0.0,Artificial intelligence and human characteristics,academic
+122,0.0,0.0,0.0,How could I use or study artificial intelligence in a university project?,student_style
+123,0.2184074368181641,0.2640681225725909,0.04566068575442678,Recruitment process and ai act,academic
+124,0.0,0.6131471927654584,0.6131471927654584,How could I use or study recruitment process in a university project?,student_style
+125,1.0,1.0,0.0,Eye trackers and marie skłodowska,academic
+126,1.0,1.0,0.0,How could I use or study eye trackers in a university project?,student_style
+127,0.1175161047564271,0.0,-0.1175161047564271,Assistant aims and main area,academic
+128,0.1510196182278052,0.0,-0.1510196182278052,How could I use or study assistant aims in a university project?,student_style
+129,0.0,0.0,0.0,Sami brandt and mixed reality,academic
+130,0.0,0.0,0.0,How could I use or study sami brandt in a university project?,student_style
+131,0.430676558073393,0.5,0.069323441926607,Query optimisation and query plans,academic
+132,0.0,0.3154648767857287,0.3154648767857287,How could I use or study query optimisation in a university project?,student_style
+133,0.2890648263178879,0.3333333333333333,0.044268507015445435,Training data and villum young,academic
+134,0.3868528072345416,0.3333333333333333,-0.05351947390120826,How could I use or study training data in a university project?,student_style
+135,0.6309297535714575,1.0,0.36907024642854247,Just streets and social groups,academic
+136,0.3010299956639812,0.6309297535714575,0.32989975790747633,How could I use or study just streets in a university project?,student_style
+137,0.0,0.0,0.0,Computational complexity and outstanding contributions,academic
+138,0.0,0.0,0.0,How could I use or study computational complexity in a university project?,student_style
+139,0.430676558073393,0.5,0.069323441926607,Big things and journalist dan,academic
+140,0.3154648767857287,0.5,0.1845351232142713,How could I use or study big things in a university project?,student_style
+141,0.5,0.6309297535714575,0.13092975357145753,Public libraries and authorities companies,academic
+142,0.3562071871080222,0.5,0.14379281289197782,How could I use or study public libraries in a university project?,student_style
+143,0.0,0.0,0.0,Language models and ultimately want,academic
+144,0.0,0.0,0.0,How could I use or study language models in a university project?,student_style
+145,0.6309297535714575,0.6309297535714575,0.0,Social networks and network analysis,academic
+146,1.0,1.0,0.0,How could I use or study social networks in a university project?,student_style
+147,0.430676558073393,1.0,0.569323441926607,Financial times and big things,academic
+148,0.0,0.0,0.0,How could I use or study financial times in a university project?,student_style
+149,0.5802792108518124,0.3065735963827292,-0.27370561446908326,Nordic council and law enforcement,academic
+150,0.1772392867840477,0.0,-0.1772392867840477,How could I use or study nordic council in a university project?,student_style
+151,0.0,0.0,0.0,Villum experiment and written language,academic
+152,0.0,0.0,0.0,How could I use or study villum experiment in a university project?,student_style
+153,0.0,0.0,0.0,Real time and marie skłodowska,academic
+154,0.0,0.0,0.0,How could I use or study real time in a university project?,student_style
+155,0.4692787260227564,0.4692787260227564,0.0,Affect relationship and core group,academic
+156,0.2346393630113782,0.4692787260227564,0.2346393630113782,How could I use or study affect relationship in a university project?,student_style
+157,0.3562071871080222,0.3868528072345416,0.03064562012651939,Transformer language and language models,academic
+158,0.0,0.0,0.0,How could I use or study transformer language in a university project?,student_style
+159,0.0,0.0,0.0,Lundbeck foundation and early signs,academic
+160,0.0,0.0,0.0,How could I use or study lundbeck foundation in a university project?,student_style
+161,0.0,0.0,0.0,Science group and human centered,academic
+162,0.0,0.0,0.0,How could I use or study science group in a university project?,student_style
+163,0.5,0.6309297535714575,0.13092975357145753,Center computing and computing education,academic
+164,0.0,0.2890648263178879,0.2890648263178879,How could I use or study center computing in a university project?,student_style
+165,0.430676558073393,0.3868528072345416,-0.04382375083885143,Hate speech and social media platforms,academic
+166,0.2890648263178879,0.3010299956639812,0.011965169346093318,How could I use or study hate speech in a university project?,student_style
+167,0.0,0.0,0.0,Ai powered and learning tools,academic
+168,0.0,0.0,0.0,How could I use or study ai powered in a university project?,student_style
+169,0.0,0.0,0.0,Investigator programme and villum fonden,academic
+170,0.0,0.0,0.0,How could I use or study investigator programme in a university project?,student_style
+171,1.0,1.0,0.0,Neural networks and nervous systems,academic
+172,1.0,1.0,0.0,How could I use or study neural networks in a university project?,student_style
+173,0.0,0.0,0.0,Officially launched and business unit,academic
+174,0.0,0.0,0.0,How could I use or study officially launched in a university project?,student_style
+175,0.2890648263178879,0.3154648767857287,0.02640005046784083,Cooperative enterprise and labour market,academic
+176,0.0,0.3868528072345416,0.3868528072345416,How could I use or study cooperative enterprise in a university project?,student_style
+177,0.0,0.3333333333333333,0.3333333333333333,Complexity theory and erc starting,academic
+178,0.0,0.0,0.0,How could I use or study complexity theory in a university project?,student_style
+179,0.6131471927654584,0.3868528072345416,-0.2262943855309168,Internet voting and kroner respective,academic
+180,0.6131471927654584,0.6131471927654584,0.0,How could I use or study internet voting in a university project?,student_style
+181,0.6309297535714575,1.0,0.36907024642854247,Center climate and climate emergency,academic
+182,0.0,1.0,1.0,How could I use or study center climate in a university project?,student_style
+183,1.0,1.0,0.0,Modl ai and video game,academic
+184,0.6309297535714575,0.430676558073393,-0.20025319549806453,How could I use or study modl ai in a university project?,student_style
+185,0.3562071871080222,0.430676558073393,0.07446937096537082,Scale projects and percent large,academic
+186,0.0,0.0,0.0,How could I use or study scale projects in a university project?,student_style
+187,0.0,0.0,0.0,Qualitative quantitative and data strong,academic
+188,0.0,0.0,0.0,How could I use or study qualitative quantitative in a university project?,student_style
+189,0.4333451882998622,0.4508533838815827,0.01750819558172051,Cooperative enterprise and labour market,academic
+190,0.0,0.4161811555487308,0.4161811555487308,How could I use or study cooperative enterprise in a university project?,student_style
+191,0.0,0.0,0.0,Innovation projects and nikolaj oppermann,academic
+192,0.0,0.0,0.0,How could I use or study innovation projects in a university project?,student_style
+193,0.6309297535714575,0.6309297535714575,0.0,Young academy and networks data,academic
+194,0.0,0.0,0.0,How could I use or study young academy in a university project?,student_style
+195,0.0,0.0,0.0,Social cultural and humanities social,academic
+196,0.1934264036172708,0.2184074368181641,0.024981033200893316,How could I use or study social cultural in a university project?,student_style
+197,0.3154648767857287,0.6309297535714575,0.3154648767857288,Mega projects and villum kann,academic
+198,0.0,0.0,0.0,How could I use or study mega projects in a university project?,student_style
+199,0.0,0.0,0.0,Science design and air lab,academic
+200,0.0,0.0,0.0,How could I use or study science design in a university project?,student_style
+201,0.3562071871080222,0.3333333333333333,-0.022873853774688868,Emotional response and children suffer,academic
+202,0.0,0.0,0.0,How could I use or study emotional response in a university project?,student_style
+203,1.0,1.0,0.0,Cellular automata and reinforcement learning,academic
+204,1.0,1.0,0.0,How could I use or study cellular automata in a university project?,student_style
+205,1.0,1.0,0.0,City planners and gaps bicycle,academic
+206,1.0,1.0,0.0,How could I use or study city planners in a university project?,student_style
+207,0.3786706301269835,0.3007851801491498,-0.0778854499778337,Consolidator grant and solving climate,academic
+208,0.0,0.0,0.0,How could I use or study consolidator grant in a university project?,student_style
+209,1.0,0.0,-1.0,Brit ross and ross winthereik,academic
+210,0.0,0.0,0.0,How could I use or study brit ross in a university project?,student_style
+211,0.3065735963827292,0.3065735963827292,0.0,Small scale and creating sustainable,academic
+212,0.0,0.0,0.0,How could I use or study small scale in a university project?,student_style
+213,0.0,0.0,0.0,Machine learning and interaction user,academic
+214,0.0,0.0,0.0,How could I use or study machine learning in a university project?,student_style
+215,0.0,0.0,0.0,Young researcher and carlsberg foundation,academic
+216,0.0,0.0,0.0,How could I use or study young researcher in a university project?,student_style
+217,0.3562071871080222,0.3154648767857287,-0.040742310322293473,Data storage and anders kjærulff,academic
+218,0.3333333333333333,0.0,-0.3333333333333333,How could I use or study data storage in a university project?,student_style
+219,0.0,0.0,0.0,Knowledge transfer and global scale,academic
+220,0.0,0.0,0.0,How could I use or study knowledge transfer in a university project?,student_style
+221,0.6309297535714575,0.5,-0.13092975357145753,Law enforcement and civil liberties,academic
+222,0.0,0.0,0.0,How could I use or study law enforcement in a university project?,student_style
+223,0.0,0.0,0.0,Inge lehmann and lehmann programme,academic
+224,0.0,0.0,0.0,How could I use or study inge lehmann in a university project?,student_style
+225,0.0,0.2890648263178879,0.2890648263178879,Center welfare and policy making,academic
+226,0.2890648263178879,0.430676558073393,0.14161173175550512,How could I use or study center welfare in a university project?,student_style
+227,1.0,1.0,0.0,Anastassia vybornova and bicycle infrastructures,academic
+228,0.0,0.0,0.0,How could I use or study anastassia vybornova in a university project?,student_style
+229,1.0,1.0,0.0,Eye information and eye movement,academic
+230,1.0,1.0,0.0,How could I use or study eye information in a university project?,student_style
+231,0.0,0.0,0.0,Large companies and create basis,academic
+232,0.0,0.0,0.0,How could I use or study large companies in a university project?,student_style
+233,0.0,0.3562071871080222,0.3562071871080222,Test subjects and scientific paper,academic
+234,0.0,0.0,0.0,How could I use or study test subjects in a university project?,student_style
+235,0.0,0.0,0.0,Best paper award and computational complexity,academic
+236,0.0,0.0,0.0,How could I use or study best paper award in a university project?,student_style
+237,0.0,0.0,0.0,Million dkk and awarded close,academic
+238,0.0,0.0,0.0,How could I use or study million dkk in a university project?,student_style
+239,0.6309297535714575,0.5,-0.13092975357145753,Personal data and privacy issues,academic
+240,0.3868528072345416,0.0,-0.3868528072345416,How could I use or study personal data in a university project?,student_style
+241,0.6309297535714575,0.6309297535714575,0.0,Comply law and make difficult,academic
+242,0.0,0.3868528072345416,0.3868528072345416,How could I use or study comply law in a university project?,student_style
+243,0.0,0.0,0.0,Image analysis and indian institute,academic
+244,0.0,0.0,0.0,How could I use or study image analysis in a university project?,student_style
+245,0.2371977127692962,0.2640681225725909,0.026870409803294693,Villum synergy and synergy grant,academic
+246,0.0,0.0,0.0,How could I use or study villum synergy in a university project?,student_style
+247,0.0,0.3154648767857287,0.3154648767857287,Villum experiment and public trust,academic
+248,0.0,0.0,0.0,How could I use or study villum experiment in a university project?,student_style
+249,1.0,1.0,0.0,Climate crisis and inaugural lecture,academic
+250,0.0,1.0,1.0,How could I use or study climate crisis in a university project?,student_style
+251,0.1671604549662022,0.2346393630113782,0.067478908045176,Computing education and teaching practices,academic
+252,0.4692787260227564,0.758586654365518,0.2893079283427616,How could I use or study computing education in a university project?,student_style
+253,0.430676558073393,0.5,0.069323441926607,Deep learning and natural language,academic
+254,0.0,0.0,0.0,How could I use or study deep learning in a university project?,student_style
+255,1.0,1.0,0.0,Mental healthcare and refugee camps,academic
+256,0.5706417189553201,0.6934264036172708,0.1227846846619507,How could I use or study mental healthcare in a university project?,student_style
+257,1.0,1.0,0.0,Neural networks and creative ai,academic
+258,1.0,1.0,0.0,How could I use or study neural networks in a university project?,student_style
+259,0.0,0.0,0.0,Online discourse and social media platforms,academic
+260,0.2371977127692962,0.3868528072345416,0.1496550944652454,How could I use or study online discourse in a university project?,student_style
+261,0.3868528072345416,0.430676558073393,0.04382375083885143,Kann rasmussen and villum fonden,academic
+262,0.0,0.0,0.0,How could I use or study kann rasmussen in a university project?,student_style
+263,1.0,1.0,0.0,Billion word and misinformation detection,academic
+264,0.0,0.0,0.0,How could I use or study billion word in a university project?,student_style
+265,1.0,1.0,0.0,Law human and bicycle infrastructure,academic
+266,1.0,1.0,0.0,How could I use or study law human in a university project?,student_style
+267,0.0,0.0,0.0,Piece software and software runs,academic
+268,0.0,0.0,0.0,How could I use or study piece software in a university project?,student_style
+269,1.0,1.0,0.0,Billion word and misinformation detection,academic
+270,0.0,0.0,0.0,How could I use or study billion word in a university project?,student_style
+271,0.0,0.0,0.0,Welfare state and podcast series,academic
+272,0.0,0.0,0.0,How could I use or study welfare state in a university project?,student_style
+273,0.0,0.0,0.0,Welfare seekers and anette petersen,academic
+274,0.0,0.0,0.0,How could I use or study welfare seekers in a university project?,student_style
+275,0.6309297535714575,0.5,-0.13092975357145753,Public services and user involvement,academic
+276,0.5,0.5,0.0,How could I use or study public services in a university project?,student_style
+277,0.2184074368181641,0.5437713091520254,0.3253638723338613,Pioneer centre and dan witzner,academic
+278,0.0,0.0,0.0,How could I use or study pioneer centre in a university project?,student_style
+279,1.0,1.0,0.0,Climate initiatives and papua guinea,academic
+280,0.0,0.6309297535714575,0.6309297535714575,How could I use or study climate initiatives in a university project?,student_style
+281,0.0,0.0,0.0,Face recognition and data analytics,academic
+282,0.0,0.0,0.0,How could I use or study face recognition in a university project?,student_style
+283,0.0,0.0,0.0,Start package and foundation start,academic
+284,0.0,0.0,0.0,How could I use or study start package in a university project?,student_style
+285,0.0,0.0,0.0,Velux foundation and young investigator,academic
+286,0.0,0.0,0.0,How could I use or study velux foundation in a university project?,student_style
+287,1.0,1.0,0.0,Data scientists and hardware resources,academic
+288,0.3868528072345416,0.0,-0.3868528072345416,How could I use or study data scientists in a university project?,student_style
+289,0.5,0.430676558073393,-0.069323441926607,Cyber security and goes wrong,academic
+290,0.6309297535714575,0.5,-0.13092975357145753,How could I use or study cyber security in a university project?,student_style
+291,0.0,0.0,0.0,Gender inequality and women men,academic
+292,0.0,0.0,0.0,How could I use or study gender inequality in a university project?,student_style
+293,0.6309297535714575,0.6309297535714575,0.0,Training program and european commission,academic
+294,0.0,0.5,0.5,How could I use or study training program in a university project?,student_style
+295,0.7039180890341347,0.7039180890341347,0.0,Natural language and language processing,academic
+296,0.7039180890341347,0.7039180890341347,0.0,How could I use or study natural language in a university project?,student_style
+297,0.0,0.0,0.0,Centre government and lars frelle,academic
+298,0.0,0.0,0.0,How could I use or study centre government in a university project?,student_style
+299,0.0,0.0,0.0,Training data and robot solve,academic
+300,0.0,0.0,0.0,How could I use or study training data in a university project?,student_style
+301,1.0,1.0,0.0,Cyber security and level cybersecurity,academic
+302,1.0,0.9197207891481876,-0.08027921085181244,How could I use or study cyber security in a university project?,student_style
+303,0.6131471927654584,0.6131471927654584,0.0,Fake news and social dynamics,academic
+304,0.1845756967795681,0.2043823975884861,0.019806700808918,How could I use or study fake news in a university project?,student_style
+305,0.0,0.0,0.0,Data relation and big data,academic
+306,0.0,0.0,0.0,How could I use or study data relation in a university project?,student_style
+307,0.0,0.0,0.0,Mental health and healthcare providers,academic
+308,0.0,0.0,0.0,How could I use or study mental health in a university project?,student_style
+309,1.0,1.0,0.0,Software engineering and computer science social,academic
+310,1.0,1.0,0.0,How could I use or study software engineering in a university project?,student_style
+311,1.0,1.0,0.0,Elections voting and risk limiting,academic
+312,1.0,1.0,0.0,How could I use or study elections voting in a university project?,student_style
+313,0.0,0.0,0.0,Inauguration lecture and seeks make,academic
+314,0.0,0.0,0.0,How could I use or study inauguration lecture in a university project?,student_style
+315,0.4461533376408799,0.3007851801491498,-0.1453681574917301,Smart contracts and ai methods,academic
+316,0.1020973951229116,0.169580102636808,0.0674827075138964,How could I use or study smart contracts in a university project?,student_style
+317,0.0,0.0,0.0,Primary schools and sector create,academic
+318,0.0,0.0,0.0,How could I use or study primary schools in a university project?,student_style
+319,0.6309297535714575,0.6309297535714575,0.0,Blockchain systems and dkk million grant,academic
+320,0.6309297535714575,0.6309297535714575,0.0,How could I use or study blockchain systems in a university project?,student_style
+321,1.0,1.0,0.0,Refugee camps and rohingya refugees,academic
+322,1.0,1.0,0.0,How could I use or study refugee camps in a university project?,student_style
+323,0.6309297535714575,0.0,-0.6309297535714575,Want change and used real,academic
+324,0.0,0.0,0.0,How could I use or study want change in a university project?,student_style
+325,0.3562071871080222,0.5,0.14379281289197782,Data data and natural language,academic
+326,0.0,0.0,0.0,How could I use or study data data in a university project?,student_style
+327,0.430676558073393,0.430676558073393,0.0,Fake news and crisis situations,academic
+328,0.0,0.0,0.0,How could I use or study fake news in a university project?,student_style
+329,0.6309297535714575,0.5,-0.13092975357145753,Language understanding and natural language,academic
+330,0.3868528072345416,0.3154648767857287,-0.07138793044881286,How could I use or study language understanding in a university project?,student_style
+331,0.0,0.0,0.0,Air lab and emotional aspects,academic
+332,0.0,0.0,0.0,How could I use or study air lab in a university project?,student_style
+333,0.0,0.0,0.0,Data protection and allow understand,academic
+334,0.0,0.0,0.0,How could I use or study data protection in a university project?,student_style
+335,0.0,0.0,0.0,Women data and receives dkk,academic
+336,0.0,0.0,0.0,How could I use or study women data in a university project?,student_style
+337,1.0,1.0,0.0,Carbon emissions and actually make,academic
+338,1.0,1.0,0.0,How could I use or study carbon emissions in a university project?,student_style
+339,0.2890648263178879,0.0,-0.2890648263178879,Game theory and algorithmic game,academic
+340,0.0,0.0,0.0,How could I use or study game theory in a university project?,student_style
+341,1.0,1.0,0.0,Flow robotics and make easy,academic
+342,1.0,1.0,0.0,How could I use or study flow robotics in a university project?,student_style
+343,0.3868528072345416,0.3562071871080222,-0.03064562012651939,Privacy users and andrzej wąsowski,academic
+344,0.0,0.3868528072345416,0.3868528072345416,How could I use or study privacy users in a university project?,student_style
+345,0.6309297535714575,0.6309297535714575,0.0,Artificial life and young investigator,academic
+346,1.0,1.0,0.0,How could I use or study artificial life in a university project?,student_style
+347,0.0,0.0,0.0,Public schools and understand data,academic
+348,0.0,0.0,0.0,How could I use or study public schools in a university project?,student_style
+349,0.5,0.0,-0.5,Irina shklovski and virt eu,academic
+350,0.0,0.0,0.0,How could I use or study irina shklovski in a university project?,student_style
+351,1.0,1.0,0.0,Ai generated and super mario,academic
+352,1.0,1.0,0.0,How could I use or study ai generated in a university project?,student_style
+353,0.0,0.0,0.0,Nathan fielder and american tv,academic
+354,0.0,0.3562071871080222,0.3562071871080222,How could I use or study nathan fielder in a university project?,student_style
+355,0.0,0.0,0.0,Andrzej wąsowski and basic idea,academic
+356,0.0,0.0,0.0,How could I use or study andrzej wąsowski in a university project?,student_style
+357,0.5,0.5,0.0,Payment systems and vulnerable groups,academic
+358,0.0,0.2890648263178879,0.2890648263178879,How could I use or study payment systems in a university project?,student_style
+359,0.0,0.0,0.0,Interactive theorem and leading researcher,academic
+360,0.0,0.0,0.0,How could I use or study interactive theorem in a university project?,student_style
+361,0.6309297535714575,0.6309297535714575,0.0,Big tech and energy grid,academic
+362,0.0,0.0,0.0,How could I use or study big tech in a university project?,student_style
+363,0.0,0.0,0.0,Mobile phones and make practical,academic
+364,0.0,0.0,0.0,How could I use or study mobile phones in a university project?,student_style
+365,1.0,1.0,0.0,Election result and democratic process,academic
+366,1.0,1.0,0.0,How could I use or study election result in a university project?,student_style
+367,0.0,0.0,0.0,European blockchain and roman beck,academic
+368,0.0,0.0,0.0,How could I use or study european blockchain in a university project?,student_style
+369,0.0,0.0,0.0,Self driving and personal data,academic
+370,0.0,0.2043823975884861,0.2043823975884861,How could I use or study self driving in a university project?,student_style
+371,0.0,0.0,0.0,Commonly used and world changes,academic
+372,0.0,0.0,0.0,How could I use or study commonly used in a university project?,student_style
+373,0.0,0.0,0.0,Multiparty computation and world leading,academic
+374,0.0,0.0,0.0,How could I use or study multiparty computation in a university project?,student_style
+375,0.0,0.0,0.0,Mobile phones and jari kickbusch,academic
+376,0.0,0.0,0.0,How could I use or study mobile phones in a university project?,student_style
+377,0.6309297535714575,1.0,0.36907024642854247,Case management and management systems,academic
+378,1.0,1.0,0.0,How could I use or study case management in a university project?,student_style
+379,1.0,1.0,0.0,Reinforcement learning and step forward,academic
+380,1.0,1.0,0.0,How could I use or study reinforcement learning in a university project?,student_style
+381,0.0,0.0,0.0,Fake news and center information,academic
+382,0.0,0.0,0.0,How could I use or study fake news in a university project?,student_style
+383,1.0,1.0,0.0,Voting machines and used elections,academic
+384,0.6309297535714575,0.6309297535714575,0.0,How could I use or study voting machines in a university project?,student_style
+385,0.3333333333333333,0.3562071871080222,0.022873853774688868,Relatively open and public debate,academic
+386,0.0,0.0,0.0,How could I use or study relatively open in a university project?,student_style
+387,0.6309297535714575,1.0,0.36907024642854247,Voting machine and wall street,academic
+388,0.6309297535714575,0.6309297535714575,0.0,How could I use or study voting machine in a university project?,student_style
+389,0.3010299956639812,0.3333333333333333,0.03230333766935212,Make robot and extreme conditions,academic
+390,0.0,0.3010299956639812,0.3010299956639812,How could I use or study make robot in a university project?,student_style
+391,0.3868528072345416,0.6309297535714575,0.24407694633691596,Case management and phd projects,academic
+392,1.0,1.0,0.0,How could I use or study case management in a university project?,student_style
+393,0.6131471927654584,0.6131471927654584,0.0,Security critical and trust outcome,academic
+394,0.6131471927654584,0.6131471927654584,0.0,How could I use or study security critical in a university project?,student_style
+395,0.3333333333333333,0.3562071871080222,0.022873853774688868,Science talk and algorithmic decision,academic
+396,0.0,0.0,0.0,How could I use or study science talk in a university project?,student_style
+397,0.430676558073393,0.430676558073393,0.0,Efficient algorithms and rasmus pagh,academic
+398,0.3154648767857287,0.3868528072345416,0.07138793044881286,How could I use or study efficient algorithms in a university project?,student_style
+399,0.4161811555487308,0.4161811555487308,0.0,Quality assurance and robots humans,academic
+400,0.4776237035032179,0.8529278650606567,0.37530416155743873,How could I use or study quality assurance in a university project?,student_style
+401,0.2890648263178879,0.0,-0.2890648263178879,Algorithmic game and game theory,academic
+402,0.0,0.0,0.0,How could I use or study algorithmic game in a university project?,student_style
+403,1.0,0.6309297535714575,-0.36907024642854247,Health care and example communication,academic
+404,0.6309297535714575,1.0,0.36907024642854247,How could I use or study health care in a university project?,student_style
+405,0.0,0.0,0.0,Eu funded and goal creating,academic
+406,0.0,0.0,0.0,How could I use or study eu funded in a university project?,student_style
+407,0.6309297535714575,0.5,-0.13092975357145753,Social dynamics and best ideas,academic
+408,0.0,0.3333333333333333,0.3333333333333333,How could I use or study social dynamics in a university project?,student_style
+409,0.0,0.0,0.0,Software engineering and financial sector,academic
+410,0.0,0.0,0.0,How could I use or study software engineering in a university project?,student_style
+411,0.3868528072345416,0.3868528072345416,0.0,Ethos lab and novo nordisk,academic
+412,0.0,0.5,0.5,How could I use or study ethos lab in a university project?,student_style
+413,0.0,0.0,0.0,Academic boundaries and ethos lab,academic
+414,0.0,0.0,0.0,How could I use or study academic boundaries in a university project?,student_style
+415,1.0,1.0,0.0,Risk limiting and washington dc,academic
+416,1.0,1.0,0.0,How could I use or study risk limiting in a university project?,student_style
+417,1.0,1.0,0.0,Building robots and way build,academic
+418,1.0,1.0,0.0,How could I use or study building robots in a university project?,student_style
+419,0.6131471927654584,0.3868528072345416,-0.2262943855309168,Art culture and left right,academic
+420,0.6509209298071326,0.2640681225725909,-0.3868528072345417,How could I use or study art culture in a university project?,student_style
+421,0.0,0.0,0.0,Old software and software systems,academic
+422,0.0,0.0,0.0,How could I use or study old software in a university project?,student_style
+423,0.0,0.0,0.0,Think solution and example know,academic
+424,0.0,0.0,0.0,How could I use or study think solution in a university project?,student_style
+425,1.0,1.0,0.0,Eye tracking and eye movements,academic
+426,1.0,1.0,0.0,How could I use or study eye tracking in a university project?,student_style
+427,0.0,0.0,0.0,Electrical impulses and dk email,academic
+428,0.0,0.0,0.0,How could I use or study electrical impulses in a university project?,student_style
+429,1.0,1.0,0.0,Politics facebook and social media,academic
+430,1.0,1.0,0.0,How could I use or study politics facebook in a university project?,student_style
+431,0.0,0.0,0.0,Design information and email akav,academic
+432,0.0,0.0,0.0,How could I use or study design information in a university project?,student_style
+433,0.6131471927654584,0.6131471927654584,0.0,Service design and design perspective,academic
+434,0.6131471927654584,0.6131471927654584,0.0,How could I use or study service design in a university project?,student_style
+435,1.0,1.0,0.0,Microbial fuel and fuel cells,academic
+436,0.6309297535714575,0.6309297535714575,0.0,How could I use or study microbial fuel in a university project?,student_style
+437,1.0,1.0,0.0,Microbial fuel and fuel cells,academic
+438,0.6309297535714575,0.6309297535714575,0.0,How could I use or study microbial fuel in a university project?,student_style
+439,1.0,1.0,0.0,Flow robotics and robots able,academic
+440,1.0,1.0,0.0,How could I use or study flow robotics in a university project?,student_style
+441,0.5,0.6309297535714575,0.13092975357145753,Called deep and computer programs,academic
+442,1.0,1.0,0.0,How could I use or study called deep in a university project?,student_style
+443,0.0,0.0,0.0,Best paper award and emotional state,academic
+444,0.0,0.0,0.0,How could I use or study best paper award in a university project?,student_style
+445,0.0,0.0,0.0,Carnegie mellon and education science,academic
+446,0.0,0.0,0.0,How could I use or study carnegie mellon in a university project?,student_style
+447,0.0,0.0,0.0,Theoretical computer and aim develop,academic
+448,0.0,0.0,0.0,How could I use or study theoretical computer in a university project?,student_style
+449,0.0,0.0,0.0,Life easier and considered insufficient,academic
+450,0.0,0.0,0.0,How could I use or study life easier in a university project?,student_style
+451,0.6309297535714575,0.6309297535714575,0.0,Health care and like health,academic
+452,0.6309297535714575,1.0,0.36907024642854247,How could I use or study health care in a university project?,student_style
