@@ -4,13 +4,17 @@ import java.util.List;
 public class VectorDocument{
         private String documentType;
         private String documentId;
+        private String title;
+        private String snippet;
         private List<String> contributors;
         private List<Double> embedding;
 
-        public VectorDocument (String docType, String docID, List<String> contrList ){
+        public VectorDocument (String docType, String docID, String title, String snippet, List<String> contrList ){
                 this.contributors = contrList;
                 this.documentType = docType;
                 this.documentId = docID;
+                this.title = title;
+                this.snippet = snippet;
         }
 
         
@@ -39,6 +43,14 @@ public class VectorDocument{
 
         public String getDocumentId() {
                 return documentId;
+        }
+
+        public String getDocumentTitle() {
+                return title;
+        }
+
+        public String getDocSnippet(){
+                return snippet;
         }
 
         public List<String> getContributors() {

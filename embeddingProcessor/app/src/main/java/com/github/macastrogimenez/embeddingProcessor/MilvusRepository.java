@@ -98,6 +98,22 @@ public class MilvusRepository implements AutoCloseable {
 
             schema.addField(
                 AddFieldReq.builder()
+                .fieldName("title")
+                .dataType(DataType.VarChar)
+                .maxLength(256)
+                .build()
+            );
+
+            schema.addField(
+                AddFieldReq.builder()
+                .fieldName("snippet")
+                .dataType(DataType.VarChar)
+                .maxLength(1024)
+                .build()
+            );
+
+            schema.addField(
+                AddFieldReq.builder()
                 .fieldName("embeddings")
                 .dataType(DataType.FloatVector)
                 .dimension(DIMENSIONS)
@@ -193,6 +209,8 @@ public class MilvusRepository implements AutoCloseable {
             // 3. extract doc type and doc id
             String docType = document.getDocumentType();
             String docId = document.getDocumentId();
+            String docTitle = document.getDocumentTitle();
+            String docSnippet = document.getDocSnippet();
             List<String> docContributors = document.getContributors();
 
             // 4. check for null doc id, blank doc id, length longer than 256 and length of doc id + doc type shorter than 256
@@ -216,6 +234,8 @@ public class MilvusRepository implements AutoCloseable {
             // 7. add to json object doctype
             row.addProperty("document_type", docType);
             row.addProperty("document_id", docId);
+            row.addProperty("title", docTitle);
+            row.addProperty("snippet", docSnippet);
             // 8. add to json object docID
 
             row.add(
@@ -270,7 +290,9 @@ public class MilvusRepository implements AutoCloseable {
                 List.of(
                     "document_type",
                     "document_id",
-                    "contributors"
+                    "contributors",
+                    "title",
+                    "snippet"
                 )
             )
             .consistencyLevel(ConsistencyLevel.STRONG)
@@ -293,6 +315,8 @@ public class MilvusRepository implements AutoCloseable {
 
             String docType = metadata.get("document_type").toString();
             String docId = metadata.get("document_id").toString();
+            String docTitle = metadata.get("title").toString();
+            String docSnippet = metadata.get("snippet").toString();
             
             // extracting contributors and passing the data as a stream into a List
             List<String> contributors = List.of();
@@ -304,7 +328,7 @@ public class MilvusRepository implements AutoCloseable {
             
             float score = sr.getScore();
 
-            VectorSearchResult vr = new VectorSearchResult(docType, docId, contributors ,score);
+            VectorSearchResult vr = new VectorSearchResult(docType, docId, docTitle, docSnippet, contributors ,score);
             results.add(vr);
         }
         // 6. return list object
@@ -364,6 +388,8 @@ public class MilvusRepository implements AutoCloseable {
 
             String docType = metadata.get("document_type").toString();
             String docId = metadata.get("document_id").toString();
+            String docTitle = metadata.get("title").toString();
+            String docSnippet = metadata.get("snippet").toString();
             float score = sr.getScore();
 
             List<String> contributors = new ArrayList<>();
@@ -373,7 +399,7 @@ public class MilvusRepository implements AutoCloseable {
                     .map((item) -> (String) item).toList();
             }
 
-            VectorSearchResult vr = new VectorSearchResult(docType, docId, contributors, score);
+            VectorSearchResult vr = new VectorSearchResult(docType, docId, docTitle, docSnippet, contributors, score);
             results.add(vr);
         }
         // 6. return list object

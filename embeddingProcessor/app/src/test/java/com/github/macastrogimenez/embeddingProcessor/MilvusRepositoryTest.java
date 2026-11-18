@@ -51,9 +51,11 @@ public class MilvusRepositoryTest {
             List<String> contributors = new ArrayList<>();
             contributors.add("miguel");    
             contributors.add("peter");    
+
+            String dummyTitle = "testTitle";
             
             for (int i = 0; i < 2; i++) {
-                VectorDocument vd = new VectorDocument("paper", Integer.toString(i),contributors);
+                VectorDocument vd = new VectorDocument("paper", Integer.toString(i),dummyTitle, "this should be the abstract or description of the doc",contributors);
                 vd.setEmbedding(vectorsList.get(i));
                 vectorsDocs.add(i,vd);
             }
