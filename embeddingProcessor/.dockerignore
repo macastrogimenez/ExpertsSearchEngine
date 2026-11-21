@@ -1,0 +1,11 @@
+.gradle/
+**/build/
+.git/
+.idea/
+.vscode/
+.DS_Store
+env.sh
+.env
+.env.*
+*.pem
+*.key
