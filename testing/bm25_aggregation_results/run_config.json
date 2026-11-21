@@ -1,0 +1,24 @@
+{
+  "index": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_stemming_stopwords_index",
+  "queries": 452,
+  "depth": 100,
+  "top_k": 10,
+  "methods": [
+    "combmax",
+    "combmin",
+    "combsum",
+    "combmnz",
+    "combmean",
+    "discounted_combsum"
+  ],
+  "bm25f": {
+    "B": 0.75,
+    "K1": 1.2
+  },
+  "preprocessing": "stemming and stopword removal",
+  "field_boosts": "all fields = 1 (baseline MultifieldParser)",
+  "course_discounting": "only discounted_combsum",
+  "combmin_definition": "minimum positive score among retrieved matching documents",
+  "combmnz_definition": "sum(scores) * number of matching documents",
+  "note": "Known-positive labels incomplete; queries may be dependent."
+}

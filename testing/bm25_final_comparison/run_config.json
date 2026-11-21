@@ -1,0 +1,10 @@
+{
+  "original_index": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_index",
+  "tuned_index": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_stemming_stopwords_index",
+  "query_count": 452,
+  "depth": 100,
+  "top_k": 10,
+  "original": "no stemming, no stopword removal, equal field weights, CombSUM, equal type weights",
+  "tuned": "stemming + stopwords, equal field weights, discounted CombSUM, paper:project:course = 1:3:1",
+  "notes": "Known-positive labels incomplete. Both pipelines use top 100; tuning used same queries so this is an in-sample comparison."
+}

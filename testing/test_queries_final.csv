@@ -1,0 +1,453 @@
+query,query_type,expected_experts
+digital biomarkers for mental health,academic,Stella Grasshof; Martin Lund Trinhammer
+Can AI use facial expressions to help understand mental health?,student_style,Stella Grasshof; Martin Lund Trinhammer
+intelligent building blocks and robotics,academic,Sebastian Risi; Andres Faina; Rodrigo Moreno Garcia
+Can we build furniture that knows its own shape?,student_style,Sebastian Risi; Andres Faina; Rodrigo Moreno Garcia
+uncertainty communication in language models,academic,Christian Hardmeier
+How can chatbots tell us when they are unsure?,student_style,Christian Hardmeier
+sustainable resilient energy systems,academic,Yvonne Dittrich
+How can technology make renewable energy systems more reliable?,student_style,Yvonne Dittrich
+psychology and human computer interaction design,academic,Elisa Mekler
+How can psychology help us design better apps?,student_style,Elisa Mekler
+telemedicine and video consultations,academic,Cæcilie Sloth Laursen
+How do video appointments change the way doctors treat patients?,student_style,Cæcilie Sloth Laursen
+self-healing AI hardware,academic,Sebastian Risi
+Can computers repair themselves when something breaks?,student_style,Sebastian Risi
+trust in artificial intelligence,academic,Aske Mottelson
+Why do people lose trust in AI systems?,student_style,Aske Mottelson
+digital welfare state,academic,Irina Papazu
+How does digitalisation affect people using public services?,student_style,Irina Papazu
+human AI interaction and system failure,academic,Paolo Burelli
+How do people respond when automated systems make mistakes?,student_style,Paolo Burelli
+cyberattacks on critical infrastructure,academic,Oksana Kulyk
+What would happen if hackers attacked critical infrastructure?,student_style,Oksana Kulyk
+payment system resilience,academic,Sunniva Sandbukt
+Could we still pay for things if digital payments went down?,student_style,Sunniva Sandbukt
+cyber defence security tools,academic,Willard Rafnsson
+How can companies know if their security software actually works?,student_style,Willard Rafnsson
+Theoretical computer and european conference,academic,Thore Husfeldt; Riko Jacob
+How could I use or study theoretical computer in a university project?,student_style,Thore Husfeldt; Riko Jacob
+complex networks and supply chain disruptions,academic,Jonas Juul
+How can we predict disruptions in shipping networks?,student_style,Jonas Juul
+responsible AI in digital design,academic,Jichen Zhu
+How should designers use AI responsibly?,student_style,Jichen Zhu
+privacy preserving communication,academic,Rosario Giustolisi
+Can we keep our messages private from surveillance?,student_style,Rosario Giustolisi
+computational complexity theory,academic,Nutan Limaye
+What kinds of problems are too hard for computers to solve?,student_style,Nutan Limaye
+Concrete examples and technical solution,academic,Raha Asadi
+How could I use or study concrete examples in a university project?,student_style,Raha Asadi
+Proposal blocked and blocked german,academic,Carsten Schürmann
+How could I use or study proposal blocked in a university project?,student_style,Carsten Schürmann
+linguistically grounded language models,academic,Rob van der Goot
+Why do language models struggle to understand how people actually speak?,student_style,Rob van der Goot
+Information systems and award presented,academic,Louise Harder Fischer; Asger Balle Pedersen
+How could I use or study information systems in a university project?,student_style,Louise Harder Fischer; Asger Balle Pedersen
+human AI collaboration and responsible AI,academic,Jichen Zhu
+How does working with AI change human decisions?,student_style,Jichen Zhu
+Large language and language models,academic,Christian Hardmeier
+How could I use or study large language in a university project?,student_style,Christian Hardmeier
+evolutionary algorithms and AI,academic,Sebastian Risi
+Can we use evolution to create better AI?,student_style,Sebastian Risi
+organizational learning and digital workplaces,academic,Oliver Krancher
+How do employees learn to use new digital tools?,student_style,Oliver Krancher
+climate change and human behaviour,academic,Vedran Sekara
+How does climate change affect human behaviour?,student_style,Vedran Sekara
+machine learning and brain signals,academic,Paolo Burelli
+Can AI predict what someone will do from brain data?,student_style,Paolo Burelli
+mathematical foundations of computer science,academic,Rasmus Ejlers Møgelberg
+How does advanced maths help us understand programming?,student_style,Rasmus Ejlers Møgelberg
+Early stage and andrzej wąsowski,academic,Andrzej Wasowski; Alessandro Bruni; Aske Mottelson
+How could I use or study early stage in a university project?,student_style,Andrzej Wasowski; Alessandro Bruni; Aske Mottelson
+Software correctness and going solve,academic,Marco Carbone
+How could I use or study software correctness in a university project?,student_style,Marco Carbone
+High stakes and stein mixture,academic,Andrzej Wasowski; Christian Hardmeier
+How could I use or study high stakes in a university project?,student_style,Andrzej Wasowski; Christian Hardmeier
+Dkk million independent and million independent fund,academic,Andrzej Wasowski
+How could I use or study dkk million independent in a university project?,student_style,Andrzej Wasowski
+Sapere aude and assistant received,academic,Eduard Kamburjan
+How could I use or study sapere aude in a university project?,student_style,Eduard Kamburjan
+Mixed reality and sami brandt,academic,Christian Sivertsen; Justyna Starostka
+How could I use or study mixed reality in a university project?,student_style,Christian Sivertsen; Justyna Starostka
+Design culture and great deal,academic,Thomas Binder
+How could I use or study design culture in a university project?,student_style,Thomas Binder
+Teams algorithms and cheetah challenges,academic,Veronika Cheplygina
+How could I use or study teams algorithms in a university project?,student_style,Veronika Cheplygina
+Mads elmkvist and defence academy,academic,Carsten Schürmann
+How could I use or study mads elmkvist in a university project?,student_style,Carsten Schürmann
+Complexity theory and looks like,academic,Nutan Limaye
+How could I use or study complexity theory in a university project?,student_style,Nutan Limaye
+Chronic illness and auditorium lecture,academic,Anna Vallgårda
+How could I use or study chronic illness in a university project?,student_style,Anna Vallgårda
+Cyber attacks and science festival,academic,Carsten Schürmann; Oksana Kulyk
+How could I use or study cyber attacks in a university project?,student_style,Carsten Schürmann; Oksana Kulyk
+High school and school teachers,academic,Louise Meier Carlsen
+How could I use or study high school in a university project?,student_style,Louise Meier Carlsen
+Foundation developing and machine learning,academic,Alessandro Bruni
+How could I use or study foundation developing in a university project?,student_style,Alessandro Bruni
+Social groups and lecture watch,academic,Vasilis Galis
+How could I use or study social groups in a university project?,student_style,Vasilis Galis
+Internet election and election day,academic,Carsten Schürmann
+How could I use or study internet election in a university project?,student_style,Carsten Schürmann
+Probabilistic session and session types,academic,Marco Carbone
+How could I use or study probabilistic session in a university project?,student_style,Marco Carbone
+Social network and impact social,academic,Michael Szell
+How could I use or study social network in a university project?,student_style,Michael Szell
+Statistical methods and want data,academic,Jonas Juul
+How could I use or study statistical methods in a university project?,student_style,Jonas Juul
+Algorithms diverse and lead better algorithms,academic,Veronika Cheplygina
+How could I use or study algorithms diverse in a university project?,student_style,Veronika Cheplygina
+Red teaming and llm output,academic,Leon Derczynski; Nanna Inie
+How could I use or study red teaming in a university project?,student_style,Leon Derczynski; Nanna Inie
+Human brain and artificial intelligence,academic,Paolo Burelli
+How could I use or study human brain in a university project?,student_style,Paolo Burelli
+Villum fonden and synergy grant,academic,Anna Rogers
+How could I use or study villum fonden in a university project?,student_style,Anna Rogers
+Query optimisation and tech summit,academic,Zoi Kaoudi
+How could I use or study query optimisation in a university project?,student_style,Zoi Kaoudi
+Public schools and understanding data,academic,Irina Papazu; Simy Kaur Gahoonia
+How could I use or study public schools in a university project?,student_style,Irina Papazu; Simy Kaur Gahoonia
+Large language and models llms,academic,Leon Derczynski
+How could I use or study large language in a university project?,student_style,Leon Derczynski
+Start package and package grant,academic,Martin Hentschel
+How could I use or study start package in a university project?,student_style,Martin Hentschel
+Erc starting and starting grant,academic,Alena Thiel
+How could I use or study erc starting in a university project?,student_style,Alena Thiel
+Nordic baltic and green transition,academic,Vasilis Galis
+How could I use or study nordic baltic in a university project?,student_style,Vasilis Galis
+Hate speech and eu supported,academic,Luca Rossi; Christian Hardmeier
+How could I use or study hate speech in a university project?,student_style,Luca Rossi; Christian Hardmeier
+Business models and horizon europe,academic,Daniel Fürstenau; Camille Rønn
+How could I use or study business models in a university project?,student_style,Daniel Fürstenau; Camille Rønn
+Artificial intelligence and human characteristics,academic,Nanna Inie
+How could I use or study artificial intelligence in a university project?,student_style,Nanna Inie
+Recruitment process and ai act,academic,Toine Bogers; Mesut Kaya
+How could I use or study recruitment process in a university project?,student_style,Toine Bogers; Mesut Kaya
+Eye trackers and marie skłodowska,academic,Dan Witzner Hansen
+How could I use or study eye trackers in a university project?,student_style,Dan Witzner Hansen
+Assistant aims and main area,academic,Steffen Dalsgaard; Elisa Mekler; Raquel Robinson; Mylène Tanferri
+How could I use or study assistant aims in a university project?,student_style,Steffen Dalsgaard; Elisa Mekler; Raquel Robinson; Mylène Tanferri
+Sami brandt and mixed reality,academic,Sami Brandt
+How could I use or study sami brandt in a university project?,student_style,Sami Brandt
+Query optimisation and query plans,academic,Zoi Kaoudi
+How could I use or study query optimisation in a university project?,student_style,Zoi Kaoudi
+Training data and villum young,academic,Anna Rogers
+How could I use or study training data in a university project?,student_style,Anna Rogers
+Just streets and social groups,academic,Michael Szell
+How could I use or study just streets in a university project?,student_style,Michael Szell
+Computational complexity and outstanding contributions,academic,Thore Husfeldt; Nutan Limaye
+How could I use or study computational complexity in a university project?,student_style,Thore Husfeldt; Nutan Limaye
+Big things and journalist dan,academic,Bent Flyvbjerg
+How could I use or study big things in a university project?,student_style,Bent Flyvbjerg
+Public libraries and authorities companies,academic,Jörn Christiansson
+How could I use or study public libraries in a university project?,student_style,Jörn Christiansson
+Language models and ultimately want,academic,Elisa Bassignana
+How could I use or study language models in a university project?,student_style,Elisa Bassignana
+Social networks and network analysis,academic,Michele Coscia
+How could I use or study social networks in a university project?,student_style,Michele Coscia
+Financial times and big things,academic,Bent Flyvbjerg
+How could I use or study financial times in a university project?,student_style,Bent Flyvbjerg
+Nordic council and law enforcement,academic,Vasilis Galis; Jörn Christiansson
+How could I use or study nordic council in a university project?,student_style,Vasilis Galis; Jörn Christiansson
+Villum experiment and written language,academic,Mircea Lungu
+How could I use or study villum experiment in a university project?,student_style,Mircea Lungu
+Real time and marie skłodowska,academic,Alena Thiel
+How could I use or study real time in a university project?,student_style,Alena Thiel
+Affect relationship and core group,academic,Anna Vallgårda; Erik Grönvall; Jonas Fritsch
+How could I use or study affect relationship in a university project?,student_style,Anna Vallgårda; Erik Grönvall; Jonas Fritsch
+Transformer language and language models,academic,Anna Rogers
+How could I use or study transformer language in a university project?,student_style,Anna Rogers
+Lundbeck foundation and early signs,academic,Stella Grasshof
+How could I use or study lundbeck foundation in a university project?,student_style,Stella Grasshof
+Science group and human centered,academic,Aske Mottelson
+How could I use or study science group in a university project?,student_style,Aske Mottelson
+Center computing and computing education,academic,Claus Brabrand
+How could I use or study center computing in a university project?,student_style,Claus Brabrand
+Hate speech and social media platforms,academic,Leon Derczynski
+How could I use or study hate speech in a university project?,student_style,Leon Derczynski
+Ai powered and learning tools,academic,Kasper Støy
+How could I use or study ai powered in a university project?,student_style,Kasper Støy
+Investigator programme and villum fonden,academic,Radu-Cristian Curticapean
+How could I use or study investigator programme in a university project?,student_style,Radu-Cristian Curticapean
+Neural networks and nervous systems,academic,Sebastian Risi
+How could I use or study neural networks in a university project?,student_style,Sebastian Risi
+Officially launched and business unit,academic,Martin Pichlmair
+How could I use or study officially launched in a university project?,student_style,Martin Pichlmair
+Cooperative enterprise and labour market,academic,Lene Nielsen
+How could I use or study cooperative enterprise in a university project?,student_style,Lene Nielsen
+Complexity theory and erc starting,academic,Radu-Cristian Curticapean
+How could I use or study complexity theory in a university project?,student_style,Radu-Cristian Curticapean
+Internet voting and kroner respective,academic,Oksana Kulyk; Paloma Thomé de Lima
+How could I use or study internet voting in a university project?,student_style,Oksana Kulyk; Paloma Thomé de Lima
+Center climate and climate emergency,academic,Steffen Dalsgaard
+How could I use or study center climate in a university project?,student_style,Steffen Dalsgaard
+Modl ai and video game,academic,Sebastian Risi
+How could I use or study modl ai in a university project?,student_style,Sebastian Risi
+Scale projects and percent large,academic,Bent Flyvbjerg
+How could I use or study scale projects in a university project?,student_style,Bent Flyvbjerg
+Qualitative quantitative and data strong,academic,Bent Flyvbjerg
+How could I use or study qualitative quantitative in a university project?,student_style,Bent Flyvbjerg
+Cooperative enterprise and labour market,academic,Lene Nielsen; Vasiliki Baka; Hanne Westh
+How could I use or study cooperative enterprise in a university project?,student_style,Lene Nielsen; Vasiliki Baka; Hanne Westh
+Innovation projects and nikolaj oppermann,academic,Cancan Wang
+How could I use or study innovation projects in a university project?,student_style,Cancan Wang
+Young academy and networks data,academic,Michael Szell
+How could I use or study young academy in a university project?,student_style,Michael Szell
+Social cultural and humanities social,academic,Luca Rossi; Vasilieos-Spyridon Vlassis
+How could I use or study social cultural in a university project?,student_style,Luca Rossi; Vasilieos-Spyridon Vlassis
+Mega projects and villum kann,academic,Bent Flyvbjerg
+How could I use or study mega projects in a university project?,student_style,Bent Flyvbjerg
+Science design and air lab,academic,Rasmus Ejlers Møgelberg; Jonas Fritsch
+How could I use or study science design in a university project?,student_style,Rasmus Ejlers Møgelberg; Jonas Fritsch
+Emotional response and children suffer,academic,Morten Roed Frederiksen
+How could I use or study emotional response in a university project?,student_style,Morten Roed Frederiksen
+Cellular automata and reinforcement learning,academic,Sebastian Risi
+How could I use or study cellular automata in a university project?,student_style,Sebastian Risi
+City planners and gaps bicycle,academic,Michael Szell
+How could I use or study city planners in a university project?,student_style,Michael Szell
+Consolidator grant and solving climate,academic,James Maguire; Steffen Dalsgaard; Hasib Ahsan; Cancan Wang; Priscila Santos da Costa
+How could I use or study consolidator grant in a university project?,student_style,James Maguire; Steffen Dalsgaard; Hasib Ahsan; Cancan Wang; Priscila Santos da Costa
+Brit ross and ross winthereik,academic,James Maguire
+How could I use or study brit ross in a university project?,student_style,James Maguire
+Small scale and creating sustainable,academic,Steffen Dalsgaard; Priscila Santos da Costa
+How could I use or study small scale in a university project?,student_style,Steffen Dalsgaard; Priscila Santos da Costa
+Machine learning and interaction user,academic,Christopher Gad; Jonas Fritsch
+How could I use or study machine learning in a university project?,student_style,Christopher Gad; Jonas Fritsch
+Young researcher and carlsberg foundation,academic,Luca Maria Aiello
+How could I use or study young researcher in a university project?,student_style,Luca Maria Aiello
+Data storage and anders kjærulff,academic,James Maguire
+How could I use or study data storage in a university project?,student_style,James Maguire
+Knowledge transfer and global scale,academic,Michele Coscia
+How could I use or study knowledge transfer in a university project?,student_style,Michele Coscia
+Law enforcement and civil liberties,academic,Vasilis Galis
+How could I use or study law enforcement in a university project?,student_style,Vasilis Galis
+Inge lehmann and lehmann programme,academic,Therese Graversen; Veronika Cheplygina
+How could I use or study inge lehmann in a university project?,student_style,Therese Graversen; Veronika Cheplygina
+Center welfare and policy making,academic,Irina Papazu
+How could I use or study center welfare in a university project?,student_style,Irina Papazu
+Anastassia vybornova and bicycle infrastructures,academic,Michael Szell
+How could I use or study anastassia vybornova in a university project?,student_style,Michael Szell
+Eye information and eye movement,academic,Dan Witzner Hansen
+How could I use or study eye information in a university project?,student_style,Dan Witzner Hansen
+Large companies and create basis,academic,Michael Hockenhull
+How could I use or study large companies in a university project?,student_style,Michael Hockenhull
+Test subjects and scientific paper,academic,Aske Mottelson
+How could I use or study test subjects in a university project?,student_style,Aske Mottelson
+Best paper award and computational complexity,academic,Thore Husfeldt; Nutan Limaye
+How could I use or study best paper award in a university project?,student_style,Thore Husfeldt; Nutan Limaye
+Million dkk and awarded close,academic,Steffen Dalsgaard; Priscila Santos da Costa
+How could I use or study million dkk in a university project?,student_style,Steffen Dalsgaard; Priscila Santos da Costa
+Personal data and privacy issues,academic,Louise Barkhuus
+How could I use or study personal data in a university project?,student_style,Louise Barkhuus
+Comply law and make difficult,academic,Thomas Hildebrandt
+How could I use or study comply law in a university project?,student_style,Thomas Hildebrandt
+Image analysis and indian institute,academic,Yvonne Dittrich
+How could I use or study image analysis in a university project?,student_style,Yvonne Dittrich
+Villum synergy and synergy grant,academic,Sebastian Risi; Anders Sundnes Løvlie
+How could I use or study villum synergy in a university project?,student_style,Sebastian Risi; Anders Sundnes Løvlie
+Villum experiment and public trust,academic,Oksana Kulyk
+How could I use or study villum experiment in a university project?,student_style,Oksana Kulyk
+Climate crisis and inaugural lecture,academic,Steffen Dalsgaard
+How could I use or study climate crisis in a university project?,student_style,Steffen Dalsgaard
+Computing education and teaching practices,academic,Claus Brabrand; Pawel Grabarczyk; Therese Graversen
+How could I use or study computing education in a university project?,student_style,Claus Brabrand; Pawel Grabarczyk; Therese Graversen
+Deep learning and natural language,academic,Barbara Plank
+How could I use or study deep learning in a university project?,student_style,Barbara Plank
+Mental healthcare and refugee camps,academic,Lars Rune Christensen; Hasib Ahsan
+How could I use or study mental healthcare in a university project?,student_style,Lars Rune Christensen; Hasib Ahsan
+Neural networks and creative ai,academic,Sebastian Risi
+How could I use or study neural networks in a university project?,student_style,Sebastian Risi
+Online discourse and social media platforms,academic,Leon Derczynski; Nanna Inie
+How could I use or study online discourse in a university project?,student_style,Leon Derczynski; Nanna Inie
+Kann rasmussen and villum fonden,academic,Bent Flyvbjerg
+How could I use or study kann rasmussen in a university project?,student_style,Bent Flyvbjerg
+Billion word and misinformation detection,academic,Leon Derczynski
+How could I use or study billion word in a university project?,student_style,Leon Derczynski
+Law human and bicycle infrastructure,academic,Michael Szell
+How could I use or study law human in a university project?,student_style,Michael Szell
+Piece software and software runs,academic,Marco Carbone
+How could I use or study piece software in a university project?,student_style,Marco Carbone
+Billion word and misinformation detection,academic,Leon Derczynski
+How could I use or study billion word in a university project?,student_style,Leon Derczynski
+Welfare state and podcast series,academic,Kasper Støy; Michael Hockenhull
+How could I use or study welfare state in a university project?,student_style,Kasper Støy; Michael Hockenhull
+Welfare seekers and anette petersen,academic,Lars Rune Christensen; Thomas Hildebrandt
+How could I use or study welfare seekers in a university project?,student_style,Lars Rune Christensen; Thomas Hildebrandt
+Public services and user involvement,academic,Jörn Christiansson
+How could I use or study public services in a university project?,student_style,Jörn Christiansson
+Pioneer centre and dan witzner,academic,Peter Sestoft; Barbara Plank
+How could I use or study pioneer centre in a university project?,student_style,Peter Sestoft; Barbara Plank
+Climate initiatives and papua guinea,academic,Steffen Dalsgaard
+How could I use or study climate initiatives in a university project?,student_style,Steffen Dalsgaard
+Face recognition and data analytics,academic,Vasilis Galis
+How could I use or study face recognition in a university project?,student_style,Vasilis Galis
+Start package and foundation start,academic,Jichen Zhu
+How could I use or study start package in a university project?,student_style,Jichen Zhu
+Velux foundation and young investigator,academic,Roberta Sinatra
+How could I use or study velux foundation in a university project?,student_style,Roberta Sinatra
+Data scientists and hardware resources,academic,Pinar Tözün
+How could I use or study data scientists in a university project?,student_style,Pinar Tözün
+Cyber security and goes wrong,academic,Oksana Kulyk
+How could I use or study cyber security in a university project?,student_style,Oksana Kulyk
+Gender inequality and women men,academic,Roberta Sinatra
+How could I use or study gender inequality in a university project?,student_style,Roberta Sinatra
+Training program and european commission,academic,Andrzej Wasowski
+How could I use or study training program in a university project?,student_style,Andrzej Wasowski
+Natural language and language processing,academic,Barbara Plank; Rob van der Goot; Anders Giovanni Møller
+How could I use or study natural language in a university project?,student_style,Barbara Plank; Rob van der Goot; Anders Giovanni Møller
+Centre government and lars frelle,academic,Peter Sestoft; Jens Schmidt; Bent Flyvbjerg
+How could I use or study centre government in a university project?,student_style,Peter Sestoft; Jens Schmidt; Bent Flyvbjerg
+Training data and robot solve,academic,Sebastian Risi
+How could I use or study training data in a university project?,student_style,Sebastian Risi
+Cyber security and level cybersecurity,academic,Carsten Schürmann; Oksana Kulyk
+How could I use or study cyber security in a university project?,student_style,Carsten Schürmann; Oksana Kulyk
+Fake news and social dynamics,academic,Luca Rossi; Michele Coscia
+How could I use or study fake news in a university project?,student_style,Luca Rossi; Michele Coscia
+Data relation and big data,academic,James Maguire
+How could I use or study data relation in a university project?,student_style,James Maguire
+Mental health and healthcare providers,academic,Leon Derczynski
+How could I use or study mental health in a university project?,student_style,Leon Derczynski
+Software engineering and computer science social,academic,Yvonne Dittrich
+How could I use or study software engineering in a university project?,student_style,Yvonne Dittrich
+Elections voting and risk limiting,academic,Carsten Schürmann
+How could I use or study elections voting in a university project?,student_style,Carsten Schürmann
+Inauguration lecture and seeks make,academic,Thore Husfeldt
+How could I use or study inauguration lecture in a university project?,student_style,Thore Husfeldt
+Smart contracts and ai methods,academic,Steffen Dalsgaard; Sebastian Risi; Leon Derczynski; Barbara Plank; Bernardo Machado David
+How could I use or study smart contracts in a university project?,student_style,Steffen Dalsgaard; Sebastian Risi; Leon Derczynski; Barbara Plank; Bernardo Machado David
+Primary schools and sector create,academic,Vasilis Galis
+How could I use or study primary schools in a university project?,student_style,Vasilis Galis
+Blockchain systems and dkk million grant,academic,Bernardo Machado David
+How could I use or study blockchain systems in a university project?,student_style,Bernardo Machado David
+Refugee camps and rohingya refugees,academic,Lars Rune Christensen; Hasib Ahsan
+How could I use or study refugee camps in a university project?,student_style,Lars Rune Christensen; Hasib Ahsan
+Want change and used real,academic,Bernardo Machado David
+How could I use or study want change in a university project?,student_style,Bernardo Machado David
+Data data and natural language,academic,Barbara Plank
+How could I use or study data data in a university project?,student_style,Barbara Plank
+Fake news and crisis situations,academic,Leon Derczynski
+How could I use or study fake news in a university project?,student_style,Leon Derczynski
+Language understanding and natural language,academic,Barbara Plank
+How could I use or study language understanding in a university project?,student_style,Barbara Plank
+Air lab and emotional aspects,academic,Jonas Fritsch
+How could I use or study air lab in a university project?,student_style,Jonas Fritsch
+Data protection and allow understand,academic,Rachel Douglas-Jones; Marisa Cohn
+How could I use or study data protection in a university project?,student_style,Rachel Douglas-Jones; Marisa Cohn
+Women data and receives dkk,academic,Natalie Schluter; Barbara Plank
+How could I use or study women data in a university project?,student_style,Natalie Schluter; Barbara Plank
+Carbon emissions and actually make,academic,Steffen Dalsgaard
+How could I use or study carbon emissions in a university project?,student_style,Steffen Dalsgaard
+Game theory and algorithmic game,academic,Thore Husfeldt
+How could I use or study game theory in a university project?,student_style,Thore Husfeldt
+Flow robotics and make easy,academic,Kasper Støy
+How could I use or study flow robotics in a university project?,student_style,Kasper Støy
+Privacy users and andrzej wąsowski,academic,Andrzej Wasowski
+How could I use or study privacy users in a university project?,student_style,Andrzej Wasowski
+Artificial life and young investigator,academic,Sebastian Risi
+How could I use or study artificial life in a university project?,student_style,Sebastian Risi
+Public schools and understand data,academic,Christopher Gad
+How could I use or study public schools in a university project?,student_style,Christopher Gad
+Irina shklovski and virt eu,academic,Rachel Douglas-Jones
+How could I use or study irina shklovski in a university project?,student_style,Rachel Douglas-Jones
+Ai generated and super mario,academic,Sebastian Risi
+How could I use or study ai generated in a university project?,student_style,Sebastian Risi
+Nathan fielder and american tv,academic,Carsten Schürmann
+How could I use or study nathan fielder in a university project?,student_style,Carsten Schürmann
+Andrzej wąsowski and basic idea,academic,Andrzej Wasowski
+How could I use or study andrzej wąsowski in a university project?,student_style,Andrzej Wasowski
+Payment systems and vulnerable groups,academic,Sunniva Sandbukt
+How could I use or study payment systems in a university project?,student_style,Sunniva Sandbukt
+Interactive theorem and leading researcher,academic,Thore Husfeldt
+How could I use or study interactive theorem in a university project?,student_style,Thore Husfeldt
+Big tech and energy grid,academic,James Maguire
+How could I use or study big tech in a university project?,student_style,James Maguire
+Mobile phones and make practical,academic,Lars Rune Christensen
+How could I use or study mobile phones in a university project?,student_style,Lars Rune Christensen
+Election result and democratic process,academic,Carsten Schürmann
+How could I use or study election result in a university project?,student_style,Carsten Schürmann
+European blockchain and roman beck,academic,Thore Husfeldt
+How could I use or study european blockchain in a university project?,student_style,Thore Husfeldt
+Self driving and personal data,academic,Søren Debois; Kasper Støy
+How could I use or study self driving in a university project?,student_style,Søren Debois; Kasper Støy
+Commonly used and world changes,academic,Peter Sestoft
+How could I use or study commonly used in a university project?,student_style,Peter Sestoft
+Multiparty computation and world leading,academic,Thore Husfeldt
+How could I use or study multiparty computation in a university project?,student_style,Thore Husfeldt
+Mobile phones and jari kickbusch,academic,Luca Rossi; Vasilis Galis
+How could I use or study mobile phones in a university project?,student_style,Luca Rossi; Vasilis Galis
+Case management and management systems,academic,Thomas Hildebrandt
+How could I use or study case management in a university project?,student_style,Thomas Hildebrandt
+Reinforcement learning and step forward,academic,Sebastian Risi
+How could I use or study reinforcement learning in a university project?,student_style,Sebastian Risi
+Fake news and center information,academic,Thore Husfeldt
+How could I use or study fake news in a university project?,student_style,Thore Husfeldt
+Voting machines and used elections,academic,Carsten Schürmann
+How could I use or study voting machines in a university project?,student_style,Carsten Schürmann
+Relatively open and public debate,academic,Luca Rossi
+How could I use or study relatively open in a university project?,student_style,Luca Rossi
+Voting machine and wall street,academic,Carsten Schürmann
+How could I use or study voting machine in a university project?,student_style,Carsten Schürmann
+Make robot and extreme conditions,academic,Sebastian Risi
+How could I use or study make robot in a university project?,student_style,Sebastian Risi
+Case management and phd projects,academic,Thomas Hildebrandt
+How could I use or study case management in a university project?,student_style,Thomas Hildebrandt
+Security critical and trust outcome,academic,Thore Husfeldt; Carsten Schürmann
+How could I use or study security critical in a university project?,student_style,Thore Husfeldt; Carsten Schürmann
+Science talk and algorithmic decision,academic,Thore Husfeldt
+How could I use or study science talk in a university project?,student_style,Thore Husfeldt
+Efficient algorithms and rasmus pagh,academic,Thore Husfeldt
+How could I use or study efficient algorithms in a university project?,student_style,Thore Husfeldt
+Quality assurance and robots humans,academic,Yvonne Dittrich; Andrzej Wasowski; Claus Brabrand
+How could I use or study quality assurance in a university project?,student_style,Yvonne Dittrich; Andrzej Wasowski; Claus Brabrand
+Algorithmic game and game theory,academic,Thore Husfeldt
+How could I use or study algorithmic game in a university project?,student_style,Thore Husfeldt
+Health care and example communication,academic,Erik Grönvall
+How could I use or study health care in a university project?,student_style,Erik Grönvall
+Eu funded and goal creating,academic,Kasper Støy
+How could I use or study eu funded in a university project?,student_style,Kasper Støy
+Social dynamics and best ideas,academic,Hanne Westh
+How could I use or study social dynamics in a university project?,student_style,Hanne Westh
+Software engineering and financial sector,academic,Andrzej Wasowski
+How could I use or study software engineering in a university project?,student_style,Andrzej Wasowski
+Ethos lab and novo nordisk,academic,Rachel Douglas-Jones
+How could I use or study ethos lab in a university project?,student_style,Rachel Douglas-Jones
+Academic boundaries and ethos lab,academic,Michael Hockenhull
+How could I use or study academic boundaries in a university project?,student_style,Michael Hockenhull
+Risk limiting and washington dc,academic,Carsten Schürmann
+How could I use or study risk limiting in a university project?,student_style,Carsten Schürmann
+Building robots and way build,academic,Kasper Støy
+How could I use or study building robots in a university project?,student_style,Kasper Støy
+Art culture and left right,academic,Anders Sundnes Løvlie; Martin Pichlmair
+How could I use or study art culture in a university project?,student_style,Anders Sundnes Løvlie; Martin Pichlmair
+Old software and software systems,academic,Marisa Cohn
+How could I use or study old software in a university project?,student_style,Marisa Cohn
+Think solution and example know,academic,Søren Debois
+How could I use or study think solution in a university project?,student_style,Søren Debois
+Eye tracking and eye movements,academic,Dan Witzner Hansen
+How could I use or study eye tracking in a university project?,student_style,Dan Witzner Hansen
+Electrical impulses and dk email,academic,Anna Vallgårda; Erik Grönvall; Jonas Fritsch
+How could I use or study electrical impulses in a university project?,student_style,Anna Vallgårda; Erik Grönvall; Jonas Fritsch
+Politics facebook and social media,academic,Luca Rossi
+How could I use or study politics facebook in a university project?,student_style,Luca Rossi
+Design information and email akav,academic,Anna Vallgårda
+How could I use or study design information in a university project?,student_style,Anna Vallgårda
+Service design and design perspective,academic,Lars Rune Christensen; Lene Nielsen
+How could I use or study service design in a university project?,student_style,Lars Rune Christensen; Lene Nielsen
+Microbial fuel and fuel cells,academic,Kasper Støy
+How could I use or study microbial fuel in a university project?,student_style,Kasper Støy
+Microbial fuel and fuel cells,academic,Kasper Støy
+How could I use or study microbial fuel in a university project?,student_style,Kasper Støy
+Flow robotics and robots able,academic,Kasper Støy; Andres Faina
+How could I use or study flow robotics in a university project?,student_style,Kasper Støy; Andres Faina
+Called deep and computer programs,academic,Sebastian Risi
+How could I use or study called deep in a university project?,student_style,Sebastian Risi
+Best paper award and emotional state,academic,Sebastian Risi
+How could I use or study best paper award in a university project?,student_style,Sebastian Risi
+Carnegie mellon and education science,academic,Andrzej Wasowski
+How could I use or study carnegie mellon in a university project?,student_style,Andrzej Wasowski
+Theoretical computer and aim develop,academic,Rasmus Ejlers Møgelberg
+How could I use or study theoretical computer in a university project?,student_style,Rasmus Ejlers Møgelberg
+Life easier and considered insufficient,academic,Peter Sestoft
+How could I use or study life easier in a university project?,student_style,Peter Sestoft
+Health care and like health,academic,Erik Grönvall
+How could I use or study health care in a university project?,student_style,Erik Grönvall

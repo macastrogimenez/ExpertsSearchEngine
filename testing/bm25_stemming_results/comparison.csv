@@ -1,0 +1,453 @@
+query_id,query,query_type,top_k_overlap,same_top_1
+1,digital biomarkers for mental health,academic,9,1
+2,Can AI use facial expressions to help understand mental health?,student_style,8,0
+3,intelligent building blocks and robotics,academic,7,1
+4,Can we build furniture that knows its own shape?,student_style,2,0
+5,uncertainty communication in language models,academic,8,1
+6,How can chatbots tell us when they are unsure?,student_style,5,0
+7,sustainable resilient energy systems,academic,8,1
+8,How can technology make renewable energy systems more reliable?,student_style,9,1
+9,psychology and human computer interaction design,academic,8,1
+10,How can psychology help us design better apps?,student_style,5,0
+11,telemedicine and video consultations,academic,9,1
+12,How do video appointments change the way doctors treat patients?,student_style,5,0
+13,self-healing AI hardware,academic,10,1
+14,Can computers repair themselves when something breaks?,student_style,5,1
+15,trust in artificial intelligence,academic,9,0
+16,Why do people lose trust in AI systems?,student_style,8,1
+17,digital welfare state,academic,8,1
+18,How does digitalisation affect people using public services?,student_style,9,1
+19,human AI interaction and system failure,academic,6,1
+20,How do people respond when automated systems make mistakes?,student_style,6,1
+21,cyberattacks on critical infrastructure,academic,7,0
+22,What would happen if hackers attacked critical infrastructure?,student_style,5,0
+23,payment system resilience,academic,5,0
+24,Could we still pay for things if digital payments went down?,student_style,9,0
+25,cyber defence security tools,academic,9,1
+26,How can companies know if their security software actually works?,student_style,10,1
+27,Theoretical computer and european conference,academic,4,1
+28,How could I use or study theoretical computer in a university project?,student_style,4,0
+29,complex networks and supply chain disruptions,academic,5,0
+30,How can we predict disruptions in shipping networks?,student_style,5,1
+31,responsible AI in digital design,academic,7,1
+32,How should designers use AI responsibly?,student_style,6,1
+33,privacy preserving communication,academic,9,1
+34,Can we keep our messages private from surveillance?,student_style,5,1
+35,computational complexity theory,academic,5,0
+36,What kinds of problems are too hard for computers to solve?,student_style,6,0
+37,Concrete examples and technical solution,academic,7,0
+38,How could I use or study concrete examples in a university project?,student_style,7,0
+39,Proposal blocked and blocked german,academic,5,0
+40,How could I use or study proposal blocked in a university project?,student_style,6,1
+41,linguistically grounded language models,academic,9,1
+42,Why do language models struggle to understand how people actually speak?,student_style,6,1
+43,Information systems and award presented,academic,6,0
+44,How could I use or study information systems in a university project?,student_style,8,1
+45,human AI collaboration and responsible AI,academic,8,1
+46,How does working with AI change human decisions?,student_style,8,1
+47,Large language and language models,academic,9,1
+48,How could I use or study large language in a university project?,student_style,5,1
+49,evolutionary algorithms and AI,academic,8,0
+50,Can we use evolution to create better AI?,student_style,5,1
+51,organizational learning and digital workplaces,academic,5,1
+52,How do employees learn to use new digital tools?,student_style,6,1
+53,climate change and human behaviour,academic,7,1
+54,How does climate change affect human behaviour?,student_style,6,0
+55,machine learning and brain signals,academic,9,1
+56,Can AI predict what someone will do from brain data?,student_style,7,1
+57,mathematical foundations of computer science,academic,7,0
+58,How does advanced maths help us understand programming?,student_style,7,0
+59,Early stage and andrzej wąsowski,academic,6,1
+60,How could I use or study early stage in a university project?,student_style,6,1
+61,Software correctness and going solve,academic,8,1
+62,How could I use or study software correctness in a university project?,student_style,8,1
+63,High stakes and stein mixture,academic,9,1
+64,How could I use or study high stakes in a university project?,student_style,5,1
+65,Dkk million independent and million independent fund,academic,6,0
+66,How could I use or study dkk million independent in a university project?,student_style,6,1
+67,Sapere aude and assistant received,academic,3,0
+68,How could I use or study sapere aude in a university project?,student_style,6,1
+69,Mixed reality and sami brandt,academic,10,0
+70,How could I use or study mixed reality in a university project?,student_style,7,0
+71,Design culture and great deal,academic,7,0
+72,How could I use or study design culture in a university project?,student_style,8,1
+73,Teams algorithms and cheetah challenges,academic,7,0
+74,How could I use or study teams algorithms in a university project?,student_style,5,0
+75,Mads elmkvist and defence academy,academic,10,1
+76,How could I use or study mads elmkvist in a university project?,student_style,6,1
+77,Complexity theory and looks like,academic,3,0
+78,How could I use or study complexity theory in a university project?,student_style,5,0
+79,Chronic illness and auditorium lecture,academic,5,0
+80,How could I use or study chronic illness in a university project?,student_style,6,1
+81,Cyber attacks and science festival,academic,9,1
+82,How could I use or study cyber attacks in a university project?,student_style,7,0
+83,High school and school teachers,academic,7,1
+84,How could I use or study high school in a university project?,student_style,4,1
+85,Foundation developing and machine learning,academic,6,1
+86,How could I use or study foundation developing in a university project?,student_style,5,0
+87,Social groups and lecture watch,academic,6,1
+88,How could I use or study social groups in a university project?,student_style,5,0
+89,Internet election and election day,academic,7,1
+90,How could I use or study internet election in a university project?,student_style,7,1
+91,Probabilistic session and session types,academic,10,1
+92,How could I use or study probabilistic session in a university project?,student_style,7,1
+93,Social network and impact social,academic,8,1
+94,How could I use or study social network in a university project?,student_style,7,1
+95,Statistical methods and want data,academic,7,1
+96,How could I use or study statistical methods in a university project?,student_style,4,1
+97,Algorithms diverse and lead better algorithms,academic,7,1
+98,How could I use or study algorithms diverse in a university project?,student_style,5,0
+99,Red teaming and llm output,academic,5,0
+100,How could I use or study red teaming in a university project?,student_style,5,0
+101,Human brain and artificial intelligence,academic,10,1
+102,How could I use or study human brain in a university project?,student_style,3,0
+103,Villum fonden and synergy grant,academic,7,1
+104,How could I use or study villum fonden in a university project?,student_style,6,1
+105,Query optimisation and tech summit,academic,5,0
+106,How could I use or study query optimisation in a university project?,student_style,6,1
+107,Public schools and understanding data,academic,10,1
+108,How could I use or study public schools in a university project?,student_style,5,0
+109,Large language and models llms,academic,9,1
+110,How could I use or study large language in a university project?,student_style,5,1
+111,Start package and package grant,academic,8,1
+112,How could I use or study start package in a university project?,student_style,6,1
+113,Erc starting and starting grant,academic,8,0
+114,How could I use or study erc starting in a university project?,student_style,7,1
+115,Nordic baltic and green transition,academic,9,1
+116,How could I use or study nordic baltic in a university project?,student_style,6,1
+117,Hate speech and eu supported,academic,5,0
+118,How could I use or study hate speech in a university project?,student_style,6,0
+119,Business models and horizon europe,academic,9,1
+120,How could I use or study business models in a university project?,student_style,6,0
+121,Artificial intelligence and human characteristics,academic,10,0
+122,How could I use or study artificial intelligence in a university project?,student_style,7,1
+123,Recruitment process and ai act,academic,6,1
+124,How could I use or study recruitment process in a university project?,student_style,6,0
+125,Eye trackers and marie skłodowska,academic,9,1
+126,How could I use or study eye trackers in a university project?,student_style,6,1
+127,Assistant aims and main area,academic,8,1
+128,How could I use or study assistant aims in a university project?,student_style,7,1
+129,Sami brandt and mixed reality,academic,10,0
+130,How could I use or study sami brandt in a university project?,student_style,6,1
+131,Query optimisation and query plans,academic,6,1
+132,How could I use or study query optimisation in a university project?,student_style,6,1
+133,Training data and villum young,academic,9,1
+134,How could I use or study training data in a university project?,student_style,8,1
+135,Just streets and social groups,academic,8,1
+136,How could I use or study just streets in a university project?,student_style,6,1
+137,Computational complexity and outstanding contributions,academic,3,0
+138,How could I use or study computational complexity in a university project?,student_style,4,0
+139,Big things and journalist dan,academic,9,1
+140,How could I use or study big things in a university project?,student_style,7,0
+141,Public libraries and authorities companies,academic,8,1
+142,How could I use or study public libraries in a university project?,student_style,5,1
+143,Language models and ultimately want,academic,7,1
+144,How could I use or study language models in a university project?,student_style,5,1
+145,Social networks and network analysis,academic,4,0
+146,How could I use or study social networks in a university project?,student_style,7,0
+147,Financial times and big things,academic,9,1
+148,How could I use or study financial times in a university project?,student_style,4,1
+149,Nordic council and law enforcement,academic,10,1
+150,How could I use or study nordic council in a university project?,student_style,6,1
+151,Villum experiment and written language,academic,6,0
+152,How could I use or study villum experiment in a university project?,student_style,4,0
+153,Real time and marie skłodowska,academic,9,1
+154,How could I use or study real time in a university project?,student_style,4,1
+155,Affect relationship and core group,academic,4,0
+156,How could I use or study affect relationship in a university project?,student_style,5,0
+157,Transformer language and language models,academic,5,1
+158,How could I use or study transformer language in a university project?,student_style,5,0
+159,Lundbeck foundation and early signs,academic,5,0
+160,How could I use or study lundbeck foundation in a university project?,student_style,7,0
+161,Science group and human centered,academic,9,1
+162,How could I use or study science group in a university project?,student_style,6,0
+163,Center computing and computing education,academic,7,0
+164,How could I use or study center computing in a university project?,student_style,4,0
+165,Hate speech and social media platforms,academic,7,1
+166,How could I use or study hate speech in a university project?,student_style,6,0
+167,Ai powered and learning tools,academic,8,1
+168,How could I use or study ai powered in a university project?,student_style,6,1
+169,Investigator programme and villum fonden,academic,0,0
+170,How could I use or study investigator programme in a university project?,student_style,3,1
+171,Neural networks and nervous systems,academic,5,1
+172,How could I use or study neural networks in a university project?,student_style,5,1
+173,Officially launched and business unit,academic,9,1
+174,How could I use or study officially launched in a university project?,student_style,7,1
+175,Cooperative enterprise and labour market,academic,7,1
+176,How could I use or study cooperative enterprise in a university project?,student_style,7,1
+177,Complexity theory and erc starting,academic,5,1
+178,How could I use or study complexity theory in a university project?,student_style,5,0
+179,Internet voting and kroner respective,academic,8,1
+180,How could I use or study internet voting in a university project?,student_style,7,1
+181,Center climate and climate emergency,academic,8,0
+182,How could I use or study center climate in a university project?,student_style,7,0
+183,Modl ai and video game,academic,9,1
+184,How could I use or study modl ai in a university project?,student_style,5,1
+185,Scale projects and percent large,academic,6,0
+186,How could I use or study scale projects in a university project?,student_style,2,0
+187,Qualitative quantitative and data strong,academic,10,1
+188,How could I use or study qualitative quantitative in a university project?,student_style,6,0
+189,Cooperative enterprise and labour market,academic,7,1
+190,How could I use or study cooperative enterprise in a university project?,student_style,7,1
+191,Innovation projects and nikolaj oppermann,academic,5,0
+192,How could I use or study innovation projects in a university project?,student_style,4,0
+193,Young academy and networks data,academic,8,0
+194,How could I use or study young academy in a university project?,student_style,7,1
+195,Social cultural and humanities social,academic,3,0
+196,How could I use or study social cultural in a university project?,student_style,6,0
+197,Mega projects and villum kann,academic,6,1
+198,How could I use or study mega projects in a university project?,student_style,3,0
+199,Science design and air lab,academic,7,0
+200,How could I use or study science design in a university project?,student_style,8,1
+201,Emotional response and children suffer,academic,8,0
+202,How could I use or study emotional response in a university project?,student_style,3,0
+203,Cellular automata and reinforcement learning,academic,10,1
+204,How could I use or study cellular automata in a university project?,student_style,8,1
+205,City planners and gaps bicycle,academic,7,1
+206,How could I use or study city planners in a university project?,student_style,5,0
+207,Consolidator grant and solving climate,academic,9,0
+208,How could I use or study consolidator grant in a university project?,student_style,6,1
+209,Brit ross and ross winthereik,academic,10,1
+210,How could I use or study brit ross in a university project?,student_style,6,1
+211,Small scale and creating sustainable,academic,6,1
+212,How could I use or study small scale in a university project?,student_style,4,0
+213,Machine learning and interaction user,academic,8,0
+214,How could I use or study machine learning in a university project?,student_style,7,1
+215,Young researcher and carlsberg foundation,academic,5,1
+216,How could I use or study young researcher in a university project?,student_style,5,1
+217,Data storage and anders kjærulff,academic,10,1
+218,How could I use or study data storage in a university project?,student_style,8,1
+219,Knowledge transfer and global scale,academic,9,0
+220,How could I use or study knowledge transfer in a university project?,student_style,6,0
+221,Law enforcement and civil liberties,academic,9,1
+222,How could I use or study law enforcement in a university project?,student_style,6,1
+223,Inge lehmann and lehmann programme,academic,0,0
+224,How could I use or study inge lehmann in a university project?,student_style,6,1
+225,Center welfare and policy making,academic,7,1
+226,How could I use or study center welfare in a university project?,student_style,7,1
+227,Anastassia vybornova and bicycle infrastructures,academic,4,1
+228,How could I use or study anastassia vybornova in a university project?,student_style,6,1
+229,Eye information and eye movement,academic,8,1
+230,How could I use or study eye information in a university project?,student_style,6,1
+231,Large companies and create basis,academic,7,0
+232,How could I use or study large companies in a university project?,student_style,6,0
+233,Test subjects and scientific paper,academic,5,0
+234,How could I use or study test subjects in a university project?,student_style,3,1
+235,Best paper award and computational complexity,academic,3,0
+236,How could I use or study best paper award in a university project?,student_style,7,1
+237,Million dkk and awarded close,academic,8,0
+238,How could I use or study million dkk in a university project?,student_style,6,1
+239,Personal data and privacy issues,academic,9,1
+240,How could I use or study personal data in a university project?,student_style,8,0
+241,Comply law and make difficult,academic,5,1
+242,How could I use or study comply law in a university project?,student_style,6,1
+243,Image analysis and indian institute,academic,5,0
+244,How could I use or study image analysis in a university project?,student_style,4,0
+245,Villum synergy and synergy grant,academic,7,1
+246,How could I use or study villum synergy in a university project?,student_style,6,0
+247,Villum experiment and public trust,academic,7,0
+248,How could I use or study villum experiment in a university project?,student_style,4,0
+249,Climate crisis and inaugural lecture,academic,9,1
+250,How could I use or study climate crisis in a university project?,student_style,7,1
+251,Computing education and teaching practices,academic,5,0
+252,How could I use or study computing education in a university project?,student_style,4,0
+253,Deep learning and natural language,academic,10,1
+254,How could I use or study deep learning in a university project?,student_style,8,1
+255,Mental healthcare and refugee camps,academic,9,1
+256,How could I use or study mental healthcare in a university project?,student_style,6,1
+257,Neural networks and creative ai,academic,8,1
+258,How could I use or study neural networks in a university project?,student_style,5,1
+259,Online discourse and social media platforms,academic,9,1
+260,How could I use or study online discourse in a university project?,student_style,6,0
+261,Kann rasmussen and villum fonden,academic,10,1
+262,How could I use or study kann rasmussen in a university project?,student_style,6,1
+263,Billion word and misinformation detection,academic,9,1
+264,How could I use or study billion word in a university project?,student_style,7,0
+265,Law human and bicycle infrastructure,academic,5,1
+266,How could I use or study law human in a university project?,student_style,4,0
+267,Piece software and software runs,academic,9,0
+268,How could I use or study piece software in a university project?,student_style,8,1
+269,Billion word and misinformation detection,academic,9,1
+270,How could I use or study billion word in a university project?,student_style,7,0
+271,Welfare state and podcast series,academic,9,1
+272,How could I use or study welfare state in a university project?,student_style,7,0
+273,Welfare seekers and anette petersen,academic,10,1
+274,How could I use or study welfare seekers in a university project?,student_style,8,1
+275,Public services and user involvement,academic,10,1
+276,How could I use or study public services in a university project?,student_style,8,1
+277,Pioneer centre and dan witzner,academic,9,1
+278,How could I use or study pioneer centre in a university project?,student_style,6,1
+279,Climate initiatives and papua guinea,academic,9,1
+280,How could I use or study climate initiatives in a university project?,student_style,7,0
+281,Face recognition and data analytics,academic,9,1
+282,How could I use or study face recognition in a university project?,student_style,6,1
+283,Start package and foundation start,academic,3,0
+284,How could I use or study start package in a university project?,student_style,6,1
+285,Velux foundation and young investigator,academic,7,1
+286,How could I use or study velux foundation in a university project?,student_style,6,0
+287,Data scientists and hardware resources,academic,9,1
+288,How could I use or study data scientists in a university project?,student_style,8,1
+289,Cyber security and goes wrong,academic,10,1
+290,How could I use or study cyber security in a university project?,student_style,7,1
+291,Gender inequality and women men,academic,9,1
+292,How could I use or study gender inequality in a university project?,student_style,6,1
+293,Training program and european commission,academic,7,0
+294,How could I use or study training program in a university project?,student_style,5,1
+295,Natural language and language processing,academic,9,1
+296,How could I use or study natural language in a university project?,student_style,7,1
+297,Centre government and lars frelle,academic,5,0
+298,How could I use or study centre government in a university project?,student_style,7,0
+299,Training data and robot solve,academic,8,0
+300,How could I use or study training data in a university project?,student_style,8,1
+301,Cyber security and level cybersecurity,academic,9,1
+302,How could I use or study cyber security in a university project?,student_style,7,1
+303,Fake news and social dynamics,academic,6,1
+304,How could I use or study fake news in a university project?,student_style,6,1
+305,Data relation and big data,academic,8,1
+306,How could I use or study data relation in a university project?,student_style,7,0
+307,Mental health and healthcare providers,academic,9,1
+308,How could I use or study mental health in a university project?,student_style,7,1
+309,Software engineering and computer science social,academic,9,1
+310,How could I use or study software engineering in a university project?,student_style,9,1
+311,Elections voting and risk limiting,academic,8,1
+312,How could I use or study elections voting in a university project?,student_style,7,0
+313,Inauguration lecture and seeks make,academic,5,1
+314,How could I use or study inauguration lecture in a university project?,student_style,6,1
+315,Smart contracts and ai methods,academic,9,1
+316,How could I use or study smart contracts in a university project?,student_style,6,1
+317,Primary schools and sector create,academic,6,0
+318,How could I use or study primary schools in a university project?,student_style,6,1
+319,Blockchain systems and dkk million grant,academic,8,0
+320,How could I use or study blockchain systems in a university project?,student_style,7,1
+321,Refugee camps and rohingya refugees,academic,10,1
+322,How could I use or study refugee camps in a university project?,student_style,7,0
+323,Want change and used real,academic,5,1
+324,How could I use or study want change in a university project?,student_style,6,0
+325,Data data and natural language,academic,9,1
+326,How could I use or study data data in a university project?,student_style,9,1
+327,Fake news and crisis situations,academic,4,0
+328,How could I use or study fake news in a university project?,student_style,6,1
+329,Language understanding and natural language,academic,10,1
+330,How could I use or study language understanding in a university project?,student_style,6,0
+331,Air lab and emotional aspects,academic,5,0
+332,How could I use or study air lab in a university project?,student_style,7,1
+333,Data protection and allow understand,academic,8,0
+334,How could I use or study data protection in a university project?,student_style,8,0
+335,Women data and receives dkk,academic,10,1
+336,How could I use or study women data in a university project?,student_style,9,1
+337,Carbon emissions and actually make,academic,6,1
+338,How could I use or study carbon emissions in a university project?,student_style,7,1
+339,Game theory and algorithmic game,academic,6,0
+340,How could I use or study game theory in a university project?,student_style,7,1
+341,Flow robotics and make easy,academic,7,1
+342,How could I use or study flow robotics in a university project?,student_style,5,0
+343,Privacy users and andrzej wąsowski,academic,7,1
+344,How could I use or study privacy users in a university project?,student_style,7,1
+345,Artificial life and young investigator,academic,8,1
+346,How could I use or study artificial life in a university project?,student_style,6,1
+347,Public schools and understand data,academic,9,0
+348,How could I use or study public schools in a university project?,student_style,5,0
+349,Irina shklovski and virt eu,academic,10,1
+350,How could I use or study irina shklovski in a university project?,student_style,6,1
+351,Ai generated and super mario,academic,10,1
+352,How could I use or study ai generated in a university project?,student_style,5,0
+353,Nathan fielder and american tv,academic,10,1
+354,How could I use or study nathan fielder in a university project?,student_style,6,1
+355,Andrzej wąsowski and basic idea,academic,8,0
+356,How could I use or study andrzej wąsowski in a university project?,student_style,6,1
+357,Payment systems and vulnerable groups,academic,5,1
+358,How could I use or study payment systems in a university project?,student_style,6,1
+359,Interactive theorem and leading researcher,academic,6,0
+360,How could I use or study interactive theorem in a university project?,student_style,5,1
+361,Big tech and energy grid,academic,10,1
+362,How could I use or study big tech in a university project?,student_style,6,0
+363,Mobile phones and make practical,academic,5,1
+364,How could I use or study mobile phones in a university project?,student_style,7,1
+365,Election result and democratic process,academic,7,1
+366,How could I use or study election result in a university project?,student_style,7,1
+367,European blockchain and roman beck,academic,8,1
+368,How could I use or study european blockchain in a university project?,student_style,7,1
+369,Self driving and personal data,academic,10,1
+370,How could I use or study self driving in a university project?,student_style,6,0
+371,Commonly used and world changes,academic,5,1
+372,How could I use or study commonly used in a university project?,student_style,6,1
+373,Multiparty computation and world leading,academic,6,0
+374,How could I use or study multiparty computation in a university project?,student_style,5,1
+375,Mobile phones and jari kickbusch,academic,8,1
+376,How could I use or study mobile phones in a university project?,student_style,7,1
+377,Case management and management systems,academic,7,0
+378,How could I use or study case management in a university project?,student_style,7,0
+379,Reinforcement learning and step forward,academic,9,1
+380,How could I use or study reinforcement learning in a university project?,student_style,5,1
+381,Fake news and center information,academic,6,1
+382,How could I use or study fake news in a university project?,student_style,6,1
+383,Voting machines and used elections,academic,4,0
+384,How could I use or study voting machines in a university project?,student_style,3,1
+385,Relatively open and public debate,academic,8,1
+386,How could I use or study relatively open in a university project?,student_style,8,0
+387,Voting machine and wall street,academic,10,1
+388,How could I use or study voting machine in a university project?,student_style,5,1
+389,Make robot and extreme conditions,academic,6,1
+390,How could I use or study make robot in a university project?,student_style,8,1
+391,Case management and phd projects,academic,6,1
+392,How could I use or study case management in a university project?,student_style,7,0
+393,Security critical and trust outcome,academic,9,1
+394,How could I use or study security critical in a university project?,student_style,8,1
+395,Science talk and algorithmic decision,academic,6,0
+396,How could I use or study science talk in a university project?,student_style,5,0
+397,Efficient algorithms and rasmus pagh,academic,7,1
+398,How could I use or study efficient algorithms in a university project?,student_style,4,0
+399,Quality assurance and robots humans,academic,6,1
+400,How could I use or study quality assurance in a university project?,student_style,9,1
+401,Algorithmic game and game theory,academic,6,0
+402,How could I use or study algorithmic game in a university project?,student_style,7,0
+403,Health care and example communication,academic,9,1
+404,How could I use or study health care in a university project?,student_style,7,1
+405,Eu funded and goal creating,academic,6,1
+406,How could I use or study eu funded in a university project?,student_style,6,1
+407,Social dynamics and best ideas,academic,8,0
+408,How could I use or study social dynamics in a university project?,student_style,7,0
+409,Software engineering and financial sector,academic,9,1
+410,How could I use or study software engineering in a university project?,student_style,9,1
+411,Ethos lab and novo nordisk,academic,9,1
+412,How could I use or study ethos lab in a university project?,student_style,8,1
+413,Academic boundaries and ethos lab,academic,9,1
+414,How could I use or study academic boundaries in a university project?,student_style,6,1
+415,Risk limiting and washington dc,academic,7,1
+416,How could I use or study risk limiting in a university project?,student_style,4,1
+417,Building robots and way build,academic,8,1
+418,How could I use or study building robots in a university project?,student_style,5,0
+419,Art culture and left right,academic,7,0
+420,How could I use or study art culture in a university project?,student_style,6,0
+421,Old software and software systems,academic,9,1
+422,How could I use or study old software in a university project?,student_style,8,1
+423,Think solution and example know,academic,5,0
+424,How could I use or study think solution in a university project?,student_style,4,0
+425,Eye tracking and eye movements,academic,8,1
+426,How could I use or study eye tracking in a university project?,student_style,6,1
+427,Electrical impulses and dk email,academic,7,1
+428,How could I use or study electrical impulses in a university project?,student_style,6,1
+429,Politics facebook and social media,academic,9,1
+430,How could I use or study politics facebook in a university project?,student_style,7,0
+431,Design information and email akav,academic,8,1
+432,How could I use or study design information in a university project?,student_style,9,0
+433,Service design and design perspective,academic,9,1
+434,How could I use or study service design in a university project?,student_style,9,1
+435,Microbial fuel and fuel cells,academic,9,1
+436,How could I use or study microbial fuel in a university project?,student_style,7,1
+437,Microbial fuel and fuel cells,academic,9,1
+438,How could I use or study microbial fuel in a university project?,student_style,7,1
+439,Flow robotics and robots able,academic,8,1
+440,How could I use or study flow robotics in a university project?,student_style,5,0
+441,Called deep and computer programs,academic,7,0
+442,How could I use or study called deep in a university project?,student_style,7,1
+443,Best paper award and emotional state,academic,6,0
+444,How could I use or study best paper award in a university project?,student_style,7,1
+445,Carnegie mellon and education science,academic,8,1
+446,How could I use or study carnegie mellon in a university project?,student_style,7,1
+447,Theoretical computer and aim develop,academic,3,0
+448,How could I use or study theoretical computer in a university project?,student_style,4,0
+449,Life easier and considered insufficient,academic,6,0
+450,How could I use or study life easier in a university project?,student_style,8,1
+451,Health care and like health,academic,9,1
+452,How could I use or study health care in a university project?,student_style,7,1

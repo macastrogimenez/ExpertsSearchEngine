@@ -1,0 +1,15 @@
+{
+  "queries": 452,
+  "unique_queries": 427,
+  "document_limit": 100,
+  "top_k": 10,
+  "aggregation": "discounted_combsum",
+  "stemming": "enabled in both",
+  "stopwords": {
+    "stemming_no_stopwords": "disabled",
+    "stemming_with_stopwords": "Whoosh English STOP_WORDS"
+  },
+  "baseline_index": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_stemming_index",
+  "stopword_index": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_stemming_stopwords_index",
+  "evaluation_note": "Incomplete known-positive judgments; not exhaustive relevance labels."
+}

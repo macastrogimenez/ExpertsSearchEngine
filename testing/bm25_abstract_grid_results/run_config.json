@@ -1,0 +1,33 @@
+{
+  "queries": 452,
+  "depth": 100,
+  "top_k": 10,
+  "abstract_weights": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "indexes": {
+    "stem0_stop0": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_index",
+    "stem0_stop1": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_standard_stopwords_index",
+    "stem1_stop0": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_stemming_index",
+    "stem1_stop1": "/Users/izahetmanowska/Desktop/ExpertsSearchEngine/backend/whoosh_bm25_stemming_stopwords_index"
+  },
+  "search_fields": [
+    "title",
+    "subtitle",
+    "abstract",
+    "description",
+    "programme"
+  ],
+  "title_weight": 1,
+  "other_field_weights": 1,
+  "aggregation": "discounted_combsum",
+  "bm25f": {
+    "B": 0.75,
+    "K1": 1.2
+  },
+  "field_weight_method": "Whoosh MultifieldParser fieldboosts (query-time boosts)",
+  "note": "Known-positive labels are incomplete; related queries may be dependent"
+}
