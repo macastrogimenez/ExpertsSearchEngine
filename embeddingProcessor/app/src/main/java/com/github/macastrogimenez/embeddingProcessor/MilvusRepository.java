@@ -100,7 +100,7 @@ public class MilvusRepository implements AutoCloseable {
                 AddFieldReq.builder()
                 .fieldName("title")
                 .dataType(DataType.VarChar)
-                .maxLength(256)
+                //.maxLength(256)
                 .build()
             );
 
@@ -108,7 +108,8 @@ public class MilvusRepository implements AutoCloseable {
                 AddFieldReq.builder()
                 .fieldName("snippet")
                 .dataType(DataType.VarChar)
-                .maxLength(1024)
+                .isNullable(true)
+                //.maxLength(4000)
                 .build()
             );
 
@@ -290,9 +291,9 @@ public class MilvusRepository implements AutoCloseable {
                 List.of(
                     "document_type",
                     "document_id",
-                    "contributors",
                     "title",
-                    "snippet"
+                    "snippet",
+                    "contributors"
                 )
             )
             .consistencyLevel(ConsistencyLevel.STRONG)
@@ -316,7 +317,10 @@ public class MilvusRepository implements AutoCloseable {
             String docType = metadata.get("document_type").toString();
             String docId = metadata.get("document_id").toString();
             String docTitle = metadata.get("title").toString();
-            String docSnippet = metadata.get("snippet").toString();
+            String docSnippet;
+            if  (metadata.get("snippet") != null) {
+                docSnippet = metadata.get("snippet").toString();
+            } else { docSnippet = "no content";}
             
             // extracting contributors and passing the data as a stream into a List
             List<String> contributors = List.of();
