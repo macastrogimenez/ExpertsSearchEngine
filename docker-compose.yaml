@@ -1,3 +1,4 @@
+
 services:
   ollama:
     image: ollama/ollama:latest
@@ -21,7 +22,7 @@ services:
       context: ./embeddingProcessor
     environment:
       OLLAMA_URL: http://ollama:11434
-      # Milvus runs in the separate milvus/docker-compose.yml stack.
+      # Milvus runs in a separate Compose stack
       MILVUS_URL: ${MILVUS_URL:-http://host.docker.internal:19530}
       MILVUS_TOKEN: ${MILVUS_TOKEN:-root:Milvus}
       DB_HOST: ${DB_HOST:-}
@@ -33,5 +34,16 @@ services:
     ports:
       - "8080:8080"
 
+  front-end:
+    image: node:24-alpine
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+      - frontend-node-modules:/app/node_modules
+    ports:
+      - "5173:5173"
+    command: npm run dev -- --host 0.0.0.0
+
 volumes:
   ollama-data:
+  frontend-node-modules:
