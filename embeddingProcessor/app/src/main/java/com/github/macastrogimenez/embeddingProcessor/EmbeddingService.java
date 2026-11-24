@@ -41,7 +41,7 @@ public class EmbeddingService {
                 // construct http request
                 HttpRequest request = HttpRequest.newBuilder()
                         .uri(URI.create(OLLAMA_URL + "/api/embed"))
-                        .timeout(Duration.ofSeconds(60))
+                        .timeout(Duration.ofSeconds(180))
                         .header("Content-type", "application/json")
                         .POST(HttpRequest.BodyPublishers.ofString(json))
                         .build();
@@ -77,7 +77,7 @@ public class EmbeddingService {
                 // construct http request
                 HttpRequest request = HttpRequest.newBuilder()
                         .uri(URI.create(OLLAMA_URL + "/api/embed"))
-                        .timeout(Duration.ofSeconds(60))
+                        .timeout(Duration.ofSeconds(180))
                         .header("Content-type", "application/json")
                         .POST(HttpRequest.BodyPublishers.ofString(json))
                         .build();
