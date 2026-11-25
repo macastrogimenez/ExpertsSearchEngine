@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import os
 import shutil
 from collections import defaultdict
 from datetime import date, datetime
@@ -28,7 +29,8 @@ from whoosh.scoring import BM25F
 
 from dbconfig import DB_CONFIG
 
-INDEX_PATH = Path(__file__).resolve().parent / 'whoosh_bm25_index'
+INDEX_ROOT = Path(os.environ.get('BM25_INDEX_ROOT') or Path(__file__).resolve().parent)
+INDEX_PATH = INDEX_ROOT / 'whoosh_bm25_index'
 SEARCH_FIELDS = ('title', 'subtitle', 'abstract', 'description', 'programme')
 DEFAULT_DOCUMENT_LIMIT = 100
 

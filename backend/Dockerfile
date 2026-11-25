@@ -34,8 +34,8 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 COPY . .
 
 # Allow the application user to create and update the search index.
-RUN mkdir -p /app/whoosh_index \
-    && chown -R appuser:appuser /app/whoosh_index
+RUN mkdir -p /app/whoosh_index /app/whoosh \
+    && chown -R appuser:appuser /app/whoosh_index /app/whoosh
 
 # Switch to the non-privileged user to run the application.
 USER appuser

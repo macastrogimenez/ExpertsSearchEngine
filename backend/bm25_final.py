@@ -8,12 +8,12 @@ import json
 import math
 from collections import defaultdict
 from pathlib import Path
-from bm25_baseline import INDEX_PATH, search_documents
+from bm25_baseline import INDEX_PATH, INDEX_ROOT, search_documents
 from bm25_discounted import course_group_key
 from bm25_stopwords import build as build_stopword_index
 from bm25_stemming import validate as validate_indexes
 
-FINAL_INDEX_PATH = Path(__file__).resolve().parent / 'whoosh_bm25_final_index'
+FINAL_INDEX_PATH = INDEX_ROOT / 'whoosh_bm25_final_index'
 DOCUMENT_LIMIT = 100
 DOCUMENT_WEIGHTS = {'paper': 1.0, 'project': 3.0, 'course': 1.0}
 
