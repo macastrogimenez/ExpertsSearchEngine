@@ -14,6 +14,26 @@ python bm25_final.py validate
 
 This creates `backend/whoosh_bm25_final_index/`.
 
+### Docker storage
+
+The root `docker-compose.yaml` mounts the named volume `backend-data` at
+`/app/whoosh` and sets `BM25_INDEX_ROOT=/app/whoosh`. All BM25 index variants
+are stored in subdirectories of this volume, so they survive container recreation.
+Without this environment variable, local builds still use the `backend/` folder.
+Existing indexes elsewhere are not moved automatically.
+
+From the repository root:
+
+```bash
+docker compose up -d --build --force-recreate backend
+docker compose exec backend python bm25_baseline.py build
+docker compose exec backend python bm25_final.py build
+docker compose exec backend python bm25_final.py validate
+```
+
+The baseline build requires database connectivity. Do not use `docker compose down -v`
+if you want to retain the indexes: that command removes the named volumes.
+
 ## Search
 
 From `backend/`:

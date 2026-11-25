@@ -17,10 +17,11 @@ from whoosh.analysis import StemmingAnalyzer, STOP_WORDS
 from whoosh.fields import ID, STORED, TEXT, Schema
 
 from bm25_stemming import STEM_INDEX_PATH, records, validate
+from bm25_baseline import INDEX_ROOT
 
 
 STOP_INDEX_PATH = (
-    Path(__file__).resolve().parent
+    INDEX_ROOT
     / "whoosh_bm25_stemming_stopwords_index"
 )
 
