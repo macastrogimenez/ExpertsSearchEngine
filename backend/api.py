@@ -3,11 +3,14 @@ from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from search import search_people, MAX_RESULTS
+# there was an error here: the import line was from search import search_people, MAX_RESULTS -> search.py does not exist
+from bm25_final import search_people
 from paper_url import get_papers_by_person
 from projects import get_projects_by_person
 from courses import get_courses_by_person
 from persons import get_person_data
+
+MAX_RESULTS = 20
 
 
 app = FastAPI(
