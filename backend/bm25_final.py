@@ -48,6 +48,30 @@ def aggregate(documents, people, limit=10):
             for uid in ranked]
 
 
+def rank_people(query, documents, people, limit):
+    normalized_query = ' '.join(query.casefold().split())
+    if not normalized_query:
+        return []
+
+    single_word = ' ' not in normalized_query
+    name_matches = [
+        person for person in people.values()
+        if ' '.join(person['name'].casefold().split()) == normalized_query
+        or (single_word and normalized_query in person['name'].casefold().split())
+    ]
+    if not name_matches:
+        return aggregate(documents, people, limit=limit)
+
+    ranked = aggregate(documents, people, limit=len(people))
+    ranked_by_uuid = {person['uuid']: person for person in ranked}
+    exact_results = [ranked_by_uuid.get(person['uuid'], {
+        **person, 'score': 0.0, 'matched_document_count': 0,
+    }) for person in sorted(name_matches, key=lambda person: person['uuid'])]
+    exact_uuids = {person['uuid'] for person in exact_results}
+    other_results = [person for person in ranked if person['uuid'] not in exact_uuids]
+    return (exact_results + other_results)[:limit]
+
+
 def search_people(query: str, limit: int = 10):
     """Search researchers using the final tuned BM25F configuration."""
     if not 1 <= limit <= 100:
@@ -71,7 +95,7 @@ def search_people(query: str, limit: int = 10):
         path=FINAL_INDEX_PATH,
     )
 
-    return aggregate(documents, people, limit=limit)
+    return rank_people(query, documents, people, limit)
 
 
 
@@ -104,7 +128,7 @@ def main():
         print(json.dumps({'query': args.query, 'document_limit': DOCUMENT_LIMIT,
                           'retrieved_documents': len(documents),
                           'weights': DOCUMENT_WEIGHTS,
-                          'results': aggregate(documents, people, args.top_k)},
+                          'results': rank_people(args.query, documents, people, args.top_k)},
                          ensure_ascii=False, indent=2))
 
 if __name__ == '__main__':
