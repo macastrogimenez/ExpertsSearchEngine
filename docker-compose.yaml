@@ -1,9 +1,9 @@
 
 services:
   ollama:
-    image: ollama/ollama:latest
+    image: ollama/ollama:0.40.15
     ports:
-      - "11434:11434"
+      - "127.0.0.1:11435:11434"
     volumes:
       - ollama-data:/root/.ollama
 
@@ -12,10 +12,16 @@ services:
       context: ./backend
     environment:
       OLLAMA_URL: http://ollama:11434
+      BM25_INDEX_ROOT: /app/whoosh
+    volumes:
+      - backend-data:/app/whoosh
     ports:
       - "8000:8000"
     depends_on:
       - ollama
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
 
   embedding-processor:
     build:

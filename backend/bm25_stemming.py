@@ -18,9 +18,9 @@ from whoosh import index
 from whoosh.analysis import StemmingAnalyzer
 from whoosh.fields import ID, STORED, TEXT, Schema
 
-from bm25_baseline import INDEX_PATH
+from bm25_baseline import INDEX_PATH, INDEX_ROOT
 
-STEM_INDEX_PATH = Path(__file__).resolve().parent / 'whoosh_bm25_stemming_index'
+STEM_INDEX_PATH = INDEX_ROOT / 'whoosh_bm25_stemming_index'
 FIELDS = ('title', 'subtitle', 'abstract', 'description', 'programme')
 
 

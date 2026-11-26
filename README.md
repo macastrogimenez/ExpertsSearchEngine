@@ -114,7 +114,7 @@ curl --get 'http://localhost:8080/semanticSearch' \
 
 ```Bash
 curl --get 'http://localhost:8080/semanticSearchFiltered' \
-  --data-urlencode 'query= ai in agriculture' \
+  --data-urlencode 'query=ai in agriculture' \
   --data-urlencode 'K=5' \
   --data-urlencode 'filter=paper'
 ```

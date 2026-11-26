@@ -8,12 +8,12 @@ import json
 import math
 from collections import defaultdict
 from pathlib import Path
-from bm25_baseline import INDEX_PATH, search_documents
+from bm25_baseline import INDEX_PATH, INDEX_ROOT, search_documents
 from bm25_discounted import course_group_key
 from bm25_stopwords import build as build_stopword_index
 from bm25_stemming import validate as validate_indexes
 
-FINAL_INDEX_PATH = Path(__file__).resolve().parent / 'whoosh_bm25_final_index'
+FINAL_INDEX_PATH = INDEX_ROOT / 'whoosh_bm25_final_index'
 DOCUMENT_LIMIT = 100
 DOCUMENT_WEIGHTS = {'paper': 1.0, 'project': 3.0, 'course': 1.0}
 
@@ -48,6 +48,30 @@ def aggregate(documents, people, limit=10):
             for uid in ranked]
 
 
+def rank_people(query, documents, people, limit):
+    normalized_query = ' '.join(query.casefold().split())
+    if not normalized_query:
+        return []
+
+    single_word = ' ' not in normalized_query
+    name_matches = [
+        person for person in people.values()
+        if ' '.join(person['name'].casefold().split()) == normalized_query
+        or (single_word and normalized_query in person['name'].casefold().split())
+    ]
+    if not name_matches:
+        return aggregate(documents, people, limit=limit)
+
+    ranked = aggregate(documents, people, limit=len(people))
+    ranked_by_uuid = {person['uuid']: person for person in ranked}
+    exact_results = [ranked_by_uuid.get(person['uuid'], {
+        **person, 'score': 0.0, 'matched_document_count': 0,
+    }) for person in sorted(name_matches, key=lambda person: person['uuid'])]
+    exact_uuids = {person['uuid'] for person in exact_results}
+    other_results = [person for person in ranked if person['uuid'] not in exact_uuids]
+    return (exact_results + other_results)[:limit]
+
+
 def search_people(query: str, limit: int = 10):
     """Search researchers using the final tuned BM25F configuration."""
     if not 1 <= limit <= 100:
@@ -71,7 +95,7 @@ def search_people(query: str, limit: int = 10):
         path=FINAL_INDEX_PATH,
     )
 
-    return aggregate(documents, people, limit=limit)
+    return rank_people(query, documents, people, limit)
 
 
 
@@ -104,7 +128,7 @@ def main():
         print(json.dumps({'query': args.query, 'document_limit': DOCUMENT_LIMIT,
                           'retrieved_documents': len(documents),
                           'weights': DOCUMENT_WEIGHTS,
-                          'results': aggregate(documents, people, args.top_k)},
+                          'results': rank_people(args.query, documents, people, args.top_k)},
                          ensure_ascii=False, indent=2))
 
 if __name__ == '__main__':

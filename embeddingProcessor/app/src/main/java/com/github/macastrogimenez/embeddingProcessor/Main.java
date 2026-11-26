@@ -103,7 +103,7 @@ public class Main
                                     //SearchCourse c = new SearchCourse(courseId, courseTitle, courseAbstract, courseDescription, courseProgramme, courseProfessor);
                                     //searchCourses.put(rowCount, c);
         
-                                    VectorDocument d = new VectorDocument("course", courseId, contrList);
+                                    VectorDocument d = new VectorDocument("course", courseId, courseTitle, courseAbstract, contrList);
                                     searchCourses[rowCount] = d;
         
                                     if (hundredCourseEmbeddingText.size() == 100) {
@@ -175,9 +175,11 @@ public class Main
                                         + "\n"
                                         + "abstract: " + paperAbstract
                                     );
+
+                                    String vectorTitle = title + " " + subtitle;
         
                                     hundredPapersdocStrings.add(s.toString());
-                                    VectorDocument sp = new VectorDocument("paper", uuid, contrList);
+                                    VectorDocument sp = new VectorDocument("paper", uuid, vectorTitle, paperAbstract,  contrList);
                                     searchPapers[rowCount] = sp;
         
                                     if (hundredPapersdocStrings.size() == 100){
@@ -248,7 +250,7 @@ public class Main
         
                                     hundredProjectsdocStrings.add(s.toString());
                                     //SearchProject p = new SearchProject(uuid, title, description, participants);
-                                    VectorDocument p = new VectorDocument("project", uuid, participants);
+                                    VectorDocument p = new VectorDocument("project", uuid, title, description, participants);
                                     searchProjects[rowCount] = p;
         
                                     if(hundredProjectsdocStrings.size()==100){
