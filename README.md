@@ -33,9 +33,9 @@ application with Java 21 and copies the application and dependencies into a Java
 21 runtime image. Integration tests are not run during the image build.
 
 Run these commands from the repository root. First load the PostgreSQL settings
-(`DB_HOST`, `DB_NAME`, `DB_USERNAME`, `DB_PASSWORD`) from your local `env.sh`.
+(`DB_HOST`, `DB_NAME`, `DB_USERNAME`, `DB_PASSWORD`) from your local `env.sh`. 
 The script and `.env` files are excluded from the image build context.
-
+For further information on how to load the `env.sh` file, check the following [Notion page](https://app.notion.com/p/Embedding-processor-3f9863b9ac2e80eb8c56e037aa1dac32?source=copy_link#3f9863b9ac2e809ea85cfd0d9c501171)
 
 ```Bash
 set -a
