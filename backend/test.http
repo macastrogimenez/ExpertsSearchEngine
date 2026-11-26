@@ -1,6 +1,6 @@
 ###
 // 200: test endpoint /search for term "marco carbone"
-GET http://127.0.0.1:8000/search?q=marco%20carbone&limit=15 HTTP/1.1
+GET http://127.0.0.1:8000/search?q=toine%20bogers&limit=15 HTTP/1.1
 
 ###
 // 200: test endpoint /search for term "machine learning"
