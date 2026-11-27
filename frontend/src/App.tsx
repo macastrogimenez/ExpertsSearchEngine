@@ -4,6 +4,9 @@ import Navbar from './navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import SearchView from './views/SearchView'
 import ExpertDetailView from './views/ExpertDetailView'
+import AboutView from './views/AboutView'
+import ChatView from './views/ChatView'
+import ResultsView from './views/ResultsView'
 
 function App() {
   //const [count, setCount] = useState(0)
